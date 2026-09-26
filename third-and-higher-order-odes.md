@@ -32,6 +32,10 @@ urlcolor: MidnightBlue
 citecolor: MidnightBlue
 ---
 
+Latest PDF on GitHub:
+
+<https://github.com/hobnilre/physics-ode-3rd-deg/blob/main/third-and-higher-order-odes.pdf>
+
 # What derivative order establishes
 \label{sec:scope}
 
