@@ -1,18 +1,19 @@
 # Verification and finishing record
 
-Completed 2026-09-26. The deliverable is one integrated, 46-page article, with three standalone vector figures and five appendices. Its explicit subject is third- and higher-order derivative equations throughout.
+Revised 2026-09-27 after REVIEW_2.md. The deliverable is one integrated, 63-page article, with three standalone vector figures and six appendices. Its explicit subject remains third- and higher-order derivative equations, with unresolved energy questions leading the abstract, introduction and conclusion. The original integration checks are retained below with corrected scope. Review acceptance and exact checks are recorded in notes/review-1-resolution.md and notes/review-2-resolution.md.
 
 ## Scope and coverage
 
-- All sixteen mandatory chapters, the second-order foundation, and the shared power-accounting chapter were read in full.
-- The coverage checklist contains 478 checked section/context spans, with separate locations for substantive tables, figures, and displayed definitions. Additional relevant passages across the other volumes and linked derivations are included in that map.
-- The open-problem inventory records 339 atomic questions and their manuscript treatment or explicit contextual/administrative disposition. Source status is not treated as proof. Relevant unresolved mathematical, physical, and measurement limitations remain in the article.
+- All sixteen mandatory chapters, the second-order foundation, and the shared power-accounting chapter were read in full during the earlier integration. The present revision revisited the reviewed energy passages, relevant open questions and linked finite-supply equations; it does not claim a fresh full-source read.
+- The coverage checklist retains its section/context index and separate table, figure and display locations. Review 1 rewrote 195 destinations with specific constructions and dispositions, including the formerly omitted separate contact/joint proposals. Review 2 replaces twelve targeted chapter destinations and eighteen atomic issue mappings with specific release, coupling, supply, stochastic and uncertainty treatments. The count of checked spans is not itself a completeness certificate.
+- The earlier open-problem inventory remains a traceability map of 339 atomic questions and contextual/administrative dispositions. It is not represented as a fresh independent proof of every atomic coverage claim. Seven developed local proposals now include exact predictions and explicit uncertainty conditions; unresolved physical and mathematical limits remain in the article.
 - Numerical presentations were replaced by exact identities, counterexamples, limiting cases, or conditional statements. No simulation, numerical solver, parameter experiment, or source computation was run for the article. No numerical performance result or actual measurement is claimed.
-- Consolidation retains different parameter manifolds, source and observation ports, physical preparations, singular boundaries, event sides, and uncertainty conditions. The coverage map's equation and section targets all exist in the manuscript.
+- The review re-audits distinguish constructions previously grouped under broad targets, including separate constitutive laws, initialized transfer cancellation, off-state guards and graph state spaces. The new energy treatments distinguish an unassigned residual from a conditional added port and retain unresolved subsystem checks. All named equation and section destinations in the coverage checklist and Review 2 resolution record resolve to the manuscript.
+- All pre-revision equation and section labels remain. The manuscript comparison shows targeted prose replacement and added derivations, with the earlier distinct cases and qualifications retained. The new supply appendix does not replace the constant-coupling cubic with a different model's trajectory.
 
 ## Independent mathematical checks
 
-Exact scratch algebra was performed inline during the session; no calculation program or dataset is retained. The article supplies the definitions and derivations needed to reproduce its mathematical results.
+Exact scratch algebra was performed inline during the session; no calculation program or dataset is retained. The article supplies the definitions and derivations needed to reproduce its mathematical results. The following table records the original integration checks; the review exposed errors outside what those summaries actually established. The explicit corrections and independent checks in notes/review-1-resolution.md supersede those earlier broad claims.
 
 | Construction | Independent verification and scope |
 |:---|:---|
@@ -31,9 +32,25 @@ Exact scratch algebra was performed inline during the session; no calculation pr
 | Clamp and switching | Substituted the complete constant-voltage clamp solution into all three state equations. Integrated its port work and evaluated the store independently. The two-capacitor reset integrals explicitly distinguish sequential and coincident conductance profiles. |
 | Arithmetic limitations | Proved the implicit-midpoint quadratic-invariant identity in exact arithmetic, without asserting finite-precision drift or event accuracy. Exact rank deficiency and divergent unstable continuations are retained as distinct from arithmetic uncertainty. |
 
-Units, signs, endpoint stores and parameter values were reconciled with notes/conventions.md. Zero numerical integration residual means an exact analytical identity; unspecified physical model residuals remain unknown. Work and energy are not used to select coefficients, derivative order, preparation or control.
+Review 2 added the following exact scratch checks, independently of the retained integration record:
+
+| Construction | Exact verification in this revision |
+|:---|:---|
+| Source-off third-order trajectory | Substituted the exponential state into all three ODEs; factored the cubic; separately integrated both loss works as −3/2 J; evaluated stores 3/2 and 6 J and the listed-port residual +15/2 J. |
+| Release event | Force zero gives the positive store d_c² delta_dot²/(2 k_c); continuous remaining states and zero declared event work give its negative as the deletion residual. |
+| Physical versus formal store | Symbolically reconstructed both anvil states from the scalar jet when Delta is nonzero; differentiated the physical store and the formal Q independently, obtaining their distinct stated rates. |
+| Finite supply | Checked the separate plant, coil, DC-link, sensor and thermal rates and their cancellation into the declared external powers. Verified both limiter saturation signs and the unsaturated zero loss; checked the converter loss product and continuity at zero bias current. |
+| Hidden preparation | Eliminated the initial capacitor voltage to obtain the finite-coupling bound and checked its monotone uncertain-component extension. |
+| Residual uncertainty and stochastic power | Used the triangle inequality without an independence assumption; expanded covariance and stated the absolute expected-power integrability condition for interchanging expectation and integration. |
+| Sign of integration error | Symbolically reduced the finite trapezoidal sum for a t² to its positive error a T³/(6 n²); no numerical integration was run. |
+
+Units, signs, endpoint stores and parameter values were reconciled with notes/conventions.md. Exact signed integrations have zero numerical integration error; their declared-boundary energy residual can be nonzero. Unspecified physical model residuals remain unknown. Work and energy are not used to select coefficients, derivative order, release criteria, preparation or control.
 
 ## Material corrections and qualifications
+
+Review 1 fixed the inverse transformer-ratio convention, derived the six-store circuit's initialized free response, imposed the diode off-state guard with a restart counterexample, separated vertex and edge graph invariants, restored the independent contact/joint constitutive proposals, and made the peak-phasor reactive-power factor explicit. Its direct-polynomial passivity theorem and six measurement predictions were checked under their stated assumptions. The nine collision weights and seven-weight restriction were checked by exact expansion; the normalized state matrix was checked by similarity/time scaling. Those corrections remain intact.
+
+Review 2 makes the negative release-event residual, positive source-off coupling residual and hidden-store question explicit at the front. Proposed heat destinations are exclusive whole-store alternatives until measured; a proposed controller is a conditional realization, not an established explanation. The seven-state finite-supply appendix retains separate coil, DC-link, sensor, thermal and interval accounts, distinguishes a zero charger voltage from disconnection, and supplies dimensioned sensor conversion factors. Numerical source questions retain their actual scope and status in the notes; exact symbolic identities are not represented as resolving those computations.
 
 The manuscript explicitly corrects universal fourth-order observability for positive collision components: an exact positive-component cancellation surface exists. A massless hammer or absorber can retain a damped internal relaxation, so setting a mass to zero alone does not justify the simplest reduced model. The conventional coefficient staircase is not a stability construction. A stable polynomial does not make every chosen effort–flow map passive.
 
@@ -49,6 +66,7 @@ The following actual source markers were verified against their entries. Each ap
 | OP-LR08-01 | Low-energy torsional contact with synchronized angles, rates and contact torque. |
 | OP-LR31-01 | Independent circuit-component changes and covariance-aware voltage/current identification. |
 | OP-LR12-01 | Calibrated low-power VNA observations with independently varied shunt capacitance. |
+| OP-LR23-01 | Prepared low-voltage RC discharge with capacitor endpoints, separately integrated resistor work and a calibrated finite-coupling bound on hidden energy. |
 | OP-LR01-04 | Low-voltage battery emulator with controlled RC preparation and branch-voltage observations. |
 | OP-LR58-01 | Two-mass shaker with force, acceleration and coupling-strain measurements. |
 
@@ -56,16 +74,16 @@ These are proposed discriminating measurements, not completed experiments. Relev
 
 ## Published references
 
-The four cited references were checked against the publisher or institutional source: Wettstein, Grauberger and Matthiesen (2021), DOI 10.1007/s42452-021-04149-8; Steven Bible's Microchip AN826 (2002), DS00826A, pages 1–14; Coilcraft's Measuring Self Resonant Frequency application note; and Keysight's Impedance Measurement Handbook, application note 5950-3000. Undated institutional documents are marked n.d. Each bibliography entry has a supporting in-text author–year citation and a stable link.
+The original four applied references were checked against the publisher or institutional source: Wettstein, Grauberger and Matthiesen (2021), DOI 10.1007/s42452-021-04149-8; Steven Bible's Microchip AN826 (2002), DS00826A, pages 1–14; Coilcraft's Measuring Self Resonant Frequency application note; and Keysight's Impedance Measurement Handbook, application note 5950-3000. Undated institutional documents are marked n.d. Each bibliography entry has a supporting in-text author–year citation and a stable link. This revision adds verified primary references: Kalman (1963), DOI 10.1137/0301010; Willems (1972), DOI 10.1007/BF00276494; Foster (1924), DOI 10.1002/j.1538-7305.1924.tb01358.x; and Rice (1945), DOI 10.1002/j.1538-7305.1945.tb00453.x. Their publisher metadata and available abstracts were checked, and the claims cited remain within their scope.
 
 ## Build and visual inspection
 
-The required make pdf build succeeds and produces the root PDF. Extracted PDF text has no unresolved double-question-mark references. The manuscript has 147 distinct labels and 42 internal cross-references, all resolving; all three figures have captions and prose references. There are no duplicate equation labels or stray control characters.
+The required make pdf build succeeds and produces the 63-page root PDF. Extracted PDF text has no unresolved double-question-mark references or exposed LaTeX commands. The manuscript has 194 distinct equation/section/figure labels and 81 internal cross-references, all resolving; all three figures have captions and prose references. There are no duplicate equation labels or stray control characters. Every pre-revision equation and section label is retained.
 
-All 46 PDF pages were rendered and inspected, including the title, continued tables, full coefficient array, long equations, figure captions, appendices and references. All three standalone figure PNGs were also inspected. No clipped content, overlapping labels or unresolved references remain. The only small table-width warnings seen during the layout check came from rounded Pandoc column fractions (0.11105 pt); the tables fit visibly inside the intended text area. Pages changed by the final caption and figure-reference fixes were rebuilt and inspected again.
+All 63 revised PDF pages were rendered and inspected, including the title, continued tables, full coefficient array, long equations, figure captions, appendices and references. Detailed inspection of the new hidden-store passage caught and corrected a malformed LaTeX boundary; the final affected pages were rendered again. The three unchanged standalone figures were also visible in the inspected article pages; their earlier standalone inspection remains applicable. No clipped content, overlapping labels or unresolved references remain. The only overfull warnings in the converged layout check came from the pre-existing rounded coefficient-table column fractions (0.11105 pt); the tables fit visibly inside the intended text area. One underfull paragraph causes no clipping.
 
-Case-insensitive manuscript checks found no source-project name, prohibited vocabulary, snake-case configuration identifiers, or unauthorized problem identifiers. The six permitted markers have the required spelling and unique occurrence. All abstract, table, figure and conclusion values are exact definitions or consequences of the displayed algebra, with illustrative assumptions identified.
+Case-insensitive manuscript checks found no source-project name, prohibited vocabulary, snake-case configuration identifiers, or unauthorized problem identifiers. The seven permitted markers have the required spelling and unique occurrence. All abstract, table, figure and conclusion values are exact definitions or consequences of the displayed algebra, with illustrative assumptions identified. The source-reported computational values in notes/review-2-resolution.md are explicitly provenance, not article results.
 
 ## Repository disposition
 
-Only this project directory was written. The external source and named templates remained read-only. The local repository uses main and has no remote. Sources, build instructions, working notes, standalone figures and the root PDF are staged explicitly by filename; no commit was created. Build intermediates and rendered inspection images remain ignored under build/. No scripts, notebooks, numerical datasets or scratch calculation programs are included in the deliverables.
+Only this project directory was written. The external source and named templates remained read-only. No staging or commit command was run. The Git index has no staged changes; the manuscript, root PDF, README and working notes remain local changes. REVIEW_1.md and REVIEW_2.md remain outside Git tracking and are currently ignored by the repository's review-file rule. Repository remotes were not changed. Build intermediates and rendered inspection images remain ignored under build/. No scripts, notebooks, numerical datasets or scratch calculation programs are included in the deliverables.

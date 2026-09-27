@@ -1,8 +1,8 @@
 # Article conventions
 
 Title: Third- and Higher-Order ODEs.
-Subtitle: Coefficient families, physical realizations, identification, and initial data.
-Date: 2026-09-26.
+Subtitle: Open energy problems, coefficient families, realizations, and initial data.
+Date: 2026-09-27.
 The literal shared front-matter template supplies the author line “Hob Nilre & Bo C. Herlin.”
 
 ## Mathematical conventions
@@ -17,6 +17,11 @@ The literal shared front-matter template supplies the author line “Hob Nilre &
 - β is the cubic-contact strength locally, and k_c/k_j in the independent collision-group chart. Δ is the collision reconstruction determinant locally and the inductance determinant in the clamp subsection. These definitions are scoped explicitly.
 - d_c,d_j denote physical viscous dampings, avoiding conflict with the generic template coefficient c. R denotes support reaction only in the absorber subsection.
 - Norms and ratios with zero denominators are undefined unless a separately derived extension is stated.
+- Minimal zero-state transfer degree is separate from observable free-response order and physical state dimension. The six-store cancellation has degree zero but generally one observable initialized decay.
+- Peak phasors are used throughout: complex power is VI*/2 and reactive power is Im(VI*)/2; RMS quantities are explicitly named.
+- The hidden RC example uses secondary-to-primary voltage ratio ν; the passive synthesis uses primary-to-secondary ratio n=1/ν. The ν=0 endpoint is a decoupled port with a closed internal RC discharge loop.
+- B_v acts from edge coordinates to vertex linkages in the conservative graph; B_e is a physical node-branch incidence matrix for branch linkages. Their invariant conditions are B_v^T h=0 and B_e h=0, respectively.
+- Battery diode current is nonnegative in the declared orientation. A blocked interval requires Voc+sum(v_j)>=0 throughout; otherwise conduction can restart. Open-switch relaxation is distinguished from diode blocking.
 
 ## Physical signs and boundaries
 
@@ -24,11 +29,18 @@ Positive power enters a declared boundary. Each port is conjugate effort times f
 
 The generic residual is ΔE minus the sum of signed works. Numerical integration residual is exactly zero for the exact analyses. Missing physical constitutive, switching, thermal, acoustic, field, supply, and sensor effects remain an unknown model residual. No work/energy criterion chooses order, weights, preparation, or controls.
 
+Exact integration does not imply zero balance residual for an incomplete boundary. Deleting a contact store with continuous other states and no event transfer gives r_E,event=-U_c. Its removed-store magnitude is positive. The listed transducer ports leave r_E,listed=integral((g_m-g_e) i v dt); this is unassigned coupling work until a physical account is independently established. A hypothetical closing work is not an identified transfer.
+
+In the finite supply, P_a=i_b A is positive from the bias subsystem into the plant. The bias coil receives -P_a. The converter coil-terminal power is u_b i_b, distinct from charger-terminal power V_b j and ideal-source power U j. Turning U off leaves the source resistance/limiter attached; a separately stated off converter has u_b=0. DC-link demand contains coil-terminal, sensor and logic powers only. Converter/actuator exchange already enters the coil subledger. The combined seven states are (i,x,v,i_b,V_b,z,E_theta), with operation domain V_b>0 and prescribed mode changes; continuous finite switches have no imposed state jump.
+
+The conditional supply has sensor voltage h=a_i i+a_v v with dimensioned conversion factors, sensor current j_s=C_s zdot+G_s z, sensor power z j_s, and separately specified nonnegative logic loss. Thermal energy E_theta and outward ambient heat Q_amb=gamma_theta E_theta are separate from reactive stores. The illustrative temperature assignment is Theta=Theta_a+E_theta/C_theta. It does not claim measured thermal properties.
+
 Collision transfer powers are positive out of the hammer, into the anvil, into contact deformation, and into the joint as individually defined. Coil-to-battery current enters the positive battery terminal. Two-port transformer current orientations and reciprocal-transducer mechanical-force orientation are stated locally. Frame transformations transport stores and each port; physical preparation is not an observer shift.
 
 ## Exact illustrative values
 
 - Collision: J_h=1/6250 and J_a=1/10000 kg m²; k_c=k_j=1500 N m; d_c=1/100 and d_j=1/50 N m s; initial hammer rate 600 s⁻¹. Reduced inertia 1/16250; initial kinetic store 144/5 J. Alternative joint stiffness 1000 or 2200 and speeds 400 or 800 are parameter choices, not reported measurements.
+- The common contact normalization is γ=J_*²/(k_c J_h J_a), J_*=J_h J_a/(J_h+J_a). The illustrative economical weights are (40/169,120/169,3151/1950,29/13,1); the last entry is a normalization.
 - Exceptional collision: normalized J_h=J_a=k_c=d_c=k_j=1,d_j=2. The common pole is -1.
 - Cubic contact: β=1/5, δ*=1/25, illustrative only.
 - RF inductor: L=100 nH,R=3/5 Ω,C_p=1/4 pF.
@@ -40,6 +52,11 @@ Collision transfer powers are positive out of the hammer, into the anvil, into c
 - Mechanical pair: masses1,19 kg, initial velocities10,0 m/s,k=19/20 N/m, interval[0,π]s. The successive-contact example adds mass361 kg.
 - Reset example: C1=C2=1 F,difference voltage2 V. Complete equalization dissipates1 J.
 - Geometry figure: y1²/4+y2²≤1,y1+y2=1; center(4/5,1/5),endpoints(0,1),(8/5,-3/5).
+- Diode restart counterexample: Voc=V_b>0, initial polarization (8V_b,-8V_b), time constants (T_b,2T_b), T_b>0.
+- New source-off transducer illustration: L=1 H, m=1 kg, k=1 N/m, R=1 ohm, d=1 N s/m, g_e=-2 V s/m, g_m=3 N/A, both listed drives zero. On t in [0,ln(2) s], i=exp(t/1 s) A, x=exp(t/1 s) m, v=exp(t/1 s) m/s. Initial/final stores are 3/2 and 6 J; increase 9/2 J; separate resistor and damper works -3/2 J each; listed-port residual +15/2 J. This is a new assumed exact example, not a source numerical result.
+- Bias-loss family: ell(P)=epsilon_ell P²/(P_*+abs(P)); epsilon_ell>=0 and P_*>0. The illustrative epsilon_ell=1/50 and P_*=1 W reproduce the previously stated loss law. Divided effort v_ell=epsilon_ell i_b A²/(P_*+abs(i_b A)) is continuous and zero at i_b=0.
+- Hidden-store bound assumes the true initial terminal current is bounded by epsilon_i, with V_p=0 and finite known secondary-to-primary ratio nu>0. E0<=C R² epsilon_i²/(2 nu²); the uncertain-component bound uses C_max, R_max and a positive nu_min.
+- The signed finite-sum integration control has f(t)=a t², a>0, n positive integer, T>0; its exact excess is a T³/(6n²). This is an algebraic identity, not a performed numerical integration.
 - Every other displayed value is an exact definition or a derived rational/closed form. There are no measured or simulated outputs.
 
 ## Figures and typography

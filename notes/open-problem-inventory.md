@@ -840,7 +840,7 @@ Source: opb-lr-03.md
 
 Can a bounded test or proof resolve the mathematical release closes the declared storage boundary, but every force-zero row retains an unassigned fracture/acoustic/thermal/fixture destination?
 
-Coverage: eq:release; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:release-open; eq:release-residual; eq:release-sequence; eq:release-measurement. Negative deleted-store residual, exclusive acoustic/heat/fracture/fixture hypotheses and independently observed retained state/transfer; physical destination remains open.
 
 ## OP-LR03-02: Criterion choice is constitutive and remains unresolved
 
@@ -850,7 +850,7 @@ Source: opb-lr-03.md
 
 Can a bounded test or proof resolve criterion choice is constitutive and remains unresolved?
 
-Coverage: eq:release; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:release-open, criterion paragraph after eq:release-sequence. Force-zero, deformation-zero and clipped-force state laws are distinct constitutive choices; work does not select the criterion.
 
 ## OP-LR04-01: Destination and constitutive restitution law remain unidentified
 
@@ -860,7 +860,7 @@ Source: opb-lr-04.md
 
 Can a bounded test or proof resolve destination and constitutive restitution law remain unidentified?
 
-Coverage: sec:collision; sec:work; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:release-open, eq:release-measurement and the retained deformation measurement. Destination and general restitution law remain unassigned; the easy deformation test is narrower than full release attribution.
 
 ## OP-LR04-02: Friction, plasticity, adhesion, thermal/acoustic release, motor ripple, m...
 
@@ -870,7 +870,7 @@ Source: opb-lr-04.md
 
 Can a bounded test or proof resolve friction, plasticity, adhesion, thermal/acoustic release, motor ripple, more than two re-engagements, wider gaps/edges/damping and hardware are untested?
 
-Coverage: sec:collision; sec:work; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:release-open; sec:collision; sec:networks. Repeated gates retain negative residual sums and separate motor/fixture accounts; wider friction, adhesion, plasticity, acoustic/thermal, motor and hardware limits remain open.
 
 ## OP-LR05-01: The noncoincidence rejects a one-to-one internal-zero interpretation, but...
 
@@ -880,7 +880,7 @@ Source: opb-lr-05.md
 
 Can a bounded test or proof resolve the noncoincidence rejects a one-to-one internal-zero interpretation, but no independent component realization is identified?
 
-Coverage: eq:formal-work; sec:parts. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:formal-work; eq:physical-jet-store; sec:parts. Formal Q growth, effective-rate zero condition and physical store are compared explicitly; no new independent component realization of Q is identified.
 
 ## OP-LR05-02: The quantity/rate remains a mathematical identity
 
@@ -1290,7 +1290,7 @@ Source: opb-lr-23.md
 
 Can a bounded test or proof resolve bound hidden prepared energy from terminal uncertainty and test multiple nearly cancelled modes, nonideal transformers and noisy observations?
 
-Coverage: eq:hidden-rc; eq:hidden-discharge. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:hidden-measurement; eq:hidden-energy-bound. Exact finite-coupling bound, bounded-parameter extension, low-voltage internal-store audit and unknown-coupling limit. Marker developed locally; multimode, nonideal and preparation limits remain open.
 
 ## OP-LR23-02: Exact port cancellation does not establish absence of an internal prepare...
 
@@ -1300,7 +1300,7 @@ Source: opb-lr-23.md
 
 Can a bounded test or proof resolve exact port cancellation does not establish absence of an internal prepared mode?
 
-Coverage: eq:hidden-rc; eq:hidden-discharge. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:hidden-discharge and sec:hidden-measurement. The ideal discharge is accounted for by resistor work while terminal work is zero; this is a conditional construction, not a new unresolved energy deficit.
 
 ## OP-LR24-01: Prohibit unguarded transient use
 
@@ -2210,7 +2210,7 @@ Source: opb-lr-55.md
 
 Do driven-CRL physical settling and measurement work integration discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:driven-modes; eq:counterflow-duty; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:residual-outcomes and sec:driven. Physical settling/measurement port work and endpoint residuals require separate interval bounds; exact symbolic replacement does not resolve source integration failures.
 
 ## OP-NUM-LR55-02: Converge the 791 driven-CRL surrogate-audit warnings
 
@@ -2220,7 +2220,7 @@ Source: opb-lr-55.md
 
 Do driven-CRL surrogate settling work integration discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:driven-modes; eq:counterflow-duty; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:residual-outcomes and sec:driven. Surrogate settling/measurement work requires its own declared realization, signed intervals and endpoint bounds; no source convergence is asserted.
 
 ## OP-LR56-01: The earlier non-sinusoidal/multitone/stochastic drive exclusion is narrow...
 
@@ -2280,7 +2280,7 @@ Source: opb-lr-56.md
 
 Do stochastic-CRL operation port quadrature discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:stochastic-work; eq:stochastic-power; eq:stochastic-residual. Operation port integrals remain an unresolved numerical source question; correlation, source work and endpoint uncertainty are distinguished.
 
 ## OP-NUM-LR56-02: Converge the 520 stochastic operation energy-balance warnings
 
@@ -2290,7 +2290,7 @@ Source: opb-lr-56.md
 
 Do stochastic-CRL operation endpoint energy balance discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:stochastic-work. Bounded source resolution of operation endpoint checks is retained in this inventory; it does not settle operation port-work or broader physical drift questions.
 
 ## OP-NUM-LR56-03: Converge the 72 stochastic relaxation port-quadrature warnings
 
@@ -2300,7 +2300,7 @@ Source: opb-lr-56.md
 
 Do stochastic-CRL relaxation port quadrature discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:stochastic-work source-off relaxation paragraph. Bounded source resolution of relaxation work is retained; no new calculation or broader closure is claimed.
 
 ## OP-NUM-LR56-04: Converge the 72 stochastic relaxation energy-balance warnings
 
@@ -2310,7 +2310,7 @@ Source: opb-lr-56.md
 
 Do stochastic-CRL relaxation endpoint energy balance discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:stochastic-work source-off relaxation paragraph. Bounded source resolution of relaxation endpoints remains distinct from operation and physical-realization questions.
 
 ## OP-LR57-01: Identify the nonlinear material law
 
@@ -2480,7 +2480,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve the 66 unstable and 474 nonpassive controls are deliberately incomplete models, not passive transducers?
 
-Coverage: eq:transducer-cubic; eq:transducer-work; sec:applications. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:coupling-open; eq:coupling-residual and eq:source-off-values through eq:source-off-works. Exact positive listed-port residual in a new illustrative finite-prefix model; stability, passivity and physical supply remain separate.
 
 ## OP-LR59-02: The explicit controller closes the tested positive-store boundary but its...
 
@@ -2490,7 +2490,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve the explicit controller closes the tested positive-store boundary but its physical bias/supply realization is unidentified?
 
-Coverage: eq:transducer-cubic; eq:transducer-work; sec:applications. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:bias-state, eq:bias-work and eq:bias-increase; sec:supply. Reaction-driven coil increase and finite supply state/port equations are conditional; hardware realization and DC-link/thermal/interval consistency remain open.
 
 ## OP-LR59-03: Continue unstable-prefix precision with relative as well as absolute tole...
 
@@ -2500,7 +2500,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve continue unstable-prefix precision with relative as well as absolute tolerances, do not extrapolate it to steady state, and test effective coupling outside `0.1..0.9`, `Q` outside `2..10`, other loads and `m/L`, bias dynamics, nonlinear saturation/hysteresis, thermal ports, finite switching, feedback, multi-axis transducers, calibrated cross-domain sensors and hardware?
 
-Coverage: eq:transducer-cubic; eq:transducer-work; sec:applications. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:supply final paragraph; sec:residual-outcomes. Absolute and relative uncertainty on unstable prefixes, nonlinear/material/sensor/multiaxis limits and finite-supply constraints remain independent questions.
 
 ## OP-NUM-LR59-01: Converge the four unstable-transducer finite-prefix audit failures
 
@@ -2510,7 +2510,7 @@ Source: opb-lr-59.md
 
 Do unstable-transducer finite-prefix solver, quadrature, model, and energy audit discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: eq:transducer-cubic; eq:transducer-work; sec:applications. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:coupling-open finite-prefix discussion and sec:supply final paragraph. Separate source numerical failures remain unresolved; the exact exponential example neither reproduces nor resolves them.
 
 ## OP-NUM-LR59-02: Converge the Step 13 finite transducer supply ledgers
 
@@ -2520,7 +2520,7 @@ Source: opb-lr-59.md
 
 Do the Step 13 thermal endpoint solver, Simpson–GK quadrature, interval r_E, and integrated DC-link subledger discrepancies converge below their frozen gates?
 
-Coverage: eq:transducer-cubic; eq:transducer-work; sec:applications. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:supply-local-residuals; eq:supply-combined; sec:supply final paragraph. DC-link integrated demand, interval residuals, thermal endpoints and transfer integration remain distinct checks; a proved conditional identity does not certify source convergence.
 
 ## OP-LR60-01: The principal finite-band approximation does not certify nonprincipal pat...
 
