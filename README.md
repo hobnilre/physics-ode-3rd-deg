@@ -1,25 +1,26 @@
 # Third- and Higher-Order ODEs
 
-Open energy problems, coefficient families, realizations, and initial data.
+Coefficient synthesis, identification, and physical realization.
 
 ## What this article adds, and why it matters
 
-Where does energy go when contact ends? What sustains increasing storage with the listed drives switched off? How much changing energy can a quiet terminal conceal? Third- and higher-order ODEs expose these questions through the internal states, couplings and preparation that a simpler description leaves unseen. The article develops exact predictions and concrete measurement opportunities using ordinary voltage, current and motion instruments.
+Higher-order equations become useful when their coefficients can be constructed, traced to physical parameters and distinguished by measurement. This article develops that route from a second-order reference system to third- and higher-order coefficient laws, with exact constructions and concrete experiments that can challenge their physical interpretation.
 
-- **Energy changes while the loop current stays zero.** A three-state RC–inductor model has two discharging capacitor stores and nonzero resistor works while its loop current and summed section voltage remain zero. Its volt, milliampere and second scales invite direct comparison using an oscilloscope, current shunts and capacitor-voltage measurements. How tightly can imperfect terminal observations bound the hidden energy? Independently observed internal states make that question measurable.
+- **A systematic coefficient family.** The dimensional construction `A_(r,k) = S τ^k ρ^(-r)` organizes the possible monomials at every derivative order. Component laws and independent parameter ratios determine specific combinations, making each coefficient's origin explicit.
+- **A construction that continues to higher orders.** Adding a polarization branch gives an exact recurrence for every coefficient and the forcing operator. Each added physical state supplies the information needed for the next step.
+- **Laws that predict across configurations.** The collision example derives a fourth-order equation and exact seven- and nine-term representations on specified parameter domains. Support proofs and identification criteria show how independent component changes can distinguish competing laws and expose weak contributions.
+- **A connection from coefficients to physical systems.** RF circuits, batteries, mechanical absorbers and networks connect the synthesized equations to internal states, preparation and measurable responses. Stability, passive realization and finite-domain error bounds establish where each construction applies.
 
-- **The listed drives are off. Why is stored energy rising?** An exact third-order electromechanical model increases its store while exporting heat, leaving a positive residual for its listed ports. Which physical transfer accounts for it? A low-amplitude reciprocal-transducer control puts actuator output and supply work on separate voltage/current channels, alongside force and motion measurements. Bias-coil growth, DC-link depletion and thermal storage become distinct energy questions for independent measurement.
+The physical realizations also lead to open energy questions that can be investigated with ordinary laboratory instruments:
 
-- **Contact force reaches zero with energy still in the spring.** The fourth-order collision model predicts a positive elastic store at force-zero release; deleting that store produces a signed deficit. A slow torsional setup with ordinary encoders and a torque sensor can establish the remaining deformation and stored energy. Where does it go during separation—retained motion, fixture transfer, heat or sound? Resolving the store is the first measurement; tracing its destination is the open problem.
+- **[Energy left when contact force vanishes](third-and-higher-order-odes.md#the-unresolved-store-at-contact-release).** The spring–damper model predicts elastic energy remaining at force-zero release. A slow torsional contact, encoders and a torque sensor can measure the remaining deformation and mechanical work through release. Where does that stored energy go?
+- **[Energy behind a quiet terminal](third-and-higher-order-odes.md#measuring-a-changing-store-behind-a-quiet-terminal).** Prepared RC branches can discharge through their resistors while the terminal signal stays quiet. Capacitor-voltage probes and current shunts expose the internal change at volt and milliampere scales. How tightly can terminal measurements bound hidden energy when coupling and preparation vary?
+- **[Following the energy into growing motion](third-and-higher-order-odes.md#a-separately-instrumented-coupling-control).** An unequal-coupling third-order model predicts increasing stored energy with both named drives at zero. A low-amplitude actuator control makes the extra transfer accessible to voltage, current, force and motion measurements. Can independently measured actuator, supply and endpoint accounts explain the growth, and what residual remains?
+- **[The energy consequences of a return wire](third-and-higher-order-odes.md#loading-and-return-paths-as-measurable-work-questions).** Changing a transformer's return or probe connection changes its physical dynamics. Low-voltage coils, resistors, an output capacitor and synchronized voltage/current channels let the experiment follow source work, winding losses and receiver work separately. Can one calibrated model predict the energy transfers across both connections?
+- **[The energy cost of a moving reference](third-and-higher-order-odes.md#a-finite-physical-reference-and-its-supply).** Two voltage ramps can finish at the same capacitor voltage while drawing different source work. A slow voltage driver and ordinary shunt measurements reveal the difference. Adding the receiver opens the next question: which supply transfers produce the reference motion and its compensation currents?
 
-- **The same capacitor endpoints, different source works.** A finite reference driver can reach the same final voltage through ramps of different duration, with exactly different source and resistor works. Low-voltage ramps, shunt currents and independent capacitor endpoints put the distinction directly on the bench. When that driver moves a physical reference for a larger circuit, which compensation and controller supplies carry the additional work, and what signed residual survives their separate accounts?
-
-- **Attach a return path—and follow the energy.** A ground connection, probe or load can change a transformer's trajectory and its source, winding and receiver works. Simultaneous voltage/current measurements and independently calibrated magnetic and capacitor endpoints distinguish extra source transfer, released initial storage and a remaining excess or deficit. Can one calibrated finite-state model predict those accounts across different physical returns?
-
-The mathematical contribution makes these questions precise: a complete coefficient family, exact elimination, compatible initial data, passive realizations and controlled singular limits. One collision model has four physical states, a third-order initialized output and a second-order zero-state transfer. A vanishing observed current can retain a finite prepared store. These results show why derivative order, terminal response and internal energy must be investigated together.
-
-Each proposed measurement compares separately integrated signed port works with independently evaluated initial and final stores. Exact channel-error bounds identify the resolution needed to distinguish the outcomes. A positive or negative residual that survives those bounds remains an open result, with its magnitude, sign and conditions intact.
-
-## Article
+## Article and build
 
 [Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md)
+
+Run `make pdf` with Pandoc, XeLaTeX and the TeX Gyre fonts installed. The build regenerates changed vector figures before the article. Coverage, conventions and revision verification are maintained in `notes/`.

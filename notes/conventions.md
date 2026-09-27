@@ -1,9 +1,20 @@
 # Article conventions
 
 Title: Third- and Higher-Order ODEs.
-Subtitle: Open energy problems, coefficient families, realizations, and initial data.
+Subtitle: Coefficient synthesis, identification, and physical realization.
 Date: 2026-09-27.
 The literal shared front-matter template supplies the author line “Hob Nilre & Bo C. Herlin.”
+
+## Review 5 focus and added constructions
+
+- Coefficient synthesis is the primary objective. Physical state dimension, initialization, realizability and signed work establish its interpretation and limits; they do not replace the synthesis argument.
+- A complete monomial classification is restricted to the positive reference triple and its two dimensional constraints. General dimensionless functions F_k are not automatically finite Laurent sums. Constant weights are defined on a declared parameter domain, with a fixed exponent dictionary and normalization.
+- The collision's exact support now belongs to sec:collision-support. Its full-coordinate normalization is P/k_c with forcing N/k_c; its restricted seven/nine-atom normalization is gamma P with forcing gamma N. The omitted damping-product atom is (k,r,s)=(2,0,1), not the literal ninth position in the displayed table.
+- The constructive branch recurrence keeps L and R_Sigma fixed while adding independently specified positive R_(N+1), tau_(N+1). Q_0=1, P_0=Ls+R_Sigma. Zero coefficients outside polynomial ranges define the coefficient recurrences. The unreduced leading coefficient is L times the product of branch times.
+- The branch-family chart requires N>=1 and R_Sigma>0, with (a,b,c)=(L,R_Sigma,1/C_1), tau_0=L/R_Sigma, rho=R_Sigma^2 C_1/L, mu_j=R_j/R_Sigma, chi_j=C_j/C_1, chi_1=1 and alpha_j=mu_j chi_j rho. Current coefficients use A^(i)_(r,k)=A_(r,k+1); this index shift adds no physical state. The original recurrence also applies at R_Sigma=0, where the divided chart fails.
+- Source placement is part of the forced equation. A voltage offset in the parallel network's inductor branch gives lambda_dot=V+V_g, capacitor voltage V=lambda_dot-V_g and forcing C V_g_dot+V_g/R. Its mechanical counterpart uses the common spring/damper force p_dot-Q_g; uniform gravity on two freely falling bodies has Q_g=0 in their relative coordinate. Source work uses the conjugate branch current or relative velocity, and endpoint stores retain the source offset.
+- The finite Laurent-support uniqueness lemma assumes independent coordinates on a nonempty open positive domain. A constrained path or finite observation set requires its own rank check. The evidence table separates representation, recovery, independent prediction and realization.
+- The rational-series recurrence assumes a nonzero denominator constant term and applies inside the Taylor disk. Increasing its expansion index does not increase physical state dimension.
 
 ## Mathematical conventions
 

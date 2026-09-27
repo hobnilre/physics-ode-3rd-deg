@@ -1,6 +1,6 @@
 # Working coverage checklist
 
-Revision audit: 2026-09-27, following REVIEW_3.md; the earlier review corrections remain in force. This revision preserves the sixteen mandatory chapters, second-order foundation and shared power contract and corrects the stale compound/reference coverage against the current source. The new item-level mapping and source hashes are in notes/review-3-resolution.md. Source paths are confined to working notes. Counts of checked spans are navigation metadata, not a proof of completeness. The item-specific destinations and correction dispositions below supersede the earlier broad mappings where they differ.
+Revision audit: 2026-09-27, following REVIEW_5.md. Coefficient synthesis now organizes the article. The sixteen mandatory chapters, second-order foundation, shared power contract and additional higher-order coverage remain in scope; earlier corrections remain in force. notes/review-5-resolution.md records the moved destinations, added exact constructions and preservation audit. The current second-order source's added source-placement material is integrated below. The compound/reference source audit in notes/review-3-resolution.md remains applicable. Source paths are confined to working notes. Counts of checked spans are navigation metadata, not a proof of completeness.
 
 Each section span includes its inline definitions, assumptions and limitations; subordinate table, figure and equation locations inherit that item's stated destination and disposition. “Retained” names an explicit construction; “consolidated” names a common treatment; “corrected” records a changed claim; “replaced” names the exact or conditional substitute for computational output. A broad section heading alone does not establish equivalence between different constructions. Numerical outputs/plots are replaced by exact derivations or conditional limitations, not promoted to exact or measured performance. Reproduction commands, software versions and artifact inventories are excluded under the symbolic-replacement instruction; their scientific issues remain covered.
 
@@ -17,7 +17,12 @@ Each section span includes its inline definitions, assumptions and limitations; 
   - Tables at L112 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L120–127 Interconnecting Series and Parallel ODEs → sec:family; eq:template; eq:duality. All four state/effort maps, momentum/linkage, topology and damped analogy.
 - [x] L128–136 Mechanical and Electrical Equivalents → sec:family; eq:template; eq:duality. All four state/effort maps, momentum/linkage, topology and damped analogy.
-- [x] L137–174 End-to-end analogy control → Replaced by exact eq:canonical-pair and eq:crossing-boundaries; the damped extension beside OP-LR50-01 now gives normalized trajectory equality and eq:measurement-separation.
+- [x] L137–157 Sources and source-placement table → sec:source-placement states ideal force/voltage sources, finite battery limitations and the four distinct placements.
+- [x] L158–170 Battery driving LRC/MCK → sec:source-placement gives both driven equations, reference scales, gravity in a fixed-reference parallel mechanical system and the conjugate loop-current/common-velocity source powers.
+- [x] L171–195 Battery across CRL/KCM → common voltage/force constraints, total delivered current and source-terminal velocity, including constant-force spring/damper/momentum behavior; a source cannot be inserted into a right-hand side with the wrong dimensions.
+- [x] L196–255 Gravity and the inductor-branch source → eq:source-placement derives the branch-source forcing operator and constant-source limit; relative mass/momentum, uniform-gravity null and independent common-motion account retained. The article also gives the exact variable-source derivative term.
+- [x] L256–340 Work, endpoint offsets and source connection → eq:source-placement-work and surrounding signed source/heat integrals retain all four source ports, independent stores, offset capacitor voltage/spring force, compatible interval assumptions and switching transfers. Numerical residual reporting is replaced by exact identities and the separate uncertainty treatment in sec:limits.
+- [x] L341–378 End-to-end analogy control → Replaced by exact eq:canonical-pair and eq:crossing-boundaries; the damped extension beside OP-LR50-01 gives normalized trajectory equality and eq:measurement-separation. Lossless singular-chart limitations remain in sec:family.
 
 ## volume_i_q1/02_Ode3rdDeg.md
 
@@ -147,19 +152,19 @@ Each section span includes its inline definitions, assumptions and limitations; 
 
 ## volume_i_q1/06_OdeRowMixture.md
 
-- [x] L1–27 6. Searching Sums of A_(r,k) → sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
+- [x] L1–27 6. Searching Sums of A_(r,k) → sec:collision-support; sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
   - Standalone displayed definitions/identities at L5 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L28–58 Mechanical Row Family → Retained: eq:family specialized to rotational references; eq:collision-groups names the joint chart.
   - Standalone displayed definitions/identities at L38, L40, L42, L47, L51, L55 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L59–85 Numerical Target → Retained: exact polynomial eq:collision-poly with contact normalization gamma stated at eq:collision-weights; no source-specific normalization is silently equated to another.
-- [x] L86–87 Two Tests → sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
+- [x] L86–87 Two Tests → sec:collision-support; sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
 - [x] L88–99 Stiffness-Only Transfer → Retained: eq:seven-weights gives each constant on the fixed-damping, varying-stiffness path.
   - Standalone displayed definitions/identities at L94, L98 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L100–106 Independent Stiffness and Damping → Retained: the nine-weight table after eq:collision-groups, with independent damping and stiffness.
 - [x] L107–131 Models Compared → Replaced: paragraph following eq:seven-weights compares the single-coefficient, low-only extension, high-order shift, adjacent-pair, three-atom and wider-window candidate classes algebraically.
   - Tables at L115 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
   - Standalone displayed definitions/identities at L111 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
-- [x] L132–150 Held-Out Power Results → sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
+- [x] L132–150 Held-Out Power Results → sec:collision-support; sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
   - Tables at L134 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
   - Figures at L143, L149 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L151–206 What the Search Found at Each k → Retained explicitly: both the nine-weight table and eq:seven-weights, with independent powers proving the required supports.
@@ -168,9 +173,9 @@ Each section span includes its inline definitions, assumptions and limitations; 
   - Standalone displayed definitions/identities at L169, L171, L173, L175, L177, L196 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L207–236 Why Independent Damping Breaks the Simple Sum → Retained: eta=d_j/d_c and the nine-weight table; one-coordinate weights cannot remain constant under independent damping.
   - Standalone displayed definitions/identities at L211, L215 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
-- [x] L237–253 Selection Rule Going Forward → sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
+- [x] L237–253 Selection Rule Going Forward → sec:collision-support; sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
   - Standalone displayed definitions/identities at L241 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
-- [x] L254–269 Running the Bundle → sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
+- [x] L254–269 Running the Bundle → sec:collision-support; sec:identification; eq:collision-groups. Seven-atom restricted support and nine-atom two-coordinate support replace performance tables.
 - [x] L270–371 Exact collision states and initial jets → Retained: eq:collision-normalized reconstructs the four-group state matrix and dimensional scale freedoms; eq:state-image and eq:collision-jet retain complete initial maps.
 - [x] L372–381 Independent Inertia and Contact Controls → Retained: inverse dimensional reconstruction and reference-versus-physical stiffness interchange immediately after eq:collision-normalized.
 
@@ -187,7 +192,7 @@ Each section span includes its inline definitions, assumptions and limitations; 
   - Tables at L140 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
   - Figures at L146, L174 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
   - Standalone displayed definitions/identities at L151, L153, L155, L157, L159, L164, L166, L168, L170, L172 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
-- [x] L176–196 What the Eighth Term Means → Retained: paragraph beginning The ninth atom identifies the omitted d_c d_j term; small response error does not certify coefficient recovery.
+- [x] L176–196 What the Eighth Term Means → Retained: paragraph following eq:collision-normalized explicitly identifies (k,r,s)=(2,0,1) as the omitted d_c d_j term; small response error does not certify coefficient recovery.
   - Standalone displayed definitions/identities at L181, L187 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L197–249 Robustness Qualification of the Eighth-Term Decision → Retained as limitations: fixed-support versus selected-support uncertainty, threshold dependence, learning curves and correlated noise after eq:information.
 - [x] L250–270 Running the Bundle → sec:identification; sec:limits. Omitted damping product and objective/noise/partition/threshold sensitivity remain qualified.
@@ -195,14 +200,14 @@ Each section span includes its inline definitions, assumptions and limitations; 
 
 ## volume_i_q1/08_RowStructure.md
 
-- [x] L1–16 8. Structure and Identification of `A_(r,k)` Rows → sec:identification; eq:collision-groups. Normalized paths and current/charge index shift.
-- [x] L17–38 Normalized Exact Paths → sec:identification; eq:collision-groups. Normalized paths and current/charge index shift.
+- [x] L1–16 8. Structure and Identification of `A_(r,k)` Rows → sec:collision-support; sec:identification; eq:collision-groups. Normalized paths and current/charge index shift.
+- [x] L17–38 Normalized Exact Paths → sec:collision-support; sec:identification; eq:collision-groups. Normalized paths and current/charge index shift.
 - [x] L39–91 Effective order and initial-data closure → Retained and corrected: eq:jet-recurrence and its four-case closure table distinguish monomial units, exact divisibility, rational drift and leading-zero surfaces.
   - Tables at L60 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L92–156 Mirror-lattice equivariance and initial support → Retained: eq:jet-family, dual q transport, exact Minkowski cancellation example and convergent anchor-shift formula.
   - Standalone displayed definitions/identities at L96 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L157–185 Hankel Rank and Exponent Recovery → Retained: eq:hankel, distinct-node/nonzero-weight hypotheses and noninteger exponent qualifications.
-- [x] L186–195 Exact Collision Support → Retained: exact nine-weight and seven-weight constructions in sec:identification.
+- [x] L186–195 Exact Collision Support → Retained: exact nine-weight and seven-weight constructions in sec:collision-support.
 - [x] L196–211 Constant-`rho` Nulls → Retained: constant-rho rank-one null immediately before eq:information.
 - [x] L212–229 Selector, Basis and Relabelling Controls → Retained: eq:reference and eq:derivative-symbols distinguish relabelling, basis transport and changed observation operators.
 - [x] L230–240 Exact Signs and Reference Singularities → Retained: signed cancellation and reference-singularity paragraphs after eq:reference.
@@ -280,10 +285,10 @@ Each section span includes its inline definitions, assumptions and limitations; 
 
 ## volume_i_q1/10_CoilBatteryTransfer.md
 
-- [x] L1–18 10. Switched Coil-to-Battery Work Audit → sec:battery; eq:battery-state; eq:battery-ledger. Boundary, sign, ideal/resistive/polarization models and physical powers.
+- [x] L1–18 10. Switched Coil-to-Battery Work Audit → sec:construction; sec:battery; eq:battery-state; eq:battery-ledger. Boundary, sign, ideal/resistive/polarization models and physical powers.
   - Standalone displayed definitions/identities at L9 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L19–42 Boundary and Sign Convention → Corrected: diode orientation at eq:battery-state; eq:battery-off and eq:battery-restart distinguish an opened switch from conditional diode blocking.
-- [x] L43–61 Battery Models → Retained: eq:battery-state and eq:battery-poly give N-branch elimination with initialization restrictions.
+- [x] L43–61 Battery Models → Retained in sec:construction: eq:battery-state and eq:battery-poly give N-branch elimination with initialization restrictions; eq:branch-synthesis through eq:branch-support add exact arbitrary-order coefficient construction. The physical application and events remain in sec:battery.
   - Standalone displayed definitions/identities at L47, L51, L55 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
 - [x] L62–96 Signed Powers → Retained: eq:battery-ledger names each source and loss port; the coil-only and combined boundaries are separate.
   - Figures at L95 → the same mapped treatment; substantive structure retained, numerical outputs replaced.
