@@ -59,6 +59,21 @@ Collision transfer powers are positive out of the hammer, into the anvil, into c
 - The signed finite-sum integration control has f(t)=a t², a>0, n positive integer, T>0; its exact excess is a T³/(6n²). This is an algebraic identity, not a performed numerical integration.
 - Every other displayed value is an exact definition or a derived rational/closed form. There are no measured or simulated outputs.
 
+## Review 3 additions
+
+- Double collision cancellation: normalized J_h=1, J_a=2, k_c=d_c=k_j=1, d_j=3. Transfer 2/(2s²+2s+1); observability and controllability ranks three; initialized output annihilator (D+1)(2D²+2D+1). The state (1,-1,0,1) gives theta_h=e^-t, theta_a=t e^-t.
+- Hidden three-state loop: i=0, v1=-v2=V0 exp(-t/RC), physical states (i,v1,v2). Assumed R=1000 ohm, C=1/1000 F, V0=1 V, T=1 s. Each resistor work is -(1-e^-2)/2000 J; endpoint stores are 1/1000 and e^-2/1000 J.
+- Assumed calibration, not achieved performance: C error 1/100000 F, voltage error 1/1000 V, resistor-current error 1/10^6 A; observed voltage/current bounds 11/10 V and 11/10000 A. Four capacitor endpoint errors plus two resistor works give 1652401/50000000000 J. Other errors remain separately bounded, never silently zero.
+- Reciprocal actuator control: g=3 N/A, K=5 V s/m, u_c=K v; reduced g_e=g-K=-2 and g_m=g=3. State amplitude 1/100 scales every work/store by 1/10000. Controller output work is 3/4000 J and plant store increase 9/20000 J. This is not the bias-dependent seven-state model.
+- Winding orientation sigma=±1 is present in every ideal-ratio comparison: v2=sigma*n*v1 and Psi2-sigma*n*Psi1. This is a volt-second quantity, not work.
+- Reference cell: C=J/alpha², w=V_A-V_R, I_tau=tau/alpha, I_r=-C V_R_dot. Compensation work w I_r belongs to an actual source port. Net floating bias current is zero; individual compensation work is not.
+- Reference-ramp assumptions: C_d=1/1000 F, R_d=100 ohm, delta r=1 V, r_-=0. At T=1 s, source work 3/5000 J and heat -1/10000 J; at T=1/2 s, 7/10000 and -1/5000 J. Both final stores are 1/2000 J. Separate unit-scale acceleration control uses C_d=1/200 F, R_d=3/4 ohm, r=2t, T=1 s: driver source 403/40000 J, heat -3/40000 J and store change 1/100 J, distinct from receiver compensation work 2 J.
+- Compound electrical/mechanical map: v=alpha omega, z=L i/alpha, J=alpha² C, K=alpha² L^-1, mobility R/alpha². Branches A→C, P→C, B→C, P→C; positive incidence at origin. h_A,h_B are signed nonzero ratios. All-dynamic receiver has eight states; an ideal compatible held-node constraint gives seven.
+- Nonideal reference realization: receiver eight + sensors nine + actuator currents eight + command capacitor one + driver capacitor one + rail one = 28 states. Eighteen algebraic converters add no states. The 41 heat exports are not a state count. Finite sensor/holding error remains; current sensing requires beta in V/A.
+- Rail operation requires V_s>=V_c>0. Zero-drive rest gives q=V0² exp(-2G_q t/C_s). At C_s=1 F,V_c=1/100 V, remaining store is 1/20000 J. Active cutoff retains other states too.
+- Rigid family: L0=ell0/epsilon, kappa=1-epsilon², R0=r0 epsilon², C=epsilon C0. Appendix-local s_c,d_c are common/differential currents, distinct from contact damping. Lplus=ell0(2-epsilon²)/epsilon and Lminus=ell0 epsilon. Prepared s_c=s_* epsilon^p has the stated finite/diverging store regimes without a small-parameter expansion.
+- Event enclosures use exact convergent analytic identities and explicit Cauchy remainder bounds; no finite Taylor approximation is asserted to equal a trajectory. Linear event results do not certify nonlinear clipped-controller events. Normalized polynomial reversal profiles and their primitives are exact algebraic controls.
+
 ## Figures and typography
 
 Figures are standalone vector TikZ PDFs. Blue denotes the primary object/boundary (hammer in the mechanical schematic); orange the second object (anvil); green the contact/realization/invariant; purple the joint/observation center. Gray denotes axes, external fixture and diagram boundaries. Abstract logical figures reuse this palette for corresponding roles, without assigning physical components to formal coefficients.

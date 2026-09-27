@@ -3382,12 +3382,46 @@ Can justified work and voltage-integral uncertainty be brought below their separ
 
 Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
-## OP-TRF-11: Compound circulating-power ratios lack an electrical reference counterpart
+## OP-TRF-11: Compound circulation has an exact ideal electrical reference counterpart
 
 Source: opb-trf-01.md
 
-`open` / `model_realization` / `inconclusive` / `medium`
+`open` / `model_realization` / `supported` / `medium`
 
-Can a specified transformer network reproduce OP-EPI-08's compound-train circulating/throughput ratios across corresponding electrical references, while distinguishing reference-dependent terminal contributions from complete physical port powers and independently auditing signed work and stores?
+Within the ideal quasistatic scope of OP-EPI-08, do the corresponding electrical reference-dependent terminal contributions reproduce all nine mechanical port powers, their signed works and the circulating/throughput ratios?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Updated source status (2026-09-27): bounded closure success, superseding the earlier snapshot's inconclusive ideal result. The current ideal counterpart is supported on its specified finite comparison population. It does not establish physical finite-state duality.
+
+Coverage: sec:physical-reference; eq:compound-mechanical; eq:compound-modal-limit; sec:compound-events. The finite ODE correspondence, compatible rigid reduction and distinction between mapped core diagnostics and a complete physical boundary are explicit. Pure quasistatic table enumeration is contextual rather than a new higher-order ODE result. Finite extensions belong to the separate issue below.
+
+## OP-TRF-12: Finite compound duality: certified events, nonideal drivers and conditional rigid limits
+
+Source: opb-trf-01.md; source snapshot and linked derivations recorded in notes/review-3-resolution.md.
+
+open / model_realization / inconclusive / medium; closure unresolved.
+
+Can independently specified finite mechanical and transformer models extend the ideal compound correspondence through loaded state evolution, preparation, reference commutation and reset, with corresponding signed port works and independently evaluated stores?
+
+Bounded source results retained in their actual scope: the finite compliant/electrical comparison and its targeted refinements; an exact prescribed-reference capacitor cell; matched-drive rigid reduction; ideal active compound driver and supply; constrained models and exact polynomial reversal controls; a completed exact-model dissipative event certificate; finite-bandwidth sensors, actuators, lossy converters and finite rail; conditional passive/clamped limits and prepared-state counterexamples. The later reports supersede the earlier reports' statements that these particular constructions or enumerated linear events were still unexecuted. The nonlinear limited driver's global event completeness, arbitrary parameter/initial-state limits, unrestricted physical duality and hardware remain open. Numerical acceptance and empirical error estimates are not rigorous hardware bounds.
+
+Item-specific article coverage:
+
+- eq:compound-state and eq:compound-mechanical: independent finite constitutive laws, dimensional state map, seven/eight receiver states, physical ten-port account, five operating stages and continuous conductance events.
+- eq:reference-cell and eq:reference-ramp-work: real compensation and driver ports, independent stores, exact receiver/driver examples, finite-duration source and heat works. The practical question has a single inline marker beside its first developed statement in sec:physical-reference.
+- eq:compound-reference and eq:ideal-reference-rail: prescribed versus state-dependent references, compatible initialization, nine ideal converters, rail and controller accounts.
+- eq:compound-sensor through eq:compound-finite-rail: 28 finite states, nine sensors, eight current actuators, command/driver capacitors, eighteen converter losses, forty-one separate heat exports, local versus combined boundaries.
+- eq:rail-preparation and eq:rail-cutoff: independently integrated rail preparation and positive store at cutoff; active-cutoff receiver states remain present.
+- sec:compound-driver: fast same-sign work, opposite local residuals, rail endpoint sensitivity, retained constitutive assumptions and conditional simultaneous bandwidth/efficiency approach.
+- eq:perfect-coupling-state and eq:energized-clamp: compatible descriptor constraints, retained magnetizing dynamics, source/heat shares and independent event endpoints; fixed-resistance zero-time reference limit.
+- eq:compound-modal-limit through eq:drive-mismatch-limit and eq:compound-preparation: exact winding modes, prepared common/differential cases, separately integrated preparation, finite or divergent hidden stores and drive mismatch.
+- eq:compound-passive-limit and eq:compound-fast: unchanged passive source/receiver graph, conditional Hurwitz fast subsystem and initial layers; distinct state/current/work/store convergence.
+- eq:event-analytic-bounds and eq:compound-reversal: exact analytic event obligations, repeated/tangent zeros, persistent ties, factor coincidences, root-box works, undefined denominators and nontrivial zero full-interval works; no transfer of a linear certificate to nonlinear driver or hardware.
+
+Source computations were not rerun. Their numerical tables are replaced by these exact constructions and conditional bounds; no old unresolved numerical classification is silently changed by an article identity.
+
+## Review 3 supplemental destinations for existing energy questions
+
+- OP-LR03-01: the first local release question now bears its verified marker; finite two-sided release window, regular-work timing bounds and independent retained/contact store bounds follow eq:release-measurement.
+- OP-LR23-01 and OP-LR23-02: sec:hidden-loop adds an exact three-state ordinary-scale control, terminal-hidden relaxation, independent resistor works and assumed calibration-to-residual budget.
+- OP-LR59-02: sec:coupling-control provides a distinct independently instrumentable reciprocal-transducer control; eq:bias-work and sec:supply preserve the actual bias-coil, DC-link, thermal and interval questions. Its verified local marker is unique.
+- OP-TRF-01 and OP-TRF-07: the local loading/return measurement and independent calibrated-model comparison now have their verified unique markers; eq:channel-work-bound and eq:quadratic-store-error connect channels and coupled magnetic endpoints to residual resolution.
