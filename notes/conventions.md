@@ -2,8 +2,17 @@
 
 Title: Third- and Higher-Order ODEs.
 Subtitle: Coefficient synthesis, identification, and physical realization.
-Date: 2026-09-27.
+Date: 2026-09-28.
 The literal shared front-matter template supplies the author line “Hob Nilre & Bo C. Herlin.”
+
+## Impact-driver presentation and boundary
+
+- Coefficient synthesis remains the primary contribution. The rotary impact driver is the principal supporting application; the arbitrary-order branch construction remains the next main section.
+- The selected output is a driver bit rigidly co-rotating with the anvil. J_a includes this rigid output inertia once. The effective joint contains fastener/interface/workpiece twist and loss. An impact-wrench socket is an alternate declared attachment; resolved socket deformation requires explicit compliance or added states.
+- The constant-coefficient laws apply on a smooth active-contact interval. Incoming preparation, engagement, compression, rebound, separation and between-blow drive are distinct stages. Scaling requires the complete compatible state and input; it does not assert invariant event times for arbitrary gate laws.
+- Figure colors: elemA blue = hammer; elemB orange = anvil and rigid output; elemC green = contact faces and effective contact spring/damper; elemD purple = effective joint response and fastener; gray = fixture and boundary. Panel (a) combines a schematic contact end view with an indicated output path. Angular arrows use the same positive clockwise sense. Panel (b) retains the reactive boundary, input torque, internal torque directions and two damper loss channels.
+- sec:impact-release contains the unchanged force-zero store and deletion residual. sec:release-open retains the extended physical accounts. Positive remaining store and negative deleted-store residual are different signed quantities; no physical destination is inferred from deletion.
+- The accessible measurement is a slow torsional analogue with synchronized encoders and interface torque sensing. Its common calibrated band, state preparation and parameter uncertainties must be declared. A commercial driver has its own instrumented boundary and bandwidth; neither is reported as measured here.
 
 ## Review 5 focus and added constructions
 

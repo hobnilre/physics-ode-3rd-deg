@@ -840,7 +840,7 @@ Source: opb-lr-03.md
 
 Can a bounded test or proof resolve the mathematical release closes the declared storage boundary, but every force-zero row retains an unassigned fracture/acoustic/thermal/fixture destination?
 
-Coverage: sec:release-open; eq:release-residual; eq:release-sequence; eq:release-measurement. Negative deleted-store residual, exclusive acoustic/heat/fracture/fixture hypotheses and independently observed retained state/transfer; physical destination remains open.
+Coverage: sec:impact-release; sec:release-open; eq:release-residual; eq:release-sequence; eq:release-measurement. Negative deleted-store residual, exclusive acoustic/heat/fracture/fixture hypotheses and independently observed retained state/transfer; physical destination remains open.
 
 ## OP-LR03-02: Criterion choice is constitutive and remains unresolved
 
@@ -3425,3 +3425,8 @@ Source computations were not rerun. Their numerical tables are replaced by these
 - OP-LR23-01 and OP-LR23-02: sec:hidden-loop adds an exact three-state ordinary-scale control, terminal-hidden relaxation, independent resistor works and assumed calibration-to-residual budget.
 - OP-LR59-02: sec:coupling-control provides a distinct independently instrumentable reciprocal-transducer control; eq:bias-work and sec:supply preserve the actual bias-coil, DC-link, thermal and interval questions. Its verified local marker is unique.
 - OP-TRF-01 and OP-TRF-07: the local loading/return measurement and independent calibrated-model comparison now have their verified unique markers; eq:channel-work-bound and eq:quadratic-store-error connect channels and coupled magnetic endpoints to residual resolution.
+
+
+## Review 6 local placement
+
+OP-LR03-01 now first appears in sec:impact-release, beside eq:release and eq:release-residual. Their positive store, negative residual and deletion assumptions are unchanged. sec:release-open retains the exclusive destination hypotheses, repeated-event sum, criterion distinctions and finite-window uncertainty. OP-LR08-01 remains beside its two-body measurement proposal in sec:impact-measurement, with the anvil-channel null example and calibrated-band requirement. Neither question has been closed, and no hardware observation is claimed. All twelve developed markers still occur once.
