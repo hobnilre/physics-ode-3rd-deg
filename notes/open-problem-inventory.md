@@ -60,7 +60,7 @@ Source: opb-ct-01.md
 
 Is the (mu, e, Phi, Beta, Lambda, Theta, Omega, Kappa) classification predictive of transfer structure, or only descriptive of the four named examples?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-02: Define a cross-domain contact-transfer manifest contract
 
@@ -70,7 +70,7 @@ Source: opb-ct-01.md
 
 Can one declared transfer manifest and ledger contract carry mechanical and non-mechanical contacts without letting work, energy or passivity select a candidate?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-03: Verify the shared hybrid contact, port and residual library
 
@@ -80,7 +80,7 @@ Source: opb-ct-01.md
 
 Do the shared event-location, per-port work, rigid-limit and four-residual-class tools reproduce every declared verification case, including the fixture distinction?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-A-01: Audit teeterboard fixture-impulse share
 
@@ -90,7 +90,7 @@ Source: opb-ct-01.md
 
 What fixture-impulse share sigma_fix does an actuated fixture-coupled launch require, and does the vertical and angular impulse ledger close only with pivot and stop included?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-A-02: Compare board models and actuator controls
 
@@ -100,7 +100,7 @@ Source: opb-ct-01.md
 
 Can actuator work be separated from gravitational release and passive elastic return by the declared observables, and does the actuation-number sweep show a crossover or a threshold?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-B-01: Map the near-free club-ball strike
 
@@ -110,7 +110,7 @@ Source: opb-ct-01.md
 
 Does a finite compliant strike reproduce the free two-body event map, and by how much do offset, effective mass and head rotation break it?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-B-02: Separate candidate felt-transient mechanisms
 
@@ -120,7 +120,7 @@ Source: opb-ct-01.md
 
 Which transmission mechanism explains a small felt transient, are the three candidate locations separable, and does any wave type reach the grip inside the contact window?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-BND-01: Locate exact free two-body cell boundaries
 
@@ -130,7 +130,7 @@ Source: opb-ct-01.md
 
 Where are the exact cell boundaries chi_1=0 and the retained-motion surface, including the effective-mass, offset and exact structural corners?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-C-01: Realize the hysteretic penetration boundary
 
@@ -140,7 +140,7 @@ Source: opb-ct-01.md
 
 Does a hysteretic depth-state boundary reproduce an arrested striker at mu near 0.017, and is W_pen rather than a transfer fraction the identified output?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-C-02: Sweep support impedance, orientation and wave regime
 
@@ -150,7 +150,7 @@ Source: opb-ct-01.md
 
 Does support impedance act by removing relative displacement rather than by absorbing energy, and is penetration per blow independent of orientation at matched impact speed?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-D-01: Certify terminal-state transfer and partition ledgers
 
@@ -160,7 +160,7 @@ Source: opb-ct-01.md
 
 Does topology alone convert one declared failure into transmission, reflection and diversion, and is the store released at failure better treated as impulsive event work or as a finite-time regularization?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-D-02: Separate reversible, accumulating and terminal state classes
 
@@ -170,7 +170,7 @@ Source: opb-ct-01.md
 
 Are the reversible, accumulating and terminal state classes distinguishable by declared observables, and can a threshold carried as a state variable reproduce a non-monotone trajectory?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-D-03: Traverse published failure-threshold laws without hardware
 
@@ -180,7 +180,7 @@ Source: opb-ct-01.md
 
 Do published residual-velocity, stopping-power and instrumented-impact laws reproduce a cell traversal, and can a fragment partition be predicted rather than left as a residual?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-HW-01: Preregister missing contact-transfer measurement campaigns
 
@@ -190,7 +190,7 @@ Source: opb-ct-01.md
 
 Which measurement campaigns would identify each case, and which prerequisites remain externally blocked?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-CT-ROB-01: Refine contact-transfer robustness controls
 
@@ -200,7 +200,7 @@ Source: opb-ct-01.md
 
 Which conclusions survive the declared parameter, event-tolerance, timestep, method and modal-truncation controls?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-NUM-CT-ROB-01: Converge Roadmap 4 Step 14 support-port disappearance smooth-method impulse residual
 
@@ -210,7 +210,7 @@ Source: opb-ct-01.md
 
 Does FP-CT-ROB-01 converge below abs(impulse) <= 2e-05 N s without hiding sign or method disagreement?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-NUM-CT-ROB-02: Converge Roadmap 4 Step 14 hybrid chatter output-rate port-work disagreement
 
@@ -220,7 +220,7 @@ Source: opb-ct-01.md
 
 Does FP-CT-ROB-02 converge below abs(port_work) <= 0.0002 J without hiding sign or method disagreement?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-NUM-CT-ROB-03: Converge Roadmap 4 Step 14 terminal threshold partition balance residual
 
@@ -230,7 +230,7 @@ Source: opb-ct-01.md
 
 Does FP-CT-ROB-03 converge below abs(partition) <= 2e-07 1 without hiding sign or method disagreement?
 
-Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:networks; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
+Coverage: sec:collision; eq:rigid-map; eq:effective-mass; sec:contact-extensions; sec:limits. Relevant state, memory, modes, switching and validation limitations retained; contact-taxonomy-only or administrative detail is contextual.
 
 ## OP-EPI-01: Closure of the epicyclic power ledger in more than one rotating frame
 
@@ -870,7 +870,7 @@ Source: opb-lr-04.md
 
 Can a bounded test or proof resolve friction, plasticity, adhesion, thermal/acoustic release, motor ripple, more than two re-engagements, wider gaps/edges/damping and hardware are untested?
 
-Coverage: sec:release-open; sec:collision; sec:networks. Repeated gates retain negative residual sums and separate motor/fixture accounts; wider friction, adhesion, plasticity, acoustic/thermal, motor and hardware limits remain open.
+Coverage: sec:release-open; sec:collision; sec:networks; sec:contact-extensions. Repeated gates retain negative residual sums and separate motor/fixture accounts; wider friction, adhesion, plasticity, acoustic/thermal, motor and hardware limits remain open.
 
 ## OP-LR05-01: The noncoincidence rejects a one-to-one internal-zero interpretation, but...
 
@@ -1620,7 +1620,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve outward certification of the numerical Q1--Q3 offset brackets?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-02: Extend Q1--Q3 load-phase coverage
 
@@ -1630,7 +1630,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve Q1--Q3 transfer to the retained passive and active load-phase regions?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-03: Extend Q1--Q3 initial-state coverage
 
@@ -1640,7 +1640,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve Q1--Q3 transfer beyond the strength-two initial-state design and retained magnitude bounds?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-04: Resolve Q1--Q3 exact DAE boundaries
 
@@ -1650,7 +1650,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve the r=0, k=1, and exact open/short DAE boundaries?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-05: Continue Q1--Q3 surfaces and folds
 
@@ -1660,7 +1660,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve surface continuation away from r=19, disappearing surfaces, and untraced folds?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-06: Refine the signed Q3 stiff-edge residual
 
@@ -1670,7 +1670,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve the signed Q3 -7.94e-10 J stiff-edge residual?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-07: Refine the signed legacy branch residual
 
@@ -1680,7 +1680,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve the signed legacy +3.07e-6 J branch residual?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR40-08: Test Q1--Q3 load and state interactions
 
@@ -1690,7 +1690,7 @@ Source: opb-lr-40.md
 
 Can a bounded test or proof resolve Q1--Q3 load-phase and initial-state interactions?
 
-Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:coupled-halfcycle; eq:crossing-boundaries; sec:pickup-observation; sec:crossing-diagnostics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR41-01: Step-11 threshold enclosures themselves, the continuous regions r<=1.01...
 
@@ -1700,7 +1700,7 @@ Source: opb-lr-41.md
 
 Can a bounded test or proof resolve Step-11 threshold enclosures themselves, the continuous regions `r<=1.01`, `r>20`, `k>0.99`, regions between the discrete Step-13 ratios/states, terminal continuation slivers, tangent/multiple roots and any untraced physical folds remain unresolved?
 
-Coverage: eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:crossing-boundaries; sec:crossing-diagnostics; sec:clamp. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR41-02: K=1 is an inconsistent exact DAE for the canonical state rather than a ce...
 
@@ -1710,7 +1710,7 @@ Source: opb-lr-41.md
 
 Can a bounded test or proof resolve `k=1` is an inconsistent exact DAE for the canonical state rather than a certified finite-ODE boundary?
 
-Coverage: eq:crossing-boundaries; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:crossing-boundaries; sec:crossing-diagnostics; sec:clamp. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR42-01: Model explicit physical preparation and reset ports for the circulating c...
 
@@ -1720,7 +1720,7 @@ Source: opb-lr-42.md
 
 Can a bounded test or proof resolve model explicit physical preparation and reset ports for the circulating common-mode current, and extend admissible physical preparations—not arbitrary observer translations—to Q2 and Q3?
 
-Coverage: sec:networks; eq:preparation. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:pickup-observation; sec:initial; eq:preparation. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR42-02: Their preparation-energy ranges and word changes remain untested
 
@@ -1730,7 +1730,7 @@ Source: opb-lr-42.md
 
 Can a bounded test or proof resolve their preparation-energy ranges and word changes remain untested?
 
-Coverage: sec:networks; eq:preparation. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:pickup-observation; sec:initial; eq:preparation. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR43-01: Step 15 names the physical-winding Astate sensor and proves terminal nono...
 
@@ -1740,7 +1740,7 @@ Source: opb-lr-43.md
 
 Can a bounded test or proof resolve Step 15 names the physical-winding `A_state` sensor and proves terminal nonobservability for one two-branch control, but finite transformer/gyrator bandwidth, loss, saturation and calibration remain open?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR43-02: Raw equal-weight Astate must not be promoted as representation invariant
 
@@ -1750,7 +1750,7 @@ Source: opb-lr-43.md
 
 Can a bounded test or proof resolve raw equal-weight `A_state` must not be promoted as representation invariant?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-01: Validate simultaneous branch probes in hardware
 
@@ -1760,7 +1760,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve a branch-probe hardware protocol covering initial-flux references, calibration drift, correlation, saturation, and non-Gaussian noise?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-02: Cover omitted Volume II Chapter 3 settings and waveforms
 
@@ -1770,7 +1770,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve the 58,004 omitted simultaneous interior-sensor settings and external waveforms?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-03: Bound Volume II Chapter 3 terminal identifiability
 
@@ -1780,7 +1780,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve terminal identifiability of internal A_state and component rating without topology or probes?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-04: Realize surveyed Volume II Chapter 3 spatial geometry
 
@@ -1790,7 +1790,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve a spatial realization with surveyed windings, conductors, and magnetic materials instead of one finite-core dipole radius?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-05: Continue Volume II Chapter 3 finite-domain meshes
 
@@ -1800,7 +1800,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve continuation beyond R/a=12 with local or adaptive meshes and core-radius and exterior geometry or orientation grids?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR44-06: Resolve retained Volume II Chapter 3 finite-domain residuals
 
@@ -1810,7 +1810,7 @@ Source: opb-lr-44.md
 
 Can a bounded test or proof resolve the signed 1.98855e-6 J outer-shell increment and retained numerical and model residuals as finite-domain or model uncertainties?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:clamp; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR45-01: No tested winding number survives all declared transforms
 
@@ -1820,7 +1820,7 @@ Source: opb-lr-45.md
 
 Can a bounded test or proof resolve no tested winding number survives all declared transforms?
 
-Coverage: sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR45-02: Investigate closed cycles avoiding the reference and homotopy classes onl...
 
@@ -1830,7 +1830,7 @@ Source: opb-lr-45.md
 
 Can a bounded test or proof resolve investigate closed cycles avoiding the reference and homotopy classes only if a physical frame/orientation is fixed?
 
-Coverage: sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR45-03: The orthant word remains event data but is itself frame/modal dependent
 
@@ -1840,7 +1840,7 @@ Source: opb-lr-45.md
 
 Can a bounded test or proof resolve the orthant word remains event data but is itself frame/modal dependent?
 
-Coverage: sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR46-01: Require machine-readable orientation maps at every topology and sensor bo...
 
@@ -1850,7 +1850,7 @@ Source: opb-lr-46.md
 
 Can a bounded test or proof resolve require machine-readable orientation maps at every topology and sensor boundary?
 
-Coverage: sec:networks; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:observation-bounds; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR46-02: Extend the control to mutual, polyphase and spatial field graphs where a...
 
@@ -1860,7 +1860,7 @@ Source: opb-lr-46.md
 
 Can a bounded test or proof resolve extend the control to mutual, polyphase and spatial field graphs where a fixed label can create higher-rank false residuals?
 
-Coverage: sec:networks; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:observation-bounds; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR47-01: Derive incidence matrices from the full winding/switch/arc/clamp netlist...
 
@@ -1870,7 +1870,7 @@ Source: opb-lr-47.md
 
 Can a bounded test or proof resolve derive incidence matrices from the full winding/switch/arc/clamp netlist rather than either declared reduced snapshot?
 
-Coverage: sec:networks; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:clamp; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR47-02: Include arc ignition/restrike and clamp release graphs and state projections
 
@@ -1880,7 +1880,7 @@ Source: opb-lr-47.md
 
 Can a bounded test or proof resolve include arc ignition/restrike and clamp release graphs and state projections?
 
-Coverage: sec:networks; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:clamp; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR47-03: Do not pair voltages and currents from different graph sides without a pr...
 
@@ -1890,7 +1890,7 @@ Source: opb-lr-47.md
 
 Can a bounded test or proof resolve do not pair voltages and currents from different graph sides without a proved common refinement?
 
-Coverage: sec:networks; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:clamp; sec:reset. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR48-01: The port partitions and Q7 release work are demonstrably edge-shape depen...
 
@@ -2000,7 +2000,7 @@ Source: opb-lr-50.md
 
 Can a bounded test or proof resolve add a damped `rho>0` collision/circuit pair and transport preparation, relaxation and reset ports?
 
-Coverage: sec:family; eq:canonical-pair. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-pair; sec:family; eq:canonical-pair. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR50-02: Verify rho->1/rho and finite taus away from the lossless boundary before...
 
@@ -2010,7 +2010,7 @@ Source: opb-lr-50.md
 
 Can a bounded test or proof resolve verify `rho->1/rho` and finite `tau*s` away from the lossless boundary before generalizing the regression?
 
-Coverage: sec:family; eq:canonical-pair. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-pair; sec:family; eq:canonical-pair. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR51-01: The counterexamples resolve only the wider factor-three claim, not a univ...
 
@@ -2020,7 +2020,7 @@ Source: opb-lr-51.md
 
 Can a bounded test or proof resolve the counterexamples resolve only the wider factor-three claim, not a universal `N`-state maximum?
 
-Coverage: eq:graph; eq:ellipsoid; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:graph; eq:ellipsoid; sec:network-elimination; sec:network-pair; sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR51-02: N>12, disconnected, bridge/multigraph/polyphase/driven/feedback topologie...
 
@@ -2030,7 +2030,7 @@ Source: opb-lr-51.md
 
 Can a bounded test or proof resolve `N>12`, disconnected, bridge/multigraph/polyphase/driven/feedback topologies, other ratio patterns, mutual coupling, nonuniform stiffness/damping, initial gaps, preparation/reset and hardware remain untested?
 
-Coverage: eq:graph; eq:ellipsoid; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:graph; eq:ellipsoid; sec:network-elimination; sec:network-pair; sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR51-03: Dense/nonminimal eliminations have not been reduced to topology-minimal s...
 
@@ -2040,7 +2040,7 @@ Source: opb-lr-51.md
 
 Can a bounded test or proof resolve dense/nonminimal eliminations have not been reduced to topology-minimal scalar laws?
 
-Coverage: eq:graph; eq:ellipsoid; sec:networks. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:graph; eq:ellipsoid; sec:network-elimination; sec:network-pair; sec:observation-bounds. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-HW-LR52-01: Validate Step 15 polyphase sensor requirements in hardware
 
@@ -2050,7 +2050,7 @@ Source: opb-lr-52.md
 
 Do calibrated polyphase hardware measurements reproduce the bounded Step 15 normalized-map identifiability and sensor requirements?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR52-01: Terminal observations do not identify internal common/differential or par...
 
@@ -2060,7 +2060,7 @@ Source: opb-lr-52.md
 
 Can a bounded test or proof resolve terminal observations do not identify internal common/differential or parasitic branch sums without calibrated physical branch sensors?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR52-02: Raw coordinate stress sums are not component ratings
 
@@ -2070,7 +2070,7 @@ Source: opb-lr-52.md
 
 Can a bounded test or proof resolve raw coordinate stress sums are not component ratings?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR52-03: No tested passive parasitic reduction preserves physical internal Astate
 
@@ -2080,7 +2080,7 @@ Source: opb-lr-52.md
 
 Can a bounded test or proof resolve no tested passive parasitic reduction preserves physical internal `A_state`?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR52-04: Test phase counts outside 3,4,6, imbalance outside the declared grid, int...
 
@@ -2090,7 +2090,7 @@ Source: opb-lr-52.md
 
 Can a bounded test or proof resolve test phase counts outside `3,4,6`, imbalance outside the declared grid, interharmonics/noncommensurate mixtures, harmonic orders outside `1,3,5,7`, alternative port placements, frequencies between/outside named bands, nonlinear/saturating/asymmetric parasitics, active control and hardware?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:observation-bounds; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR53-01: Regularize finite contact duration and integrate contact power
 
@@ -2100,7 +2100,7 @@ Source: opb-lr-53.md
 
 Can a bounded test or proof resolve regularize finite contact duration and integrate contact power?
 
-Coverage: eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:contact-extensions; eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR53-02: Test friction, restitution below one and its heat/deformation port, simul...
 
@@ -2110,7 +2110,7 @@ Source: opb-lr-53.md
 
 Can a bounded test or proof resolve test friction, restitution below one and its heat/deformation port, simultaneous/multiple contacts, deformable bodies, other mass/speed/angle ranges, fixtures, sensor bandwidth and hardware?
 
-Coverage: eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:contact-extensions; eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR53-03: Frame-dependent kinetic stores and raw coordinate stress must not be mist...
 
@@ -2120,7 +2120,7 @@ Source: opb-lr-53.md
 
 Can a bounded test or proof resolve frame-dependent kinetic stores and raw coordinate stress must not be mistaken for externally transferred work or invariant component load?
 
-Coverage: eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:contact-extensions; eq:rigid-map; eq:effective-mass; sec:work. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR54-01: Event-split/adaptive contact-power and graph-cut quadrature are still req...
 
@@ -2130,7 +2130,7 @@ Source: opb-lr-54.md
 
 Can a bounded test or proof resolve event-split/adaptive contact-power and graph-cut quadrature are still required?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:contact-extensions; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR54-02: Initially touching far-edge activations can remain coincident with a samp...
 
@@ -2140,7 +2140,7 @@ Source: opb-lr-54.md
 
 Can a bounded test or proof resolve initially touching far-edge activations can remain coincident with a sampled bracket?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:contact-extensions; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR54-03: The rigid-impact limit, nonzero initial gaps, restitution/plasticity, fix...
 
@@ -2150,7 +2150,7 @@ Source: opb-lr-54.md
 
 Can a bounded test or proof resolve the rigid-impact limit, nonzero initial gaps, restitution/plasticity, fixture/contact impulses, branched contacts, actuator ports and hardware measurements remain unmodelled?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:contact-extensions; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR54-04: The switched contact graph has no single global scalar elimination
 
@@ -2160,7 +2160,7 @@ Source: opb-lr-54.md
 
 Can a bounded test or proof resolve the switched contact graph has no single global scalar elimination?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:contact-extensions; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-NUM-LR54-01: Converge the 82 unilateral-contact quadrature warnings
 
@@ -2170,7 +2170,7 @@ Source: opb-lr-54.md
 
 Do event-split contact-power and graph-cut impulse quadrature discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: sec:networks; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: sec:network-elimination; sec:contact-extensions; sec:limits. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR55-01: Useful bands do not imply global transfer and terminal matching does not...
 
@@ -2230,7 +2230,7 @@ Source: opb-lr-56.md
 
 Can a bounded test or proof resolve the earlier `non-sinusoidal/multitone/stochastic drive` exclusion is narrowed only to the four declared finite waveform families?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:nonnormal; eq:rice; sec:forced-observations; sec:waveform-statistics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR56-02: The coordinate bursts are explained by the declared metric but require ha...
 
@@ -2240,7 +2240,7 @@ Source: opb-lr-56.md
 
 Can a bounded test or proof resolve the coordinate bursts are explained by the declared metric but require hardware-coordinate/store identification before physical interpretation?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:nonnormal; eq:rice; sec:forced-observations; sec:waveform-statistics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR56-03: Correlated fitted-normal p values are descriptive and the finite-mode nul...
 
@@ -2250,7 +2250,7 @@ Source: opb-lr-56.md
 
 Can a bounded test or proof resolve correlated fitted-normal `p` values are descriptive and the finite-mode null departures remain unresolved?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:nonnormal; eq:rice; sec:forced-observations; sec:waveform-statistics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR56-04: Continue sample rate and quadrature, window length, mode count/band, inde...
 
@@ -2260,7 +2260,7 @@ Source: opb-lr-56.md
 
 Can a bounded test or proof resolve continue sample rate and quadrature, window length, mode count/band, independent path count and non-Gaussian/colored drives?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:nonnormal; eq:rice; sec:forced-observations; sec:waveform-statistics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR56-05: Test coincident eigenvectors, pole coalescence, infinite conditioning, re...
 
@@ -2270,7 +2270,7 @@ Source: opb-lr-56.md
 
 Can a bounded test or proof resolve test coincident eigenvectors, pole coalescence, infinite conditioning, relaxation beyond 6 s, nonlinear/time-varying plants, feedback and hardware?
 
-Coverage: eq:nonnormal; eq:rice; sec:driven. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:nonnormal; eq:rice; sec:forced-observations; sec:waveform-statistics. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-NUM-LR56-01: Converge the 1,455 stochastic operation port-quadrature warnings
 
@@ -2550,7 +2550,7 @@ Source: opb-lr-61.md
 
 Can a bounded test or proof resolve no finite family is a uniform infinite-band delay and arbitrary history has no certified unique Taylor/Padé/line state map?
 
-Coverage: eq:delay-roots; eq:pade-delay; sec:histories. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:delay-roots; eq:pade-delay; sec:histories; sec:history-examples. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR61-02: Continue order and bandwidth, histories beyond 4T, gains through and beyo...
 
@@ -2560,7 +2560,7 @@ Source: opb-lr-61.md
 
 Can a bounded test or proof resolve continue order and bandwidth, histories beyond `4T`, gains through and beyond `abs(g)=1`, prepared line fields, exterior/radiation ports, discontinuous terminations, measured delay hardware and exact stability boundaries?
 
-Coverage: eq:delay-roots; eq:pade-delay; sec:histories. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:delay-roots; eq:pade-delay; sec:histories; sec:history-examples. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR61-03: No store belongs to the bare delay, Taylor or Padé expression
 
@@ -2570,7 +2570,7 @@ Source: opb-lr-61.md
 
 Can a bounded test or proof resolve no store belongs to the bare delay, Taylor or Padé expression?
 
-Coverage: eq:delay-roots; eq:pade-delay; sec:histories. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
+Coverage: eq:delay-roots; eq:pade-delay; sec:histories; sec:history-examples. Relevant; retained as an exact result with stated scope or an unresolved limitation. Numerical child questions become symbolic consistency/uncertainty questions, with no numerical output asserted.
 
 ## OP-LR62-01: All five cases share a reduced two-store flow template and therefore do n...
 
@@ -3290,7 +3290,7 @@ Source: opb-trf-01.md
 
 How do a real ground bond, probe common-mode return and interwinding/chassis capacitances change each signed port-work integral and endpoint store?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-02: Opening windings and changing taps lack a switching-port audit
 
@@ -3300,7 +3300,7 @@ Source: opb-trf-01.md
 
 Where do the signed transfers go during actual primary opening, clamp conduction, physical tap commutation and capacitor charge sharing? In particular, what changes when the b-a readout return is physically commutated to c at nonzero winding current or capacitor voltage?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-03: Nonlinear core and thermal model discrepancies remain unquantified
 
@@ -3310,7 +3310,7 @@ Source: opb-trf-01.md
 
 How do independently specified nonlinear magnetic and thermal states change signed source, load and loss work relative to the published linear model?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-04: Singular transformer limits need distinct constrained models
 
@@ -3320,7 +3320,7 @@ Source: opb-trf-01.md
 
 Which finite-transformer work and state limits exist at perfect coupling, zero output capacitance, zero source resistance, an exact output short and zero turns ratio?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-05: Preparation, reset and control-supply work leave the transformer cycle open
 
@@ -3330,7 +3330,7 @@ Source: opb-trf-01.md
 
 What are the separately integrated preparation, operation, switching, relaxation and reset works for the imposed initial states when all real controller supplies are included?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-06: Interacting transformer parameters and solver coverage remain unswept
 
@@ -3340,7 +3340,7 @@ Source: opb-trf-01.md
 
 Which sign changes, stored-energy changes, switching sensitivities or unexplained residuals occur when load, probe, frequency and initial-state controls are crossed systematically?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-07: Transformer model discrepancy has no calibrated hardware measurement
 
@@ -3350,7 +3350,7 @@ Source: opb-trf-01.md
 
 Do calibrated simultaneous voltage/current integrals and independent endpoint-state measurements agree with the declared transformer model within their independently established uncertainty?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-08: Sampled quadrature sensitivity exceeds the decision threshold on 98 transformer intervals
 
@@ -3360,7 +3360,7 @@ Source: opb-trf-01.md
 
 Can the numerical work uncertainty on the 98 identified intervals be brought below the existing decision threshold with a justified estimate independent of the small balance residual?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-09: The planet-axle correspondence has no complete loaded dynamic transformer realization
 
@@ -3370,7 +3370,7 @@ Source: opb-trf-01.md
 
 Can a physically specified transformer network reproduce the planet axle, carrier, ring and sun readouts together with their loaded port powers and independent stores during acceleration and reference changes?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-10: Paired physical readouts retain unresolved work and voltage-integral uncertainty
 
@@ -3380,7 +3380,7 @@ Source: opb-trf-01.md
 
 Can justified work and voltage-integral uncertainty be brought below their separately declared thresholds on the 45 work and 94 readout intervals?
 
-Coverage: eq:finite-transformer; eq:transformer-integrals; sec:networks; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
+Coverage: eq:finite-transformer; eq:transformer-integrals; sec:loaded-transformer; sec:limits. Relevant finite third-order realization and its reference, loading, singular, preparation and physical limits.
 
 ## OP-TRF-11: Compound circulation has an exact ideal electrical reference counterpart
 
@@ -3392,7 +3392,7 @@ Within the ideal quasistatic scope of OP-EPI-08, do the corresponding electrical
 
 Updated source status (2026-09-27): bounded closure success, superseding the earlier snapshot's inconclusive ideal result. The current ideal counterpart is supported on its specified finite comparison population. It does not establish physical finite-state duality.
 
-Coverage: sec:physical-reference; eq:compound-mechanical; eq:compound-modal-limit; sec:compound-events. The finite ODE correspondence, compatible rigid reduction and distinction between mapped core diagnostics and a complete physical boundary are explicit. Pure quasistatic table enumeration is contextual rather than a new higher-order ODE result. Finite extensions belong to the separate issue below.
+Coverage: sec:compound-states; sec:physical-reference; eq:compound-mechanical; eq:compound-modal-limit; sec:compound-events. The finite ODE correspondence, compatible rigid reduction and distinction between mapped core diagnostics and a complete physical boundary are explicit. Pure quasistatic table enumeration is contextual rather than a new higher-order ODE result. Finite extensions belong to the separate issue below.
 
 ## OP-TRF-12: Finite compound duality: certified events, nonideal drivers and conditional rigid limits
 

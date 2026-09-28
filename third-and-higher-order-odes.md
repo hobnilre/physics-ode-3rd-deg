@@ -70,7 +70,7 @@ The primary measurement questions ask whether independent component changes dist
 
 Physical audits test the declared realization after synthesis. The impact driver's release question is developed beside its coefficient construction in Section \ref{sec:impact-release}: deleting a positive contact store without an event transfer produces a negative model residual. Its actual release law and destination remain unresolved, with the extended account in Section \ref{sec:release-open}. Unequal effective transducer couplings produce the listed-port residual in Section \ref{sec:coupling-open}, while the separately powered actuator in Section \ref{sec:coupling-control} supplies one explicit model account. The different finite bias supply retains independent coil, DC-link and thermal questions. A three-state RC loop in Section \ref{sec:hidden-loop} instead has a complete resistor-work account despite zero loop current and changing internal stores. Imperfect observation still limits the hidden-energy bound of Section \ref{sec:hidden-measurement}.
 
-These supporting measurements have different attainable outcomes. Volt- and milliampere-scale branch observations can resolve the hidden RC change; finite transformer returns and a physical reference ramp expose additional measurable works at fixed capacitor endpoints. Sections \ref{sec:physical-reference} and \ref{sec:instrument-bounds} retain the compensation supplies, endpoint states and calibration bounds needed for broader accounts. Quiet terminals, zero named commands and a small combined residual leave distinct local questions. A heat channel, controller or reset identifies a physical transfer only when its power and state changes have been established independently. Every unresolved signed residual retains its interval, preparation, assumptions and uncertainty.
+These supporting measurements have different attainable outcomes. Volt- and milliampere-scale branch observations can resolve the hidden RC change; finite transformer returns and a physical reference ramp expose additional measurable works at fixed capacitor endpoints. Appendix \ref{sec:physical-reference} and Section \ref{sec:instrument-bounds} retain the compensation supplies, endpoint states and calibration bounds needed for broader accounts. Quiet terminals, zero named commands and a small combined residual leave distinct local questions. A heat channel, controller or reset identifies a physical transfer only when its power and state changes have been established independently. Every unresolved signed residual retains its interval, preparation, assumptions and uncertainty.
 
 # The second-order foundation and its dimensional extension
 \label{sec:family}
@@ -548,6 +548,8 @@ The physical contact power remains $\tau_c\dot\delta$. Its formal decomposition 
 
 The practical comparison asks which repeatable features of the impact response are explained by additional linear dynamics and which require a changing contact or joint law. Tuned linear pulse shape, phase and unresolved linear modes may then receive a rational constitutive explanation; resolved rebound may predict restitution rather than impose it. None of these constructions removes release logic, partial engagement, backlash, preload-dependent microslip or an amplitude-dependent deformation law. Stable response and port passivity require the whole declared interconnection. A direct physical contact law of polynomial degree above two faces the same global passivity obstruction as the electrical law proved in Section \ref{sec:rf}, with torque and angular rate replacing voltage and current.
 
+Additional contact information can take several distinct forms. A resolved bending mode supplies further displacement and velocity states; an offset rigid contact changes effective inertia; penetration memory and damage require their own internal coordinates or event laws. Appendix \ref{sec:contact-extensions} derives these distinctions for teeterboard, club--ball and hammer--nail systems, including \eqref{eq:effective-mass}. They identify what must be supplied before extending the impact-driver coefficients: a component law and its preparation, a geometric inertia map, or a switching rule with its state transport.
+
 ## What remains when the blow releases?
 \label{sec:impact-release}
 
@@ -736,6 +738,8 @@ The triangle inequality proves that the two error neighborhoods are then disjoin
 
 For the impact driver, take $g$ to contain the synchronized hammer angle, anvil angle and contact torque over the common calibrated band in Section \ref{sec:impact-measurement}. Include incoming preparation, fixture parameters and sensor response in each prediction set. Varying joint stiffness follows the seven-atom path; varying damping independently adds the nine-atom discrimination. The law and uncertainty established before comparison must then predict an independently specified joint configuration without new weights. On the cancellation surface, the exact hidden motion leaves hammer angle and contact torque identical but separates anvil angle. This is an observation choice that functional independence of coefficient atoms alone cannot supply. Circuit and RF measurements below provide complementary controlled parameter changes and phase observations.
 
+Finite-window motion or current measurements retain preparation and temporal correlation. A Gaussian ensemble does not make adjacent observations independent, and a crossing-rate statistic does not identify a coefficient law. The waveform and statistical conditions in Appendix \ref{sec:waveform-statistics} specify when such observations can enter the prediction sets above. On the torsional rig, retain the calibrated time response and cross-channel uncertainty instead of treating repeated values along one blow as independent evidence.
+
 ## Rank, exponent recovery and uncertainty
 
 For $b(x)=\sum_{j=1}^m a_{j}x^{p_{j}}$ with distinct real exponents, consider exact evaluations on a geometric grid $x_\ell=x_{0}q^\ell$, $q>0$, $q\ne1$. Then
@@ -889,7 +893,7 @@ The source and resistor powers have been integrated before the independent endpo
 
 At a switch, carry the physical state through the stated reset map and recompute the jets from the new vector field. The pre-event fourth derivative is not a freely transportable coordinate of a post-event second-order system. If a state is removed, specify whether it remains in another subsystem or transfers work through a port. Simultaneous events need a joint finite model or an ordering rule. The rapid two-capacitor connection in Appendix \ref{sec:reset} gives an exact example in which the final state is order-independent while the individual port-work partitions depend on the edge ordering. No universal instantaneous partition follows from the endpoint alone.
 
-# Initialized integrals and histories
+## Initialized integrals and histories
 \label{sec:histories}
 
 The coefficient array also includes negative derivative indices. Their use extends the synthesis to initialized integral operators; the required constants and histories are additional information, not coefficients determined by dimensions.
@@ -909,8 +913,7 @@ Suppose an equation containing $D^{-m}$ has residual $R(t)$. Multiplication by $
 \end{equation}
 Thus a derivative-cleared equation can have extra solutions even when its coefficients are exact. Anchor changes must transport the integrator states through \eqref{eq:history-chain}. Preparation extending farther into the past can amplify compatibility sensitivity without changing present derivatives.
 
-A finite chain is not a complete delay history. To see this exactly, add to any history a perturbation equal to $1,-4,6,-4,1$ on the five consecutive intervals
-$[-1+j/8,-1+(j+1)/8)$, $j=0,\ldots,4$, and zero elsewhere. Its first four moments against $(-t)^j/j!$ vanish: integration produces a fourth finite difference of a polynomial of degree at most four. It also vanishes near the present, so every present derivative agrees for smooth base histories. Nevertheless its delayed value at lag $11/16$ differs by $6$. A second perturbation equal to $2$ on $[-2,-3/2)$ changes no history integral based at $-1$, but changes the delayed value at lag $7/4$ by $2$. Both controls work with a constant or a sinusoidal base history. Neither any finite present jet nor these four moments uniquely represents arbitrary delay history.
+Finite integral states still leave arbitrary delay histories undetermined. Appendix \ref{sec:history-examples} constructs histories with identical present jets and four initialized moments but different delayed values. Thus a synthesis using a history kernel needs its own preparation map, in addition to the coefficient and jet conditions above.
 
 # RF response and the limits of polynomial impedance
 \label{sec:rf}
@@ -1354,6 +1357,8 @@ With $R_{C}=R_{L}=L=1$, $C\to0$ gives $3/2$, whereas $C=\varepsilon$, $R_{C}=\va
 
 For field, fractional and delayed dynamics, a finite coefficient construction is a representation on a declared domain. The finite-state and rational-series constructions of Section \ref{sec:construction} motivate two distinct questions here: which finite realization supplies the coefficients, and how its law differs from the infinite-dimensional target. The following exact laws and discrepancies delimit that domain and state the additional field or history preparation that a finite ODE cannot infer.
 
+For the impact driver, a resolved flexible bit, socket or joint mode would enter through its declared physical coordinates and coupled equations. Replacing those modes by a distributed compliance instead requires a field preparation and a domain for any finite representation. The line, relaxation spectrum and delay below establish complementary mathematical limits for that decision; a mechanical specialization still requires its own constitutive and connection laws.
+
 ## Transmission lines and finite passive ladders
 
 For a uniform line of length $\ell$, per-length constants $L',C'>0$, $R',G'\geq0$ and current directed toward the load, the telegrapher equations are
@@ -1369,9 +1374,6 @@ $\left(\begin{smallmatrix}\cosh\gamma\ell&Z_{c}\sinh\gamma\ell\\
  Z_{c}^{-1}\sinh\gamma\ell&\cosh\gamma\ell\end{smallmatrix}\right)$,
 with branches chosen by physical continuation from $\Rea s>0$. Equivalently it is the exponential of
 $\ell\left(\begin{smallmatrix}0&R'+sL'\\G'+sC'&0\end{smallmatrix}\right)$.
-The load reflection coefficient is
-$\Gamma_{L}=(Z_{L}-Z_{c})/(Z_{L}+Z_{c})$.
-Forward and reflected waves define local reflection magnitude and phase. For a lossless line the standing-wave ratio is $(1+|\Gamma|)/(1-|\Gamma|)$; in a lossy line a local ratio does not generally equal the global envelope ratio along an arbitrary length. Group delay is $-\dd\arg H(\ii\omega)/\dd\omega$ where the phase derivative exists; transfer zeros require separate treatment.
 
 An ideal shorted lossless line has
 \begin{equation}
@@ -1388,24 +1390,7 @@ A physical finite model subdivides the line into $N$ series branches of $L'\Delt
  H_{N}(s)=c^T(sI-F_{N})^{-1}b.
  \label{eq:line-finite}
 \end{equation}
-The corresponding stores and physical spatial diagnostics are
-\begin{equation}
- E_{N}=\frac12\sum_{j}L'\Delta x\,i_{j}^2+\frac12\sum_{j}C_{j}v_{j}^2,
- \quad \Lambda_{\mathrm{abs}}=\sum_{j}L'\Delta x\,|i_{j}|,
- \quad Q_{\mathrm{abs}}=\sum_{j}C_{j}|v_{j}|.
- \label{eq:line-stores}
-\end{equation}
-Raw sums without spatial weights change just because the subdivision changes. Linkage and charge sums have different units and are not added.
-
-For the continuum boundary, $E=\int_{0}^\ell(L'i^2+C'v^2)\dd x/2$. Multiplying the time-domain telegrapher equations by the conjugate fields and integrating by parts gives
-\begin{equation}
- \dot E=v(0)i(0)-v(\ell)i(\ell)
-       -\int_{0}^\ell(R'i^2+G'v^2)\,\dd x.
- \label{eq:line-power}
-\end{equation}
-For a Thevenin source and resistive load these are the separately integrated powers $V_{s}i_{s}$, $-R_{s}i_{s}^2$, $-G_{L}v(\ell)^2$ and the two distributed loss integrals. The finite ladder gives the same identity by telescoping internal port products. Endpoint electric and magnetic fields or node states are independently evaluated. A post-pulse reflection tail need not have vanished at a chosen finite time. Deleting it by an ideal reset requires outward event work equal to its actual store and does not describe a constructed hardware reset.
-
-A degree-six Taylor matrix or a $[3/3]$ Padé matrix is a finite candidate with its own exact residual against the matrix exponential. Neither the order nor a small low-frequency discrepancy certifies a near-open high-frequency corner. An alternating zero-weighted-mean capacitance change preserves total capacitance but alters the medium; it cannot be called mere refinement of a fixed uniform line. A continuum comparison needs either a fixed material profile with refinement or a proved homogenization limit. Ideal open and short terminations are separate boundary conditions. Long reflection tails, dispersive loss, discontinuous edges, exterior fields, radiation and measured terminations remain unresolved physical limits. A separately normalized line model does not automatically audit the field and termination realization of a dimensional RF device.
+For this declared ladder, the node and branch parameters supply a finite state matrix and hence both operators in \eqref{eq:elimination}. Increasing the subdivision changes that finite construction; comparison with the fixed line additionally requires a frequency domain, a field-to-state preparation and a bound on their transfer difference. Appendix \ref{sec:line-accounts} retains the weighted spatial observables, scattering definitions, separate field and ladder work accounts, and termination and material-profile limits. These establish which physical line a coefficient comparison concerns.
 
 ## Fractional response
 
@@ -1436,7 +1421,7 @@ A diagonal Padé delay candidate can be written $Q_n(-sT)/Q_n(sT)$, where
  \frac{(2n-k)!\,n!}{(2n)!\,k!\,(n-k)!}z^k.
  \label{eq:pade-delay}
 \end{equation}
-Real coefficients make numerator and denominator conjugate at imaginary $s$, proving unit modulus there wherever the quotient is defined. This candidate is rational and all-pass on the imaginary axis; this scattering property does not make it a positive-real impedance. No finite proper rational function approximates the unit delay with arbitrarily small absolute error on the entire imaginary axis: its limit at infinite frequency is a constant, whereas the delay traverses the unit circle endlessly. The worst limiting error is at least one, and is two for a unit-modulus limiting constant. An improper rational function is unbounded there. Thus every finite approximation requires a finite active band and a history-to-state map. Section \ref{sec:histories} proves that an arbitrary history has no unique map to a finite moment chain. A prepared transmission-line field can realize a physical delay with distributed storage, but the bare delay or Padé expression has no uniquely specified store or radiation boundary.
+Real coefficients make numerator and denominator conjugate at imaginary $s$, proving unit modulus there wherever the quotient is defined. This candidate is rational and all-pass on the imaginary axis; this scattering property does not make it a positive-real impedance. No finite proper rational function approximates the unit delay with arbitrarily small absolute error on the entire imaginary axis: its limit at infinite frequency is a constant, whereas the delay traverses the unit circle endlessly. The worst limiting error is at least one, and is two for a unit-modulus limiting constant. An improper rational function is unbounded there. Thus every finite approximation requires a finite active band and a history-to-state map. Appendix \ref{sec:history-examples} proves that these finite moments and present derivatives do not determine an arbitrary delayed observation. A prepared transmission-line field can realize a physical delay with distributed storage, but the bare delay or Padé expression has no uniquely specified store or radiation boundary.
 
 # Driven, nonlinear and time-varying realizations
 \label{sec:driven}
@@ -1477,7 +1462,8 @@ The zero-common-current case has unit fraction apart from isolated zeros, provid
 
 A fitted admittance $G_\infty+\sum a_{j}/(1+s\tau_{j})$ with $a_{j}>0$ is realized by a conductance and series RL branches with $R_{j}=1/a_{j}$, $L_{j}=\tau_{j}/a_{j}$. Negating a branch's terminal response while keeping that same positive-store internal core leaves a transfer to identify. If the core absorbs $u j$ but its terminal current is $s_bj$, $s_b=-1$, the unmatched inward power is $(1-s_b)u j=2u j$. Its signed integral on the declared interval is the required additional work. A controller is one candidate account, whose supply, state and losses must be constructed and evaluated independently. Stable poles alone do not certify the resulting terminal passivity. A useful finite response band does not certify global transfer or identify a fitted model's physical states.
 
-## Nonnormal coordinates and finite waveform families
+## Forced observations and coordinate sensitivity
+\label{sec:forced-observations}
 
 A stable system $\dot z=-\diag(p_{1},p_{2})z+bu$, $p_{j}>0$, $b=(1,7/10)^T$, can be written as $x=Vz$ with nearly parallel eigenvectors. Its coordinate norm may exhibit a transient increase. The positive physical quadratic metric transported from $z$ is
 \begin{equation}
@@ -1487,34 +1473,7 @@ A stable system $\dot z=-\diag(p_{1},p_{2})z+bu$, $p_{j}>0$, $b=(1,7/10)^T$, can
 \end{equation}
 The loss channels have effort $p_{j}z_{j}$ and flow $z_{j}$ in the normalized realization, and the source port has effort $u$, flow $b^Tz$. A coordinate burst does not identify an increase of physical store. As eigenvectors coalesce, the coordinate transformation may become singular; one must distinguish a change of basis from an actual Jordan-block system.
 
-The exact forced response is Duhamel's formula \eqref{eq:preparation}. It applies to a commensurate multitone, a Gaussian packet, a carrier under a separately declared modulation envelope, a band-limited Gaussian random input, or any specified integrable waveform. These are distinct classes. A finite-window Fourier estimate retains the homogeneous term and the window convolution; zero-padding a missing past is an additional initial-history assumption. Increasing a model's order or a window length is not itself a proof of phase, peak or tail accuracy.
-
-A linear system with jointly Gaussian forcing and Gaussian initial state has a Gaussian ensemble, but adjacent observations on one finite path are correlated. A fitted normality statistic based on independent observations does not have its nominal interpretation. For a stationary differentiable zero-mean Gaussian output, the exact total zero-crossing rate of [Rice (1945)][rice] is
-\begin{equation}
- \nu_{0}=\frac1\pi\sqrt{\frac{\mathbb E\dot y^2}{\mathbb E y^2}}.
- \label{eq:rice}
-\end{equation}
-It follows by integrating $|\dot y|$ against the joint Gaussian density at $y=0$, using stationarity to obtain zero covariance of $y$ and $\dot y$. Nondifferentiable forcing/output, nonstationarity, fitted means and finite-mode tails require different assumptions. Unresolved finite-path departures, correlation, non-Gaussian drives and uncertainty in the physical metric cannot be replaced by asserted ensemble conclusions.
-
-### Signed work and unresolved drift under random drive
-\label{sec:stochastic-work}
-
-A changing mean store under a finite-band random drive raises a separate question from Gaussianity or zero-crossing rate: what signed transfer accounts for the change, and does a residual remain after that transfer is independently evaluated? On each finite operation interval $[t_0,t_1]$, retain the physical source effort $e$, its conjugate flow $f$, all loss ports and the prepared initial state. Zero mean effort does not set mean power to zero, since
-\begin{equation}
- \mathbb E[ef]=\mathbb E[e]\,\mathbb E[f]+\operatorname{Cov}(e,f).
- \label{eq:stochastic-power}
-\end{equation}
-This follows by expanding $(e-\mathbb E e)(f-\mathbb E f)$. With finite second moments and $\int_{t_0}^{t_1}\mathbb E|e_\ell f_\ell|\,\dd t<\infty$, expectation can pass through each separate integral. For every declared port define $W_\ell=\int_{t_0}^{t_1}e_\ell f_\ell\,\dd t$ before forming
-\begin{equation}
- \mathbb E[r_E]=\mathbb E[E(t_1)]-\mathbb E[E(t_0)]
-                      -\sum_\ell\mathbb E[W_\ell].
- \label{eq:stochastic-residual}
-\end{equation}
-The stores are evaluated from the states and the identified physical metric, not from the expected powers. For the normalized realization \eqref{eq:nonnormal}, the explicit products are $u(b^Tz)$ and $-(p_jz_j)z_j$, with $E=z^Tz/2$. Duhamel's formula supplies the state path and retains any correlation between preparation and drive. A random input to a merely fitted terminal law supplies no internal store until a realization is specified.
-
-The unresolved operation question is whether a persistent positive or negative residual survives the joint uncertainty of source work, losses and endpoint states. A source-off relaxation interval is audited separately with its actual remaining ports; its initial state is the operation endpoint. Agreement of a relaxation identity or an operation endpoint check does not bound uncertainty in each operation port integral. Shared paths, finite-window leakage, unresolved high-frequency modes and correlated gain or timing errors require their own bounds. A constant bias in one power channel can accumulate with interval duration; extending the interval without resolving that bias does not establish a physical drift.
-
-For a finite damped realization and a specified forcing covariance, exact state and work integrals give conditional predictions. Their zero numerical integration residual does not resolve an independently unbounded finite-precision or physical observation. Section \ref{sec:residual-outcomes} gives the signed outcome criterion. Non-Gaussian drives, longer tails, nonlinear or time-varying plants and a physical implementation of the metric remain open beyond these conditions.
+A forced coefficient prediction uses the input and prepared state in \eqref{eq:preparation}. The comparison must retain the homogeneous contribution and the observation window. Appendix \ref{sec:waveform-statistics} develops the distinct waveform classes, correlated finite-path observations and conditional crossing statistic; Section \ref{sec:identification} states their consequences for coefficient recovery. Coordinate magnitude and waveform statistics alone do not identify the physical metric or a unique coefficient law.
 
 ## Material memory and parameter modulation
 
@@ -1757,7 +1716,7 @@ It is the signed reaction, not the source-off label, that determines this predic
 
 Appendix \ref{sec:supply} supplies a finite DC link, sensor and thermal account with seven continuous states. Each state has its own endpoint evaluation and each transfer its own integral. The open question is whether a physical bias supply realizes these couplings and the source-off increase with consistent coil, DC-link, thermal and plant accounts [OP-LR59-02]. Measure coil current at both endpoints with independently calibrated $L_b$, winding voltage/current throughout the interval, and the separately accessible converter-output and DC-link pairs. Reaction effort requires an independently identified transduction law or a direct conjugate measurement; the coil remainder alone does not identify it. The measurable reciprocal control above does not settle this different nonlinear seven-state model. Interval balance, DC-link work and thermal endpoint consistency remain separate unresolved checks beyond the exact conditional identities. A small combined-path residual can conceal opposite local residuals and does not settle them. Thermal laws, saturation, hysteresis, switching slew, feedback, multi-axis coupling and calibrated cross-domain sensors remain additional physical requirements. Finite-prefix work identities do not give an unstable control a steady-state interpretation.
 
-# Larger networks, observation geometry and switching
+# Network constructions and changes of physical implementation
 \label{sec:networks}
 
 Network interconnection extends coefficient synthesis beyond one component pair. Incidence, observation and constraints determine which states survive scalar elimination. Switching and finite reference implementations can change both the coefficient law and its admissible preparation.
@@ -1781,60 +1740,12 @@ The signed sum $c=s_{1}+s_{2}$ is constant. With $d=s_{2}-s_{1}$,
 \end{equation}
 A scalar primary state generally satisfies a third-order homogeneous annihilator containing the zero common mode; specifying $c$ instead yields a second-order affine equation. This is an elementary example of how elimination and initialization change the apparent order.
 
-For two masses $1$ and $19\ \mathrm{kg}$, initial velocities $10$ and $0\ \mathrm{m\,s^{-1}}$, and contact stiffness $19/20\ \mathrm{N\,m^{-1}}$, the exact compliant interval is $0\leq t\leq\pi\ \mathrm s$:
-\begin{equation}
- p_{1}=\frac12+\frac{19}2\cos t,\qquad
- p_{2}=\frac{19}2(1-\cos t),\qquad
- \delta=10\sin t.
- \label{eq:canonical-pair}
-\end{equation}
-The contact force is $(19/2)\sin t$ in newtons. The signed momentum stays $10$, while the endpoint magnitude sum is $28$, a ratio $14/5$. Its first sign crossing is $t=\arccos(-1/19)$. Direct integration of $-k\delta\dot x_{1}$ and $k\delta\dot x_{2}$ gives works $-19/2$ and $19/2\ \mathrm J$; the spring starts and ends unstrained, and both endpoint total stores are $50\ \mathrm J$. In the center-of-mass frame the magnitude sum is $19$ at both endpoints. The change of observer modifies kinetic stores and individual works, not the physical contact law.
+Specifying the common state therefore changes the scalar equation and its forcing information without changing the component laws. Appendix \ref{sec:network-pair} gives the exact mechanical and electrical excursions, their distinct magnitude diagnostics, and a three-body counterexample to a pair-specific ceiling. Those diagnostics audit an already declared realization and preparation.
 
-For an uncoupled inductive pair with ratio $r=L_{2}/L_{1}$, the corresponding zero-mediator endpoint ratio is $(3r-1)/(r+1)$ for $r>1$, and one for $r\leq1$. The ceiling three belongs to that particular pair and preparation. It is not a general multi-state limit. An exact three-body counterexample consists of two separated compliant elastic encounters: masses $1,19,361$, initially velocities $(10,0,0)$, first let masses $1,19$ exchange, then $19,361$. At the end the velocities are $(-9,-9/10,1/10)$, with momenta $(-9,-171/10,361/10)$. The magnitude ratio is $311/50>3$. Each encounter is realized by the sinusoidal relative solution with its own positive stiffness and reduced mass, and the gaps are chosen so they do not overlap. This establishes a wider counterexample, while maxima for a specified continuously connected chain still require its own exact trajectory and extremum analysis.
+A pickup or receiver can change this construction in two ways: its physical loading adds states or changes the connections, while its observation may leave a common preparation hidden. Appendix \ref{sec:pickup-observation} derives both distinctions and the associated load and preparation questions. Its coupled-winding crossing boundaries are retained in Appendix \ref{sec:crossing-diagnostics}; their parameter measures describe the specified event rather than determine operator coefficients.
 
-## Coupled pickups and hidden common preparation
-
-For opposed primary windings a differential pickup can sense
-$\lambda_{3}=\kappa_{d}(\lambda_{2}-\lambda_{1})$. In the canonical excursion from $(10,0)$ to $(-9,19)$, its open-circuit volt-second integral is $38\kappa_{d}$. Its work is zero when its current is zero. Loading the pickup changes the full inductance matrix and back-reacts on the primary trajectory. If $K_{d}^2=\kappa_{d}^2(L_{1}+L_{2})/L_{3}$, positive semidefiniteness requires $0\leq K_{d}\leq1$; the endpoint is a descriptor boundary, not an ordinary invertible inductance matrix.
-
-A receiver winding adds a state; a receiver capacitor adds another. A figure-eight pickup followed by one rectifier and two separately rectified pickups feeding one bus have different state and connection graphs. For the declared smooth bridge law $v_{b}=V_{b}\tanh(i/i_\varepsilon)$, receiving bus power is $V_{b}i\tanh(i/i_\varepsilon)\geq0$. Copper and bus powers are integrated separately. This positivity does not decide which architecture has higher peak bus power at a specified voltage or which preserves a specified flux excursion. A receiver's natural frequency, load phase and damping change the extrema and their ordering; a peak at the end of an observation interval is not an interior extremum.
-
-For the canonical pair, let the initial currents be $(10+u,u)$ with $L_{1}=1,L_{2}=19$. The common linkage is $10+20u$ while the differential terminal evolution can remain unchanged in an ideal differential coupling. Unloaded endpoint linkages are $(-9+u,19+19u)$. Individual winding works become
-$W_{1}=-19/2-19u$, $W_{2}=19/2+19u$, by integrating their own powers along the shifted solution. The initial magnetic store is $50+10u+10u^2$, evaluated from the prepared state. For $u=-1/2$ the common sum is zero and the magnitude sum is unchanged, even though a differential receiver can see the same trajectory. This changes physical preparation; it is not merely a relabeling of the observer. Preparing and resetting the common current requires actual sources and finite paths.
-
-Normalize the differential extremum by $\mathcal R=(d_{\max}+10)/38$ for the initial canonical state $c=10,d_{0}=-10$. Entry into positive counterflow is exactly $\mathcal R>10/19$, not $\mathcal R>1/2$. With another initial state this threshold must be recomputed. Load-phase and state interactions, disappearing extrema, tangent roots, folds, extreme inductance ratios and exact open/short or perfect-coupling boundaries remain unresolved beyond this algebraic criterion. Work does not select any of those operating conditions.
-
-## Exact coupled-winding crossing boundaries
-
-For the connected lossless pair, let $\mathsf L=\left(\begin{smallmatrix}L_1&M\\M&L_2\end{smallmatrix}\right)$, $M=\sigma\kappa\sqrt{L_1L_2}$, $\sigma=\pm1$, $0\leq\kappa<1$, and initial current $(I,0)$ with $I>0$. The connection vector is $(1,-1)^T$, so $c=\lambda_1+\lambda_2=I(L_1+M)$. At the zero-mediator equilibrium,
-\begin{equation}
- \lambda_{\mathrm{eq}}=
- \frac{I(L_1+M)}{L_1+L_2+2M}
- \binom{L_1+M}{L_2+M},\qquad
- \lambda(\theta)=\lambda_{\mathrm{eq}}
-             +[\lambda(0)-\lambda_{\mathrm{eq}}]\cos\theta.
- \label{eq:coupled-halfcycle}
-\end{equation}
-Here $\theta$ is the exact normalized oscillation phase on $[0,\pi]$. The absolute sum is convex in $\cos\theta$, so its maximum lies at an endpoint. For $r=L_2/L_1>1$, the applicable growth boundaries are
-\begin{equation}
- \kappa_+(r)=\frac{\sqrt{2r-1}-1}{2\sqrt r},\qquad
- \kappa_-(r)=\frac1{\sqrt r}.
- \label{eq:crossing-boundaries}
-\end{equation}
-Growth occurs below the respective boundary and no growth above it in this stated connected model. To derive the positive-orientation result, set the endpoint candidate $-\lambda_1(\pi)+\lambda_2(\pi)$ equal to $I(L_1+M)$; the condition reduces to
-$2M^2+2L_1M-L_1(L_2-L_1)=0$.
-For negative orientation the same comparison with $I(L_1-M)$ reduces to $L_1+M=0$. Checking the endpoint signs supplies the stated $r>1$ branches. At the threshold equality holds exactly. At $\kappa=1$ the invertible-state derivation ceases to apply.
-
-A first zero of a component satisfies a scalar cosine equation from \eqref{eq:coupled-halfcycle}; its exact existence condition is that the resulting cosine lies in $[-1,1]$. Tangencies and zero modal amplitudes need their own event classification. This distinguishes an analytic enclosure of a root from a finite observation bracket or a dense-interpolation estimate. Loaded receivers and other initial states need new guards; a no-growth maximum can have an initial-time plateau, so differentiating that maximum is not a regular surface continuation.
-
-An entry fraction also needs a measure. For a rectangle $r\in[r_a,r_b]$, $\kappa\in[0,K]$, the uniform-product fraction is exactly
-\begin{equation}
- \frac1{(r_b-r_a)K}\int_{r_a}^{r_b}\min\{K,\kappa_\sigma(r)\}\,\dd r.
-\label{eq:entry-measure}
-\end{equation}
-while a uniform logarithmic-ratio measure replaces $\dd r/(r_b-r_a)$ by $\dd r/[r\log(r_b/r_a)]$. An illustrative prior can instead use a truncated lognormal ratio with logarithmic center $\log4$ and width $3/4$, independently of a beta density $6u(1-u)$ for $u=\kappa/K$. A finite equal-weight set defines yet another, discrete measure. None is a measure-free probability of counterflow. Joint parameter enclosures, untraced folds, more general preparations and actual prior calibration remain open.
-
-## Incidence, scalar annihilators and observation bounds
+## From an interconnection graph to a scalar operator
+\label{sec:network-elimination}
 
 For a connected oriented graph with $n_v$ vertices and $n_e$ edges, let $B_v\in\mathbb R^{n_v\times n_e}$ be its vertex-edge incidence matrix, $H=\diag(1/L_j)$, and take unit edge capacitances in normalized units. Vertex linkages $\lambda_v\in\mathbb R^{n_v}$ and edge charges $q_e\in\mathbb R^{n_e}$ obey
 \begin{equation}
@@ -1854,42 +1765,10 @@ A distinct circuit construction places linkage on branches. Let $B_e$ be that ci
 
 The two kernels concern different spaces. For a two-vertex, one-edge tree, $B_v=(1,-1)^T$ gives the vertex invariant $\lambda_{v,1}+\lambda_{v,2}$, whereas the corresponding node-branch matrix has trivial edge-cycle kernel. Across different circuit graphs the cross-power identity requires inclusion of the voltage subspace in the orthogonal complement of the current subspace. A switch can destroy it. It does not replace the event work audit.
 
-Magnitude bounds are useful diagnostics once the physical state and metric are known. If $E=x^THx/2$, $H>0$, and $y=Cx$ with full observation rank, constrained minimization gives
-\begin{equation}
- E_{\min}(y)=\frac12y^TQy,\qquad
- Q=(CH^{-1}C^T)^{-1},\qquad
- \|y\|_1\leq\sqrt{2E\max_{\sigma_{j}=\pm1}\sigma^TCH^{-1}C^T\sigma}.
- \label{eq:ellipsoid}
-\end{equation}
-The proof completes the square in $x$ under $Cx=y$, then uses $\|y\|_1=\max_\sigma\sigma^Ty$. This is a current-state envelope using independently evaluated $E(t)$, not an assumption that initial energy stays constant. Additional invariants restrict the ellipsoid further, as derived in Appendix \ref{sec:bounds}. A Euclidean $\sqrt N$ scaling is an isotropic reference only, not a universal network ceiling.
-
-![Schematic observation geometry. The illustrative ellipse $y_{1}^2/4+y_{2}^2\leq1$ is restricted by $y_{1}+y_{2}=1$. Its center and endpoints follow from Appendix \ref{sec:bounds}. Magnitude extrema depend on the metric, observation and invariant.](figures/observation-geometry.pdf){#fig:geometry width=82%}
-
-\FloatBarrier
-
-For a fixed linear system and componentwise source limits $|u_{j}(t)|\leq U_{j}$, a direction $a$ has exact reachable support
-\begin{equation}
- \sup a^Tx(T)=a^Te^{FT}x_{0}+
-       \sum_{j} U_{j}\int_{0}^T|a^Te^{F(T-t)}b_{j}|\,\dd t.
- \label{eq:reach-support}
-\end{equation}
-Choose the input signs to attain each integrand; constrained bandwidth or slew requires a smaller reachable set. Matrix logarithmic norms also give trajectory bounds in a declared metric. These bounds certify reachable observations and sensitivity, not an energy-based design rule.
-
-The weighted one-norm has the exact logarithmic norm
-\begin{equation}
- \mu_{1,W}(F)=\max_j\left[F_{jj}+\sum_{i\ne j}\frac{W_i}{W_j}|F_{ij}|\right],
- \qquad \|x(t)\|_{1,W}\leq e^{\mu_{1,W}t}\|x(0)\|_{1,W},
- \label{eq:lognorm}
-\end{equation}
-for constant $F$ and positive weights. A nonpositive value certifies contraction in that norm; a positive value still supplies a finite bound. The observation map must be included before comparing it with $\|y\|_1$. Total variation of each observed coordinate, the time fraction in counterflow, and $\|y\|_1-|\sum y_j|$ describe different trajectory features. Absolute port throughput $\sum_\ell\int|P_\ell|\dd t$ is a separate audit diagnostic after the signed works are retained.
-
-A physical ideal transformer can also change a magnitude diagnostic. With secondary-to-primary voltage ratio $\nu$, $\lambda_s=\nu\lambda_p$, $i_s=i_p/\nu$, and $L_s=\nu^2L_p$. In the canonical pair the conserved functional is $\lambda_1+\lambda_{2,s}/\nu$, while the raw secondary-coordinate peak is $\max(10,9+19\nu)$. The two transformer port products cancel and it stores no energy. An ideal gyrator has $v_a=R_gi_b$, $v_b=-R_gi_a$, so its two inward powers likewise sum to zero. The mapping $q=-\lambda/R_g$, $C=L/R_g^2$ preserves the corresponding component energy and gives canonical charge peak $28/R_g$. It changes units and components; it does not supply a new invariant absolute sum. Integrate both two-port powers on the same interval before using their cancellation.
-
-Orthogonal common/differential or polyphase transformations preserve the corresponding quadratic form but not a componentwise absolute sum. Physical branch states must be reconstructed before interpreting stress. Hidden zero-sequence motion requires neutral or internal sensors; adding parasitic RL or RLC branches adds physical states, while a capacitor alone does not define a resonance. A reduced passive terminal model need not preserve any internal magnitude sum. Phase imbalance, noncommensurate harmonics, nonlinear or asymmetric parasitics and sensor placement require separate identification.
-
-An ordered sequence of component signs, with zeros retained as boundary events, is invariant under positive diagonal scaling. It is generally changed by modal mixing or affine observer shifts and reverses under time reversal. Winding counts of an open observation path are not general invariants. A closed-path topological statement requires a specified excluded point, orientation, physical frame and homotopy class. These qualifications matter when a proposed higher-order signature is based on sign crossings rather than on the operator itself.
+The graph, component matrices and chosen observation therefore determine the candidate scalar coefficients and their removable factors. Reachability and observation bounds answer the next question: which states and measured magnitudes can that realization produce from a declared preparation? Appendix \ref{sec:observation-bounds} gives the exact geometric and finite-time bounds, including their dependence on sensors, coordinate changes and physical ports.
 
 ## Interruption, perfect coupling and a third-order clamp
+\label{sec:clamp}
 
 Two mutually coupled windings with a secondary capacitor have inductance matrix
 $\mathsf L=\left(\begin{smallmatrix}L_{1}&M\\M&L_{2}\end{smallmatrix}\right)$,
@@ -1904,6 +1783,8 @@ The system has three state coordinates. Eliminating the secondary variables give
  C\Delta i_{1}^{(3)}+L_{1}\dot i_{1}+V_{c}=0.
  \label{eq:clamp-third}
 \end{equation}
+Here the cubic coefficient is $C(L_1L_2-M^2)$, the first-derivative coefficient is $L_1$, and the clamp supplies the affine forcing. Thus the component values determine both the higher-order term and its singular perfect-coupling boundary; the observation can lower the effective order even away from that boundary.
+
 For $i_{1}(0)=I$, $i_{2}(0)=v_{C}(0)=0$, put
 $\omega^2=L_{1}/(C\Delta)$. The exact solution is
 \begin{align}
@@ -1943,6 +1824,7 @@ Spatial field cancellation is a different observation from temporal state order.
 Two coupled LC resonators have four continuous states. A memoryless threshold gap switches their graph without adding a continuous state; a gap-conductance evolution equation adds one. A distributed winding has further field modes, so even an exact finite clamp law does not validate a lumped description of an interruption front. Winding geometry, mutual orientation, arc ignition and restrike, winding capacitance, clamp release, core material and exterior-field ports remain unresolved physical inputs. Zero capacitance, zero switching time and simultaneous perfect coupling must be analyzed separately. Interruption work can depend on their relative limiting rates.
 
 ## A loaded transformer is a three-state physical model
+\label{sec:loaded-transformer}
 
 An explicit finite transformer circuit clarifies the difference between a voltage reference and an attached return. Take $L_{2}=n^2L_{1}$, $M=\sigma\kappa nL_{1}$, $\sigma=\pm1$, $|\kappa|<1$, winding resistances $R_{1},R_{2}$, source resistance $R_{s}$, core conductance $G_{c}$, output capacitance $C_{o}$ and load/probe conductances $G_\ell,G_{p}$. Let $\mu=1$ for a tapped connection and $\mu=0$ for an isolated secondary. The equations are
 \begin{align}
@@ -1970,7 +1852,7 @@ and an independently known initial linkage. Perfect coupling alone does not prod
 Linkage endpoints and copper integrals are evaluated independently. The ideal comparison is $v_2=\sigma n v_1$ in these winding orientations; reversing a winding changes $\sigma$, not the physical conclusion. This volt-second discrepancy is not an energy residual. Physical grounding, probe common-mode paths, winding-to-chassis capacitance, core saturation and remanence, frequency-dependent loss and thermal evolution require more states or ports. Zero source resistance, zero output capacitance, zero turns ratio, an exact output short, tap commutation and prepared nonzero states require separate constraints and finite switching laws. Appendix \ref{sec:compound-limits} derives specific constrained and prepared limits; arbitrary joint limits remain open.
 
 A mechanical gear ratio and a winding ratio may share a kinematic relation without sharing dynamics. Under $V=\alpha\omega$, $i=\tau/\alpha$, rotational inertia maps to capacitance $J/\alpha^2$, not automatically to inductance. In a rotating frame, kinetic energy transforms as
-$E'=E-\Omega H_{z}+\Omega^2 I_{z}/2$ for rotation about a fixed axis. Its derivative includes the frame-rate and angular-momentum terms; a moving frame can change shaft, support and field powers separately. Euler and centrifugal terms must be retained when their assumptions apply. Thus a readout reference or gear count cannot identify a higher-order transformer realization. The finite correspondence below establishes a specified elastic network and physical reference cell. It leaves broader joint-force identification, non-rigid extensions and measured supply correspondence open.
+$E'=E-\Omega H_{z}+\Omega^2 I_{z}/2$ for rotation about a fixed axis. Its derivative includes the frame-rate and angular-momentum terms; a moving frame can change shaft, support and field powers separately. Euler and centrifugal terms must be retained when their assumptions apply. Thus a readout reference or gear count cannot identify a higher-order transformer realization. The finite correspondence in Appendix \ref{sec:compound-states} establishes a specified elastic network and physical reference cell. It leaves broader joint-force identification, non-rigid extensions and measured supply correspondence open.
 
 ### Loading and return paths as measurable work questions
 
@@ -1980,89 +1862,14 @@ Zero commanded source voltage and an opened conductor are different conditions. 
 
 Can independently calibrated winding and probe parameters predict those local works and endpoint states across both finite-return configurations [OP-TRF-07]? Keep parameter identification separate from the final conditions and retain the full joint uncertainty in $L_1,L_2,M$ when evaluating $i^T\mathsf Li/2$. Section \ref{sec:instrument-bounds} supplies channel-level bounds. Agreement within them supports this specified realization; a signed excess outside them remains an open result. Saturation, chassis current, thermal drift and an unmeasured initial flux remain distinct hypotheses requiring their own observations.
 
-## A finite physical reference and its supply
-\label{sec:physical-reference}
+## Finite implementation changes the coefficient problem
+\label{sec:finite-implementation}
 
-Which independently measured supply transfers realize a moving reference in a finite compound electromechanical correspondence [OP-TRF-12]? A coordinate change by itself supplies none. Begin with a physical capacitor cell: a node $V_A$ and driven reference $V_R$ bound a capacitor $C=J/\alpha^2$, where $J$ is an inertia and $\alpha$ converts angular velocity to voltage. Let $w=V_A-V_R$, $V_R=\alpha\Omega$, and install two actual current-source ports,
-\begin{equation}
- I_\tau=\tau/\alpha,\qquad I_r=-C\dot V_R,\qquad
- C\dot w=I_\tau+I_r,\qquad E_C=\frac12Cw^2.
- \label{eq:reference-cell}
-\end{equation}
-The compatible map $V_A=\alpha\omega$ gives $J\dot\omega=\tau$. The separately integrated capacitor powers are $wI_\tau=\tau(\omega-\Omega)$ and $wI_r=-J\dot\Omega(\omega-\Omega)$. These are declared source ports and reproduce the accelerating-frame terms exactly. Omitting $I_r$ defines a different physical cell. With $J=\alpha=1$ in consistent units, $\tau=0$, $\Omega=2t$ and zero initial velocities on $[0,1\ \mathrm s]$, the compensated cell has $w=-2t$, $W_\tau=0$, $W_r=2\ \mathrm J$, and independently $E_0=0$, $E_1=2\ \mathrm J$. The uncompensated floating cell instead has $w=0$ and zero store throughout. Each model has a zero full residual; they are different trajectories and different sources.
+A prescribed reference or ideal controller becomes a different synthesis problem when its physical driver, sensors and supply are retained. The compound receiver in Appendix \ref{sec:compound-states} has eight regular states, or seven with one compatible ideally held node. Replacing ideal tracking by the declared finite sensor, actuator, command, driver and rail laws gives the 28-state system of Appendix \ref{sec:compound-driver}. These counts describe physical states. On a regular linear interval they also bound the scalar elimination degree; the chosen observation, constraints and cancellations determine its effective value. A nonlinear controller requires its declared nonlinear equations rather than a constant-coefficient polynomial inferred from its state count.
 
-A separate finite reference driver obeys $C_d\dot r=j_d=(u-r)/R_d$, with $r=V_R$. Its capacitor and resistor are physical even when the ideal floating receiver draws zero net bias current. For a finite linear ramp on $[0,T]$, prescribe $r=r_-+\Delta r\,t/T$ and $u=r+R_dC_d\Delta r/T$. Enclosing only the driver capacitor gives the independently evaluated account
-\begin{align}
- W_u&=\int_0^Tuj_d\,\dd t
- =C_dr_-\Delta r+\frac12C_d(\Delta r)^2
-       +\frac{R_dC_d^2(\Delta r)^2}{T},\nonumber\\
- W_{R_d}&=-\int_0^TR_dj_d^2\,\dd t
- =-\frac{R_dC_d^2(\Delta r)^2}{T},\nonumber\\
- E_{d,0}&=\frac12C_dr_-^2,\qquad
- E_{d,1}=\frac12C_d(r_-+\Delta r)^2,\qquad
- r_d=E_{d,1}-E_{d,0}-W_u-W_{R_d}=0.
- \label{eq:reference-ramp-work}
-\end{align}
-There is no ideal event within the interval; extending the ramp requires an explicit adjoining drive. The cell's compensation-source work is separate from this driver account, not supplied for free by its bias node.
+The additional component laws and connections supply the extra coefficients and forcing information. Clipping, state-dependent commands and rail cutoff also delimit the intervals on which a constant-coefficient elimination applies. A physical implementation must carry its prepared sensor and supply states into any comparison with the ideal law. For the impact driver this is the corresponding distinction between a prescribed hammer torque and a declared motor, drive and supply realization; the electrical reference construction supplies a separate explicit example.
 
-For $C_d=1\ \mathrm{mF}$, $R_d=100\ \Omega$, $r_-=0$ and $\Delta r=1\ \mathrm V$, a one-second ramp gives $j_d=1\ \mathrm{mA}$, $W_u=3/5000\ \mathrm J$, $W_{R_d}=-1/10000\ \mathrm J$, and $E_{d,1}=1/2000\ \mathrm J$. A half-second ramp gives $j_d=2\ \mathrm{mA}$, $W_u=7/10000\ \mathrm J$ and $W_{R_d}=-1/5000\ \mathrm J$, with unchanged capacitor endpoints. These finite voltage, current and timing choices are set before the work audit. Ordinary voltage and shunt channels directly distinguish duration-dependent works from duration-independent endpoint change. Independently observe the compensation-source outputs and their supplies when adding the receiver; their work is not the driver remainder.
-
-The unit-scale reference-cell example also permits the distinct driver choice $C_d=1/200\ \mathrm F$, $R_d=3/4\ \Omega$, $r=2t$. It gives $j_d=1/100\ \mathrm A$, $W_u=403/40000\ \mathrm J$, $W_{R_d}=-3/40000\ \mathrm J$, and endpoint change $1/100\ \mathrm J$. None of these equals the receiver's $2\ \mathrm J$ compensation work. This separates three boundaries that a formal change of reference can conceal.
-
-### Compound states, controls and physical boundaries
-
-A finite compound network has nodes $A,B,C,P$ and four oriented winding branches $A\to C$, $P\to C$, $B\to C$, $P\to C$. Let $\mathsf B$ be its node--branch incidence matrix, positive at each branch origin, $\mathsf C$ its positive diagonal node-capacitance matrix and $j$ its external node-current vector. For two coupled pairs $X=A,B$, take signed nonzero ratios $h_X$, $L_0,R_0>0$ and $|\kappa|<1$:
-\begin{align}
- \mathsf C\dot v&=j-\mathsf B i,&
- \mathsf L\dot i&=\mathsf B^Tv-\mathsf R i,\nonumber\\
- \mathsf L_X&=L_0
- \begin{pmatrix}h_X^2&\kappa h_X\\\kappa h_X&1\end{pmatrix},&
- \mathsf R_X&=R_0\diag(h_X^2,1).
- \label{eq:compound-state}
-\end{align}
-The pair matrices form block diagonals. Four node voltages and four winding currents give eight independent continuous states when all nodes are dynamic. Holding one node at a compatible ideal reference removes one capacitive coordinate and gives seven; several capacitors sharing a node contribute stores without creating additional independent voltages. Generic scalar order is at most the state dimension and still depends on controllability, observation and initialized cancellations.
-
-With $\omega=v/\alpha$, $z=\mathsf Li/\alpha$, $\mathsf J=\alpha^2\mathsf C$, $\mathsf K=\alpha^2\mathsf L^{-1}$ and $\tau=\alpha j$, the mechanical equations are
-\begin{equation}
- \mathsf J\dot\omega=\tau-\mathsf B\mathsf Kz,\qquad
- \dot z=\mathsf B^T\omega-\frac{\mathsf R}{\alpha^2}\mathsf Kz.
- \label{eq:compound-mechanical}
-\end{equation}
-This is an exact finite inertia--elastic-state correspondence, not a rigid ideal gear. Its store is both $v^T\mathsf Cv/2+i^T\mathsf Li/2$ and $\omega^T\mathsf J\omega/2+z^T\mathsf Kz/2$. Each node power $v_Xj_X=\omega_X\tau_X$ and each winding heat $-R_bi_b^2$ is separately integrated. Direct differentiation proves the full conditional residual zero. Shaft and mesh diagnostics alone omit inertia, elastic and resistive accounts; a support constraint can carry force or torque while doing zero work at its held coordinate.
-
-For example, a carrier source behind $R_s$ and two receiver paths, one to ground and one to the carrier, contribute $ui_s$, $-R_si_s^2$, $-G_gv_F^2$ and $-G_n(v_F-v_C)^2$. Four winding losses, a probe $-G_pv_F^2$ and a reset path $-G_rv_F^2$ complete ten separately integrated powers. Retain distinct preparation, operation, receiver-change, relaxation and reset intervals with independently evaluated endpoint stores. Changing finite conductances with all current paths retained leaves the states continuous and has no ideal impulsive work. Rewiring a charged capacitor or opening an energized winding is a different event.
-
-For a physical common reference $r$, let $w=v-\mathbf1r$ and install four compensation currents $-\mathsf C\mathbf1\dot r$. Then
-\begin{equation}
- \mathsf C\dot w=j-\mathsf B i-\mathsf C\mathbf1\dot r,\qquad
- \mathsf L\dot i=\mathsf B^Tw-\mathsf Ri.
- \label{eq:compound-reference}
-\end{equation}
-Since $\mathsf B^T\mathbf1=0$, this reproduces \eqref{eq:compound-state} for $v=w+\mathbf1r$ from compatible initial data. Each receiver capacitor sees a node-source power $w_Xj_X$ and a compensation power $-C_Xw_X\dot r$. The reference conductor's net ideal bias current is zero by node balance, not by assuming these individual powers vanish. A prescribed $r(t)$ is distinct from a state-dependent command $r=\chi(t)v_S$: the latter needs the actual selected node state and $\dot r=\chi\dot v_S+\dot\chi v_S$. Its exact algebraic tracking relation restricts initialization and is not an additional free state.
-
-Finite-bandwidth sensors, inductive current actuators, the command capacitor, reference-driver capacitor and supply rail replace that constraint by dynamical equations. Appendix \ref{sec:compound-driver} gives a 28-state realization with separately declared receiver, actuator, sensor, driver, converter and rail accounts. Its finite capacitances, current limits and conversion losses need not preserve ideal reference tracking or the ideal scalar order. At supply cutoff its remaining stores do not disappear. A resolved local residual survives even if receiver and supply remainders cancel in a combined account.
-
-The capacitor-cell correspondence and finite ramp integrals are established exact model results. The physically unresolved questions concern actual compensation currents, reference tracking, independent supply work, initial-state preparation, nonideal return paths and signed local residuals. A compound measurement adds independently calibrated node and winding channels to the same volt/current/endpoints approach; it cannot borrow the small cell's uncertainty bound. Finite apparatus limits, nonlinear driver events and general electromechanical correspondence remain open. The exact constrained and prepared limits in Appendix \ref{sec:compound-limits} delimit, rather than erase, these questions.
-
-## Contact applications with additional states
-
-A rigid teeterboard with known actuator forcing can be represented by angle and rate. Adding a bending amplitude adds a second-order mode; adding a finite activation time adds a first-order state. Leg compression, changing lever arms and unilateral contacts then produce a nonlinear hybrid system. A model that imposes the measured endpoint cannot independently validate the launch. Timing, recoil, support force and actuator/leg extension should be predicted on separate conditions. Pivot and stop impulses belong in the momentum ledger even when their ideal work vanishes. Whether fixture coupling, bending or actuator delay explains a discrepancy remains an identification question.
-
-For a club--ball encounter with impact normal $n$ and offset $r$ from the head center of mass, rigid-body mechanics gives
-\begin{equation}
- \frac1{m_{\mathrm{eff}}}=\frac1{m_{h}}
- +(r\times n)^TI_{h}^{-1}(r\times n).
- \label{eq:effective-mass}
-\end{equation}
-In a planar case with offset $d$ and radius of gyration $k_{g}$, this is $m_{h}/(1+d^2/k_{g}^2)$. The normal impulse with restitution $e$ is
-$J=(1+e)v_{\mathrm{rel}}/(1/m_{\mathrm{eff}}+1/m_{b})$ for initially closing contact and a declared fixed normal. A compliant realization resolves its duration and signed powers. Shaft bending in two planes, torsion and longitudinal motion add independent modal states or a distributed impedance. A handle-response exclusion requires comparing contact duration with $\ell/c_{\mathrm{mode}}$ for each relevant wave class. A vibration node, center of percussion and a wave-arrival condition are different mechanisms. Grip wrench, acceleration, jerk and impulse must be referred to colocated channels. Modal convergence, grip compliance, acoustic loss and actual hardware discrimination remain unresolved.
-
-A hammer--nail boundary can accumulate penetration. A depth-memory coordinate such as
-$s_{\max}(t)=\max_{u\leq t}s(u)$ distinguishes advancing and retreating force laws and cannot be replaced by an elastic spring without changing the model. Support impedance can reduce relative deformation without absorbing work at a fixed support. For a rod, the ratio of transfer duration to round-trip wave time, $\kappa_{t}=t_{\mathrm{transfer}}/(2\ell/c)$, distinguishes a slow regime from a first-transient regime requiring distributed or modal dynamics. Rate dependence, friction, plasticity, orientation under matched impact speed and finite support motion require explicit laws. A small striker mass ratio alone does not identify the penetration work or the derivative order.
-
-Reversible, accumulating and terminal internal states are likewise distinct. A fuse, fracture or threshold device changes its connection graph when an internal condition is met. Transmitted, reflected and diverted outputs then depend on the post-event topology. A released store requires separately integrated finite event ports or an independently justified impulsive limit; a partition residual cannot be assigned by subtraction and called a measured destination. Failure-threshold distributions, nonmonotone damage histories and fragment or acoustic partition remain open. A single fixed-order smooth ODE cannot replace an unspecified threshold law.
-
-Across these applications, simultaneous contacts, initially touching edges, chatter, support-port disappearance and terminal thresholds can make event ordering consequential. Four distinct discrepancies should be kept: the equation residual, the port-integration residual, the constitutive/model residual and the independently evaluated endpoint balance residual; impulse and partition identities add their own checks. Exact smooth-interval formulas do not settle convergence or physical meaning at an unresolved event. Accessible measurements differ by apparatus, and no hardware evidence is inferred from a proposed model.
+Appendix \ref{sec:physical-reference} begins that example with a capacitor cell and two finite voltage ramps that have identical capacitor endpoints but distinct source and resistor works. Ordinary voltage and shunt measurements distinguish the ramps, while independently observed compensation currents and supply transfers address the attached receiver. The exact cell, complete compound equations and local open question remain together with the finite implementation that they test.
 
 # Signed physical work and equation-term identities
 \label{sec:work}
@@ -2163,6 +1970,28 @@ The physical mobility in \eqref{eq:collision-poly} is passive because the indepe
 It is negative above $\sqrt{p_{1}/p_{3}}$. A stable denominator can thus be used in a nonpassive port map. Stability, positive-realness and a component realization are distinct assertions.
 
 For a real rational impedance with no poles in $\Rea s>0$, positive-realness requires $\Rea Z(s)\geq0$ there, including the appropriate nonnegative residues at allowed imaginary-axis poles. Nonnegative real part on a finite frequency interval is not a global certificate. A cubic $ds^3+as^2+bs+c$ with positive coefficients is Hurwitz exactly when $ab>dc$. Hence $1+s+s^2+\alpha s^3$ is strictly stable for $0<\alpha<1$, marginal at $\alpha=1$, and unstable for $\alpha>1$; for $\alpha<0$ continuity on the positive real axis already gives a positive real root. At $\alpha=0$ the order changes, so the extra initial derivative is no longer free.
+
+## Signed work and unresolved drift under random drive
+\label{sec:stochastic-work}
+
+The waveform and statistical assumptions are given in Appendix \ref{sec:waveform-statistics}. Here the same declared realization and preparation determine the physical work account after the coefficient law has been chosen.
+
+A changing mean store under a finite-band random drive raises a separate question from Gaussianity or zero-crossing rate: what signed transfer accounts for the change, and does a residual remain after that transfer is independently evaluated? On each finite operation interval $[t_0,t_1]$, retain the physical source effort $e$, its conjugate flow $f$, all loss ports and the prepared initial state. Zero mean effort does not set mean power to zero, since
+\begin{equation}
+ \mathbb E[ef]=\mathbb E[e]\,\mathbb E[f]+\operatorname{Cov}(e,f).
+ \label{eq:stochastic-power}
+\end{equation}
+This follows by expanding $(e-\mathbb E e)(f-\mathbb E f)$. With finite second moments and $\int_{t_0}^{t_1}\mathbb E|e_\ell f_\ell|\,\dd t<\infty$, expectation can pass through each separate integral. For every declared port define $W_\ell=\int_{t_0}^{t_1}e_\ell f_\ell\,\dd t$ before forming
+\begin{equation}
+ \mathbb E[r_E]=\mathbb E[E(t_1)]-\mathbb E[E(t_0)]
+                      -\sum_\ell\mathbb E[W_\ell].
+ \label{eq:stochastic-residual}
+\end{equation}
+The stores are evaluated from the states and the identified physical metric, not from the expected powers. For the normalized realization \eqref{eq:nonnormal}, the explicit products are $u(b^Tz)$ and $-(p_jz_j)z_j$, with $E=z^Tz/2$. Duhamel's formula supplies the state path and retains any correlation between preparation and drive. A random input to a merely fitted terminal law supplies no internal store until a realization is specified.
+
+The unresolved operation question is whether a persistent positive or negative residual survives the joint uncertainty of source work, losses and endpoint states. A source-off relaxation interval is audited separately with its actual remaining ports; its initial state is the operation endpoint. Agreement of a relaxation identity or an operation endpoint check does not bound uncertainty in each operation port integral. Shared paths, finite-window leakage, unresolved high-frequency modes and correlated gain or timing errors require their own bounds. A constant bias in one power channel can accumulate with interval duration; extending the interval without resolving that bias does not establish a physical drift.
+
+For a finite damped realization and a specified forcing covariance, exact state and work integrals give conditional predictions. Their zero numerical integration residual does not resolve an independently unbounded finite-precision or physical observation. Section \ref{sec:residual-outcomes} gives the signed outcome criterion. Non-Gaussian drives, longer tails, nonlinear or time-varying plants and a physical implementation of the metric remain open beyond these conditions.
 
 # Signed residual outcomes and measurement uncertainty
 \label{sec:limits}
@@ -2407,7 +2236,165 @@ For the illustrative $C_{1}=C_{2}=1\ \mathrm F$, $d^-=2\ \mathrm V$, the total l
 
 After the event, a fixed conductance $G_{0}=C_{e}/\tau$ leaves $d'=-d/\tau$ and constant $Q$. Each capacitor voltage therefore satisfies $v_{j}''+v_{j}'/\tau=0$. Before connection the isolated voltage satisfies $v_{j}'=0$. The derivative order changes because the accessible difference mode changes. Jets must be reconstructed from the post-event state, and a discarded difference store must not be concealed in an arbitrary derivative reset.
 
-# Invariant sections and exact bounds on observed magnitude
+# Field and history data for finite coefficient models
+\label{sec:field-history-details}
+
+The finite constructions in Sections \ref{sec:histories} and \ref{sec:distributed} require preparation information beyond their coefficients. The following controls retain the exact history counterexamples and the physical field and termination accounts used to delimit those constructions.
+
+## Finite moments do not determine delayed observations
+\label{sec:history-examples}
+
+A finite chain is not a complete delay history. To see this exactly, add to any history a perturbation equal to $1,-4,6,-4,1$ on the five consecutive intervals
+$[-1+j/8,-1+(j+1)/8)$, $j=0,\ldots,4$, and zero elsewhere. Its first four moments against $(-t)^j/j!$, $0\leq j\leq3$, vanish: the integral over each bin is a polynomial of degree at most $j$ in the bin index, and the five weights take its fourth finite difference. It also vanishes near the present, so every present derivative agrees for smooth base histories. Nevertheless its delayed value at lag $11/16$ differs by $6$. A second perturbation equal to $2$ on $[-2,-3/2)$ changes no history integral based at $-1$, but changes the delayed value at lag $7/4$ by $2$. Both controls work with a constant or a sinusoidal base history. Neither any finite present jet nor these four moments uniquely represents arbitrary delay history.
+
+## Scattering, spatial diagnostics and field work
+\label{sec:line-accounts}
+
+Use the line, propagation constant and finite ladder defined in Section \ref{sec:distributed}. The physical spatial and boundary observations are as follows.
+
+The load reflection coefficient is
+$\Gamma_{L}=(Z_{L}-Z_{c})/(Z_{L}+Z_{c})$.
+Forward and reflected waves define local reflection magnitude and phase. For a lossless line the standing-wave ratio is $(1+|\Gamma|)/(1-|\Gamma|)$; in a lossy line a local ratio does not generally equal the global envelope ratio along an arbitrary length. Group delay is $-\dd\arg H(\ii\omega)/\dd\omega$ where the phase derivative exists; transfer zeros require separate treatment.
+
+For the finite ladder, the stores and physical spatial diagnostics are
+\begin{equation}
+ E_{N}=\frac12\sum_{j}L'\Delta x\,i_{j}^2+\frac12\sum_{j}C_{j}v_{j}^2,
+ \quad \Lambda_{\mathrm{abs}}=\sum_{j}L'\Delta x\,|i_{j}|,
+ \quad Q_{\mathrm{abs}}=\sum_{j}C_{j}|v_{j}|.
+ \label{eq:line-stores}
+\end{equation}
+Raw sums without spatial weights change just because the subdivision changes. Linkage and charge sums have different units and are not added.
+
+For the continuum boundary, $E=\int_{0}^\ell(L'i^2+C'v^2)\dd x/2$. Multiplying the time-domain telegrapher equations by the conjugate fields and integrating by parts gives
+\begin{equation}
+ \dot E=v(0)i(0)-v(\ell)i(\ell)
+       -\int_{0}^\ell(R'i^2+G'v^2)\,\dd x.
+ \label{eq:line-power}
+\end{equation}
+For a Thevenin source and resistive load these are the separately integrated powers $V_{s}i_{s}$, $-R_{s}i_{s}^2$, $-G_{L}v(\ell)^2$ and the two distributed loss integrals. The finite ladder gives the same identity by telescoping internal port products. Endpoint electric and magnetic fields or node states are independently evaluated. A post-pulse reflection tail need not have vanished at a chosen finite time. Deleting it by an ideal reset requires outward event work equal to its actual store and does not describe a constructed hardware reset.
+
+A degree-six Taylor matrix or a $[3/3]$ Padé matrix is a finite candidate with its own exact residual against the matrix exponential. Neither the order nor a small low-frequency discrepancy certifies a near-open high-frequency corner. An alternating zero-weighted-mean capacitance change preserves total capacitance but alters the medium; it cannot be called mere refinement of a fixed uniform line. A continuum comparison needs either a fixed material profile with refinement or a proved homogenization limit. Ideal open and short terminations are separate boundary conditions. Long reflection tails, dispersive loss, discontinuous edges, exterior fields, radiation and measured terminations remain unresolved physical limits. A separately normalized line model does not automatically audit the field and termination realization of a dimensional RF device.
+
+# Finite waveform and random-drive observations
+\label{sec:waveform-statistics}
+
+These results support the finite-window and correlated-uncertainty requirements of Section \ref{sec:identification}. The physical metric and normalized two-mode realization remain those of \eqref{eq:nonnormal}; changing waveform class supplies additional observation assumptions, rather than new coefficients by itself.
+
+The exact forced response is Duhamel's formula \eqref{eq:preparation}. It applies to a commensurate multitone, a Gaussian packet, a carrier under a separately declared modulation envelope, a band-limited Gaussian random input, or any specified integrable waveform. These are distinct classes. A finite-window Fourier estimate retains the homogeneous term and the window convolution; zero-padding a missing past is an additional initial-history assumption. Increasing a model's order or a window length is not itself a proof of phase, peak or tail accuracy.
+
+A linear system with jointly Gaussian forcing and Gaussian initial state has a Gaussian ensemble, but adjacent observations on one finite path are correlated. A fitted normality statistic based on independent observations does not have its nominal interpretation. For a stationary differentiable zero-mean Gaussian output, the exact total zero-crossing rate of [Rice (1945)][rice] is
+\begin{equation}
+ \nu_{0}=\frac1\pi\sqrt{\frac{\mathbb E\dot y^2}{\mathbb E y^2}}.
+ \label{eq:rice}
+\end{equation}
+It follows by integrating $|\dot y|$ against the joint Gaussian density at $y=0$, using stationarity to obtain zero covariance of $y$ and $\dot y$. Nondifferentiable forcing/output, nonstationarity, fitted means and finite-mode tails require different assumptions. Unresolved finite-path departures, correlation, non-Gaussian drives and uncertainty in the physical metric cannot be replaced by asserted ensemble conclusions.
+
+The separate signed-work question for these same prepared and driven paths is developed in Section \ref{sec:stochastic-work}. The observation conditions here do not replace its source, loss and endpoint measurements.
+
+# Network observations, crossings and magnitude bounds
+\label{sec:network-diagnostics}
+
+The constructions in Section \ref{sec:networks} determine scalar operators from physical states and connections. This appendix establishes complementary observation and preparation results: a large magnitude excursion, a crossing fraction or a geometric envelope does not by itself identify the coefficients or internal realization. Each result retains its specified system and measurement.
+
+## Exact pair excursions and a three-body control
+\label{sec:network-pair}
+
+The three-state equations and common coordinate are defined in \eqref{eq:three-state}--\eqref{eq:pair-geometry}. Their prepared excursions give the following exact controls.
+
+For two masses $1$ and $19\ \mathrm{kg}$, initial velocities $10$ and $0\ \mathrm{m\,s^{-1}}$, and contact stiffness $19/20\ \mathrm{N\,m^{-1}}$, the exact compliant interval is $0\leq t\leq\pi\ \mathrm s$:
+\begin{equation}
+ p_{1}=\frac12+\frac{19}2\cos t,\qquad
+ p_{2}=\frac{19}2(1-\cos t),\qquad
+ \delta=10\sin t.
+ \label{eq:canonical-pair}
+\end{equation}
+The contact force is $(19/2)\sin t$ in newtons. The signed momentum stays $10$, while the endpoint magnitude sum is $28$, a ratio $14/5$. Its first sign crossing is $t=\arccos(-1/19)$. Direct integration of $-k\delta\dot x_{1}$ and $k\delta\dot x_{2}$ gives works $-19/2$ and $19/2\ \mathrm J$; the spring starts and ends unstrained, and both endpoint total stores are $50\ \mathrm J$. In the center-of-mass frame the magnitude sum is $19$ at both endpoints. The change of observer modifies kinetic stores and individual works, not the physical contact law.
+
+For an uncoupled inductive pair with ratio $r=L_{2}/L_{1}$, the corresponding zero-mediator endpoint ratio is $(3r-1)/(r+1)$ for $r>1$, and one for $r\leq1$. The ceiling three belongs to that particular pair and preparation. It is not a general multi-state limit. An exact three-body counterexample consists of two separated compliant elastic encounters: masses $1,19,361$, initially velocities $(10,0,0)$, first let masses $1,19$ exchange, then $19,361$. At the end the velocities are $(-9,-9/10,1/10)$, with momenta $(-9,-171/10,361/10)$. The magnitude ratio is $311/50>3$. Each encounter is realized by the sinusoidal relative solution with its own positive stiffness and reduced mass, and the gaps are chosen so they do not overlap. This establishes a wider counterexample, while maxima for a specified continuously connected chain still require its own exact trajectory and extremum analysis.
+
+## Coupled pickups and hidden common preparation
+\label{sec:pickup-observation}
+
+For opposed primary windings a differential pickup can sense
+$\lambda_{3}=\kappa_{d}(\lambda_{2}-\lambda_{1})$. In the canonical excursion from $(10,0)$ to $(-9,19)$, its open-circuit volt-second integral is $38\kappa_{d}$. Its work is zero when its current is zero. Loading the pickup changes the full inductance matrix and back-reacts on the primary trajectory. If $K_{d}^2=\kappa_{d}^2(L_{1}+L_{2})/L_{3}$, positive semidefiniteness requires $0\leq K_{d}\leq1$; the endpoint is a descriptor boundary, not an ordinary invertible inductance matrix.
+
+A receiver winding adds a state; a receiver capacitor adds another. A figure-eight pickup followed by one rectifier and two separately rectified pickups feeding one bus have different state and connection graphs. For the declared smooth bridge law $v_{b}=V_{b}\tanh(i/i_\varepsilon)$, receiving bus power is $V_{b}i\tanh(i/i_\varepsilon)\geq0$. Copper and bus powers are integrated separately. This positivity does not decide which architecture has higher peak bus power at a specified voltage or which preserves a specified flux excursion. A receiver's natural frequency, load phase and damping change the extrema and their ordering; a peak at the end of an observation interval is not an interior extremum.
+
+For the canonical pair, let the initial currents be $(10+u,u)$ with $L_{1}=1,L_{2}=19$. The common linkage is $10+20u$ while the differential terminal evolution can remain unchanged in an ideal differential coupling. Unloaded endpoint linkages are $(-9+u,19+19u)$. Individual winding works become
+$W_{1}=-19/2-19u$, $W_{2}=19/2+19u$, by integrating their own powers along the shifted solution. The initial magnetic store is $50+10u+10u^2$, evaluated from the prepared state. For $u=-1/2$ the common sum is zero and the magnitude sum is unchanged, even though a differential receiver can see the same trajectory. This changes physical preparation; it is not merely a relabeling of the observer. Preparing and resetting the common current requires actual sources and finite paths.
+
+Normalize the differential extremum by $\mathcal R=(d_{\max}+10)/38$ for the initial canonical state $c=10,d_{0}=-10$. Entry into positive counterflow is exactly $\mathcal R>10/19$, not $\mathcal R>1/2$. With another initial state this threshold must be recomputed. Load-phase and state interactions, disappearing extrema, tangent roots, folds, extreme inductance ratios and exact open/short or perfect-coupling boundaries remain unresolved beyond this algebraic criterion. Work does not select any of those operating conditions.
+
+## Exact coupled-winding crossing boundaries
+\label{sec:crossing-diagnostics}
+
+For the connected lossless pair, let $\mathsf L=\left(\begin{smallmatrix}L_1&M\\M&L_2\end{smallmatrix}\right)$, $M=\sigma\kappa\sqrt{L_1L_2}$, $\sigma=\pm1$, $0\leq\kappa<1$, and initial current $(I,0)$ with $I>0$. The connection vector is $(1,-1)^T$, so $c=\lambda_1+\lambda_2=I(L_1+M)$. At the zero-mediator equilibrium,
+\begin{equation}
+ \lambda_{\mathrm{eq}}=
+ \frac{I(L_1+M)}{L_1+L_2+2M}
+ \binom{L_1+M}{L_2+M},\qquad
+ \lambda(\theta)=\lambda_{\mathrm{eq}}
+             +[\lambda(0)-\lambda_{\mathrm{eq}}]\cos\theta.
+ \label{eq:coupled-halfcycle}
+\end{equation}
+Here $\theta$ is the exact normalized oscillation phase on $[0,\pi]$. The absolute sum is convex in $\cos\theta$, so its maximum lies at an endpoint. For $r=L_2/L_1>1$, the applicable growth boundaries are
+\begin{equation}
+ \kappa_+(r)=\frac{\sqrt{2r-1}-1}{2\sqrt r},\qquad
+ \kappa_-(r)=\frac1{\sqrt r}.
+ \label{eq:crossing-boundaries}
+\end{equation}
+Growth occurs below the respective boundary and no growth above it in this stated connected model. To derive the positive-orientation result, set the endpoint candidate $-\lambda_1(\pi)+\lambda_2(\pi)$ equal to $I(L_1+M)$; the condition reduces to
+$2M^2+2L_1M-L_1(L_2-L_1)=0$.
+For negative orientation the same comparison with $I(L_1-M)$ reduces to $L_1+M=0$. Checking the endpoint signs supplies the stated $r>1$ branches. At the threshold equality holds exactly. At $\kappa=1$ the invertible-state derivation ceases to apply.
+
+A first zero of a component satisfies a scalar cosine equation from \eqref{eq:coupled-halfcycle}; its exact existence condition is that the resulting cosine lies in $[-1,1]$. Tangencies and zero modal amplitudes need their own event classification. This distinguishes an analytic enclosure of a root from a finite observation bracket or a dense-interpolation estimate. Loaded receivers and other initial states need new guards; a no-growth maximum can have an initial-time plateau, so differentiating that maximum is not a regular surface continuation.
+
+An entry fraction also needs a measure. For a rectangle $r\in[r_a,r_b]$, $\kappa\in[0,K]$, the uniform-product fraction is exactly
+\begin{equation}
+ \frac1{(r_b-r_a)K}\int_{r_a}^{r_b}\min\{K,\kappa_\sigma(r)\}\,\dd r.
+\label{eq:entry-measure}
+\end{equation}
+while a uniform logarithmic-ratio measure replaces $\dd r/(r_b-r_a)$ by $\dd r/[r\log(r_b/r_a)]$. An illustrative prior can instead use a truncated lognormal ratio with logarithmic center $\log4$ and width $3/4$, independently of a beta density $6u(1-u)$ for $u=\kappa/K$. A finite equal-weight set defines yet another, discrete measure. None is a measure-free probability of counterflow. Joint parameter enclosures, untraced folds, more general preparations and actual prior calibration remain open.
+
+## Observation maps and reachable bounds
+\label{sec:observation-bounds}
+
+Magnitude bounds are useful diagnostics once the physical state and metric are known. If $E=x^THx/2$, $H>0$, and $y=Cx$ with full observation rank, constrained minimization gives
+\begin{equation}
+ E_{\min}(y)=\frac12y^TQy,\qquad
+ Q=(CH^{-1}C^T)^{-1},\qquad
+ \|y\|_1\leq\sqrt{2E\max_{\sigma_{j}=\pm1}\sigma^TCH^{-1}C^T\sigma}.
+ \label{eq:ellipsoid}
+\end{equation}
+The proof completes the square in $x$ under $Cx=y$, then uses $\|y\|_1=\max_\sigma\sigma^Ty$. This is a current-state envelope using independently evaluated $E(t)$, not an assumption that initial energy stays constant. Additional invariants restrict the ellipsoid further, as derived in Appendix \ref{sec:bounds}. A Euclidean $\sqrt N$ scaling is an isotropic reference only, not a universal network ceiling.
+
+![Schematic observation geometry. The illustrative ellipse $y_{1}^2/4+y_{2}^2\leq1$ is restricted by $y_{1}+y_{2}=1$. Its center and endpoints follow from Appendix \ref{sec:bounds}. Magnitude extrema depend on the metric, observation and invariant.](figures/observation-geometry.pdf){#fig:geometry width=82%}
+
+\FloatBarrier
+
+For a fixed linear system and componentwise source limits $|u_{j}(t)|\leq U_{j}$, a direction $a$ has exact reachable support
+\begin{equation}
+ \sup a^Tx(T)=a^Te^{FT}x_{0}+
+       \sum_{j} U_{j}\int_{0}^T|a^Te^{F(T-t)}b_{j}|\,\dd t.
+ \label{eq:reach-support}
+\end{equation}
+Choose the input signs to attain each integrand; constrained bandwidth or slew requires a smaller reachable set. Matrix logarithmic norms also give trajectory bounds in a declared metric. These bounds certify reachable observations and sensitivity, not an energy-based design rule.
+
+The weighted one-norm has the exact logarithmic norm
+\begin{equation}
+ \mu_{1,W}(F)=\max_j\left[F_{jj}+\sum_{i\ne j}\frac{W_i}{W_j}|F_{ij}|\right],
+ \qquad \|x(t)\|_{1,W}\leq e^{\mu_{1,W}t}\|x(0)\|_{1,W},
+ \label{eq:lognorm}
+\end{equation}
+for constant $F$ and positive weights. A nonpositive value certifies contraction in that norm; a positive value still supplies a finite bound. The observation map must be included before comparing it with $\|y\|_1$. Total variation of each observed coordinate, the time fraction in counterflow, and $\|y\|_1-|\sum y_j|$ describe different trajectory features. Absolute port throughput $\sum_\ell\int|P_\ell|\dd t$ is a separate audit diagnostic after the signed works are retained.
+
+A physical ideal transformer can also change a magnitude diagnostic. With secondary-to-primary voltage ratio $\nu$, $\lambda_s=\nu\lambda_p$, $i_s=i_p/\nu$, and $L_s=\nu^2L_p$. In the canonical pair the conserved functional is $\lambda_1+\lambda_{2,s}/\nu$, while the raw secondary-coordinate peak is $\max(10,9+19\nu)$. The two transformer port products cancel and it stores no energy. An ideal gyrator has $v_a=R_gi_b$, $v_b=-R_gi_a$, so its two inward powers likewise sum to zero. The mapping $q=-\lambda/R_g$, $C=L/R_g^2$ preserves the corresponding component energy and gives canonical charge peak $28/R_g$. It changes units and components; it does not supply a new invariant absolute sum. Integrate both two-port powers on the same interval before using their cancellation.
+
+Orthogonal common/differential or polyphase transformations preserve the corresponding quadratic form but not a componentwise absolute sum. Physical branch states must be reconstructed before interpreting stress. Hidden zero-sequence motion requires neutral or internal sensors; adding parasitic RL or RLC branches adds physical states, while a capacitor alone does not define a resonance. A reduced passive terminal model need not preserve any internal magnitude sum. Phase imbalance, noncommensurate harmonics, nonlinear or asymmetric parasitics and sensor placement require separate identification.
+
+An ordered sequence of component signs, with zeros retained as boundary events, is invariant under positive diagonal scaling. It is generally changed by modal mixing or affine observer shifts and reverses under time reversal. Winding counts of an open observation path are not general invariants. A closed-path topological statement requires a specified excluded point, orientation, physical frame and homotopy class. These qualifications matter when a proposed higher-order signature is based on sign crossings rather than on the operator itself.
+
+## Invariant sections and exact bounds on observed magnitude
 \label{sec:bounds}
 
 For \eqref{eq:ellipsoid}, impose independent linear invariants $A^Ty=b$, as illustrated in Figure \ref{fig:geometry}. Set
@@ -2533,6 +2520,75 @@ The exact derivation establishes the model's internal consistency without a nume
 # Finite reference controllers and nested port accounts
 \label{sec:compound-driver}
 
+The main-text synthesis consequence is stated in Section \ref{sec:finite-implementation}: physical reference generation and control add states, forcing laws and preparation requirements. This appendix carries the reference-cell measurements through the complete compound implementation and its separate supply accounts.
+
+## A finite physical reference and its supply
+\label{sec:physical-reference}
+
+Which independently measured supply transfers realize a moving reference in a finite compound electromechanical correspondence [OP-TRF-12]? A coordinate change by itself supplies none. Begin with a physical capacitor cell: a node $V_A$ and driven reference $V_R$ bound a capacitor $C=J/\alpha^2$, where $J$ is an inertia and $\alpha$ converts angular velocity to voltage. Let $w=V_A-V_R$, $V_R=\alpha\Omega$, and install two actual current-source ports,
+\begin{equation}
+ I_\tau=\tau/\alpha,\qquad I_r=-C\dot V_R,\qquad
+ C\dot w=I_\tau+I_r,\qquad E_C=\frac12Cw^2.
+ \label{eq:reference-cell}
+\end{equation}
+The compatible map $V_A=\alpha\omega$ gives $J\dot\omega=\tau$. The separately integrated capacitor powers are $wI_\tau=\tau(\omega-\Omega)$ and $wI_r=-J\dot\Omega(\omega-\Omega)$. These are declared source ports and reproduce the accelerating-frame terms exactly. Omitting $I_r$ defines a different physical cell. With $J=\alpha=1$ in consistent units, $\tau=0$, $\Omega=2t$ and zero initial velocities on $[0,1\ \mathrm s]$, the compensated cell has $w=-2t$, $W_\tau=0$, $W_r=2\ \mathrm J$, and independently $E_0=0$, $E_1=2\ \mathrm J$. The uncompensated floating cell instead has $w=0$ and zero store throughout. Each model has a zero full residual; they are different trajectories and different sources.
+
+A separate finite reference driver obeys $C_d\dot r=j_d=(u-r)/R_d$, with $r=V_R$. Its capacitor and resistor are physical even when the ideal floating receiver draws zero net bias current. For a finite linear ramp on $[0,T]$, prescribe $r=r_-+\Delta r\,t/T$ and $u=r+R_dC_d\Delta r/T$. Enclosing only the driver capacitor gives the independently evaluated account
+\begin{align}
+ W_u&=\int_0^Tuj_d\,\dd t
+ =C_dr_-\Delta r+\frac12C_d(\Delta r)^2
+       +\frac{R_dC_d^2(\Delta r)^2}{T},\nonumber\\
+ W_{R_d}&=-\int_0^TR_dj_d^2\,\dd t
+ =-\frac{R_dC_d^2(\Delta r)^2}{T},\nonumber\\
+ E_{d,0}&=\frac12C_dr_-^2,\qquad
+ E_{d,1}=\frac12C_d(r_-+\Delta r)^2,\qquad
+ r_d=E_{d,1}-E_{d,0}-W_u-W_{R_d}=0.
+ \label{eq:reference-ramp-work}
+\end{align}
+There is no ideal event within the interval; extending the ramp requires an explicit adjoining drive. The cell's compensation-source work is separate from this driver account, not supplied for free by its bias node.
+
+For $C_d=1\ \mathrm{mF}$, $R_d=100\ \Omega$, $r_-=0$ and $\Delta r=1\ \mathrm V$, a one-second ramp gives $j_d=1\ \mathrm{mA}$, $W_u=3/5000\ \mathrm J$, $W_{R_d}=-1/10000\ \mathrm J$, and $E_{d,1}=1/2000\ \mathrm J$. A half-second ramp gives $j_d=2\ \mathrm{mA}$, $W_u=7/10000\ \mathrm J$ and $W_{R_d}=-1/5000\ \mathrm J$, with unchanged capacitor endpoints. These finite voltage, current and timing choices are set before the work audit. Ordinary voltage and shunt channels directly distinguish duration-dependent works from duration-independent endpoint change. Independently observe the compensation-source outputs and their supplies when adding the receiver; their work is not the driver remainder.
+
+The unit-scale reference-cell example also permits the distinct driver choice $C_d=1/200\ \mathrm F$, $R_d=3/4\ \Omega$, $r=2t$. It gives $j_d=1/100\ \mathrm A$, $W_u=403/40000\ \mathrm J$, $W_{R_d}=-3/40000\ \mathrm J$, and endpoint change $1/100\ \mathrm J$. None of these equals the receiver's $2\ \mathrm J$ compensation work. This separates three boundaries that a formal change of reference can conceal.
+
+## Compound states, controls and physical boundaries
+\label{sec:compound-states}
+
+A finite compound network has nodes $A,B,C,P$ and four oriented winding branches $A\to C$, $P\to C$, $B\to C$, $P\to C$. Let $\mathsf B$ be its node--branch incidence matrix, positive at each branch origin, $\mathsf C$ its positive diagonal node-capacitance matrix and $j$ its external node-current vector. For two coupled pairs $X=A,B$, take signed nonzero ratios $h_X$, $L_0,R_0>0$ and $|\kappa|<1$:
+\begin{align}
+ \mathsf C\dot v&=j-\mathsf B i,&
+ \mathsf L\dot i&=\mathsf B^Tv-\mathsf R i,\nonumber\\
+ \mathsf L_X&=L_0
+ \begin{pmatrix}h_X^2&\kappa h_X\\\kappa h_X&1\end{pmatrix},&
+ \mathsf R_X&=R_0\diag(h_X^2,1).
+ \label{eq:compound-state}
+\end{align}
+The pair matrices form block diagonals. Four node voltages and four winding currents give eight independent continuous states when all nodes are dynamic. Holding one node at a compatible ideal reference removes one capacitive coordinate and gives seven; several capacitors sharing a node contribute stores without creating additional independent voltages. Generic scalar order is at most the state dimension and still depends on controllability, observation and initialized cancellations.
+
+With $\omega=v/\alpha$, $z=\mathsf Li/\alpha$, $\mathsf J=\alpha^2\mathsf C$, $\mathsf K=\alpha^2\mathsf L^{-1}$ and $\tau=\alpha j$, the mechanical equations are
+\begin{equation}
+ \mathsf J\dot\omega=\tau-\mathsf B\mathsf Kz,\qquad
+ \dot z=\mathsf B^T\omega-\frac{\mathsf R}{\alpha^2}\mathsf Kz.
+ \label{eq:compound-mechanical}
+\end{equation}
+This is an exact finite inertia--elastic-state correspondence, not a rigid ideal gear. Its store is both $v^T\mathsf Cv/2+i^T\mathsf Li/2$ and $\omega^T\mathsf J\omega/2+z^T\mathsf Kz/2$. Each node power $v_Xj_X=\omega_X\tau_X$ and each winding heat $-R_bi_b^2$ is separately integrated. Direct differentiation proves the full conditional residual zero. Shaft and mesh diagnostics alone omit inertia, elastic and resistive accounts; a support constraint can carry force or torque while doing zero work at its held coordinate.
+
+For example, a carrier source behind $R_s$ and two receiver paths, one to ground and one to the carrier, contribute $ui_s$, $-R_si_s^2$, $-G_gv_F^2$ and $-G_n(v_F-v_C)^2$. Four winding losses, a probe $-G_pv_F^2$ and a reset path $-G_rv_F^2$ complete ten separately integrated powers. Retain distinct preparation, operation, receiver-change, relaxation and reset intervals with independently evaluated endpoint stores. Changing finite conductances with all current paths retained leaves the states continuous and has no ideal impulsive work. Rewiring a charged capacitor or opening an energized winding is a different event.
+
+For a physical common reference $r$, let $w=v-\mathbf1r$ and install four compensation currents $-\mathsf C\mathbf1\dot r$. Then
+\begin{equation}
+ \mathsf C\dot w=j-\mathsf B i-\mathsf C\mathbf1\dot r,\qquad
+ \mathsf L\dot i=\mathsf B^Tw-\mathsf Ri.
+ \label{eq:compound-reference}
+\end{equation}
+Since $\mathsf B^T\mathbf1=0$, this reproduces \eqref{eq:compound-state} for $v=w+\mathbf1r$ from compatible initial data. Each receiver capacitor sees a node-source power $w_Xj_X$ and a compensation power $-C_Xw_X\dot r$. The reference conductor's net ideal bias current is zero by node balance, not by assuming these individual powers vanish. A prescribed $r(t)$ is distinct from a state-dependent command $r=\chi(t)v_S$: the latter needs the actual selected node state and $\dot r=\chi\dot v_S+\dot\chi v_S$. Its exact algebraic tracking relation restricts initialization and is not an additional free state.
+
+Finite-bandwidth sensors, inductive current actuators, the command capacitor, reference-driver capacitor and supply rail replace that constraint by dynamical equations. The finite controller in Section \ref{sec:finite-controller} gives a 28-state realization with separately declared receiver, actuator, sensor, driver, converter and rail accounts. Its finite capacitances, current limits and conversion losses need not preserve ideal reference tracking or the ideal scalar order. At supply cutoff its remaining stores do not disappear. A resolved local residual survives even if receiver and supply remainders cancel in a combined account.
+
+The capacitor-cell correspondence and finite ramp integrals are established exact model results. The physically unresolved questions concern actual compensation currents, reference tracking, independent supply work, initial-state preparation, nonideal return paths and signed local residuals. A compound measurement adds independently calibrated node and winding channels to the same volt/current/endpoints approach; it cannot borrow the small cell's uncertainty bound. Finite apparatus limits, nonlinear driver events and general electromechanical correspondence remain open. The exact constrained and prepared limits in Appendix \ref{sec:compound-limits} delimit, rather than erase, these questions.
+
+## Ideal reference controller and rail
+
 The receiver \eqref{eq:compound-state} and reference cell \eqref{eq:compound-reference} specify different levels of implementation. An ideal state-dependent controller imposes $r=\chi v_S$ with compatible initial data, and four ideal node-current sources plus four compensation sources drive the receiver. A ninth ideal bidirectional converter supplies the reference driver's command voltage $u=r+R_dC_d\dot r$. If $P_k$ is the separately declared output power of converter $k$, a finite rail with capacitance $C_s$ and controller conductance $G_q$ obeys
 \begin{equation}
  C_sV_s\dot V_s=-\sum_{k=1}^{9}P_k-G_qV_s^2,\qquad
@@ -2542,6 +2598,7 @@ The receiver \eqref{eq:compound-state} and reference cell \eqref{eq:compound-ref
 For the receiver outputs, $P_k=w_Xj_X$ or $-C_Xw_X\dot r$; the driver output is $uj_d$. Input and output work agree only for these explicitly lossless converter laws. Tracking is an imposed constitutive relation, not a consequence of the rail balance. Controller heat and each converter transfer are integrated separately; the rail endpoint is evaluated from $V_s$. Source and controller ratings constrain the admissible trajectory before its energy audit.
 
 ## Finite sensing, actuation and conversion
+\label{sec:finite-controller}
 
 A finite implementation instead has four receiver voltages $w_X$, four winding currents, nine RC sensor voltages $z_a$, eight actuator currents $j_b$, command voltage $u$, reference voltage $r$ and rail voltage $V_s$: 28 independent regular coordinates before any additional ideal constraints. The nine sensed quantities are four absolute node voltages $w_X+r$, four winding currents and driver current. Current channels require a calibrated conversion factor $\beta$ with units $\mathrm{V\,A^{-1}}$; for example $\beta=1/10\ \mathrm{V\,A^{-1}}$ is an illustrative assumption, not a dimensionless current-to-voltage identity. With rail-limited sensor targets $\xi_a$,
 \begin{equation}
@@ -2765,6 +2822,27 @@ Each node's source power is a fixed linear combination of $a\dot a$ and $aA$; it
 
 Linear drive-sign reversal with reversed compatible initial data changes states' signs but leaves quadratic powers unchanged. It supplies an exact symmetry, not an independent physical trial. Analytic event enclosures certify only the specified linear laws, coefficients and intervals. The finite-rail clipped controller is nonlinear and piecewise smooth; its saturation branches, fast same-sign transfers, cutoff and all possible tangencies require separate enclosures. Finite pointwise agreement and empirical accuracy estimates cannot establish global root completeness or hardware accuracy. The exact constructions resolve the stated bounded mathematical questions while retaining those broader open ones.
 
+# Contact applications with additional states
+\label{sec:contact-extensions}
+
+A rigid teeterboard with known actuator forcing can be represented by angle and rate. Adding a bending amplitude adds a second-order mode; adding a finite activation time adds a first-order state. Leg compression, changing lever arms and unilateral contacts then produce a nonlinear hybrid system. A model that imposes the measured endpoint cannot independently validate the launch. Timing, recoil, support force and actuator/leg extension should be predicted on separate conditions. Pivot and stop impulses belong in the momentum ledger even when their ideal work vanishes. Whether fixture coupling, bending or actuator delay explains a discrepancy remains an identification question.
+
+For a club--ball encounter with impact normal $n$ and offset $r$ from the head center of mass, rigid-body mechanics gives
+\begin{equation}
+ \frac1{m_{\mathrm{eff}}}=\frac1{m_{h}}
+ +(r\times n)^TI_{h}^{-1}(r\times n).
+ \label{eq:effective-mass}
+\end{equation}
+In a planar case with offset $d$ and radius of gyration $k_{g}$, this is $m_{h}/(1+d^2/k_{g}^2)$. The normal impulse with restitution $e$ is
+$J=(1+e)v_{\mathrm{rel}}/(1/m_{\mathrm{eff}}+1/m_{b})$ for initially closing contact and a declared fixed normal. A compliant realization resolves its duration and signed powers. Shaft bending in two planes, torsion and longitudinal motion add independent modal states or a distributed impedance. A handle-response exclusion requires comparing contact duration with $\ell/c_{\mathrm{mode}}$ for each relevant wave class. A vibration node, center of percussion and a wave-arrival condition are different mechanisms. Grip wrench, acceleration, jerk and impulse must be referred to colocated channels. Modal convergence, grip compliance, acoustic loss and actual hardware discrimination remain unresolved.
+
+A hammer--nail boundary can accumulate penetration. A depth-memory coordinate such as
+$s_{\max}(t)=\max_{u\leq t}s(u)$ distinguishes advancing and retreating force laws and cannot be replaced by an elastic spring without changing the model. Support impedance can reduce relative deformation without absorbing work at a fixed support. For a rod, the ratio of transfer duration to round-trip wave time, $\kappa_{t}=t_{\mathrm{transfer}}/(2\ell/c)$, distinguishes a slow regime from a first-transient regime requiring distributed or modal dynamics. Rate dependence, friction, plasticity, orientation under matched impact speed and finite support motion require explicit laws. A small striker mass ratio alone does not identify the penetration work or the derivative order.
+
+Reversible, accumulating and terminal internal states are likewise distinct. A fuse, fracture or threshold device changes its connection graph when an internal condition is met. Transmitted, reflected and diverted outputs then depend on the post-event topology. A released store requires separately integrated finite event ports or an independently justified impulsive limit; a partition residual cannot be assigned by subtraction and called a measured destination. Failure-threshold distributions, nonmonotone damage histories and fragment or acoustic partition remain open. A single fixed-order smooth ODE cannot replace an unspecified threshold law.
+
+Across these applications, simultaneous contacts, initially touching edges, chatter, support-port disappearance and terminal thresholds can make event ordering consequential. Four distinct discrepancies should be kept: the equation residual, the port-integration residual, the constitutive/model residual and the independently evaluated endpoint balance residual; impulse and partition identities add their own checks. Exact smooth-interval formulas do not settle convergence or physical meaning at an unresolved event. Accessible measurements differ by apparatus, and no hardware evidence is inferred from a proposed model.
+
 # Exact verification identities and comparison obligations
 \label{sec:verification}
 
@@ -2795,8 +2873,6 @@ There is also an exact discrete algebraic control for a lossless linear state eq
 then $E(x_+)-E(x)=h[(x_++x)/2]^THF[(x_++x)/2]=0$ whenever the update exists. This identity is independent of arithmetic implementation. It does not supply a finite-precision drift bound, an event rule, or a physical model certificate; those remain separate uncertainty questions. Likewise, a null singular value and a divergent unstable continuation are exact features before any arithmetic error is assessed.
 
 The proved complete-model balances follow from separate port integrals and endpoint states. Exact integration has zero numerical residual; it does not make every declared-boundary balance zero. The contact deletion and listed-port coupling examples retain their signed nonzero residuals, while the expanded supply accounts remain conditional on their state and port laws. Unspecified material, sensor, switching, thermal, acoustic and exterior-field effects remain $r_{\mathrm{model}}$, whose sign and magnitude are not invented. Unresolved interval, DC-link, thermal-endpoint and stochastic-work checks retain their own scope. Every surviving discrepancy is reported with its interval, orientation, preparation, event sides and uncertainty rather than absorbed into a presumed destination.
-
-\clearpage
 
 # References {-}
 

@@ -14,6 +14,16 @@ The literal shared front-matter template supplies the author line “Hob Nilre &
 - sec:impact-release contains the unchanged force-zero store and deletion residual. sec:release-open retains the extended physical accounts. Positive remaining store and negative deleted-store residual are different signed quantities; no physical destination is inferred from deletion.
 - The accessible measurement is a slow torsional analogue with synchronized encoders and interface torque sensing. Its common calibrated band, state preparation and parameter uncertainties must be declared. A commercial driver has its own instrumented boundary and bandwidth; neither is reported as measured here.
 
+## Supporting-material hierarchy
+
+- Every main-text supporting treatment states its role in coefficient construction, identification, prediction or validity. Cross-reference reachability is a navigation check, not a measure of necessity.
+- sec:histories is now part of sec:initial. Its complete finite-history counterexamples are in sec:history-examples; their bin-moment proof uses a polynomial of degree at most three in the bin index.
+- sec:distributed keeps the finite line, fractional and delay laws and representation domains. sec:line-accounts keeps scattering, weighted spatial diagnostics, physical work and termination limits.
+- sec:network-elimination and sec:clamp keep the graph and cubic constructions in the main text. sec:network-diagnostics consolidates exact pair excursions, pickups, crossings, parameter measures, reachable magnitudes and invariant sections.
+- sec:waveform-statistics retains the complete waveform and Gaussian-observation conditions. Correlated measurement consequences remain beside identification; sec:stochastic-work is now a subsection of the signed-work treatment.
+- sec:finite-implementation states the consequences of physical controllers for synthesis. sec:physical-reference and sec:compound-states now begin the controller appendix, with their complete ordinary-instrument examples, open question and supply accounts. A nonlinear state count does not itself define a constant-coefficient scalar equation.
+- sec:contact-extensions retains the full teeterboard, club--ball, penetration-memory and terminal-event examples; sec:impact-constitutive explains the additional model information each class supplies.
+
 ## Review 5 focus and added constructions
 
 - Coefficient synthesis is the primary objective. Physical state dimension, initialization, realizability and signed work establish its interpretation and limits; they do not replace the synthesis argument.
