@@ -91,6 +91,8 @@ Collision transfer powers are positive out of the hammer, into the anvil, into c
 
 ## Review 3 additions
 
+After REVIEW_7, detailed hidden-loop calibration, growing-plant works, reference ramps and full controller/event accounts below are developed in the companion. Their values and distinct model scopes remain the conventions for those transferred controls; notes/review-7-resolution.md maps their current destinations.
+
 - Double collision cancellation: normalized J_h=1, J_a=2, k_c=d_c=k_j=1, d_j=3. Transfer 2/(2s²+2s+1); observability and controllability ranks three; initialized output annihilator (D+1)(2D²+2D+1). The state (1,-1,0,1) gives theta_h=e^-t, theta_a=t e^-t.
 - Hidden three-state loop: i=0, v1=-v2=V0 exp(-t/RC), physical states (i,v1,v2). Assumed R=1000 ohm, C=1/1000 F, V0=1 V, T=1 s. Each resistor work is -(1-e^-2)/2000 J; endpoint stores are 1/1000 and e^-2/1000 J.
 - Assumed calibration, not achieved performance: C error 1/100000 F, voltage error 1/1000 V, resistor-current error 1/10^6 A; observed voltage/current bounds 11/10 V and 11/10000 A. Four capacitor endpoint errors plus two resistor works give 1652401/50000000000 J. Other errors remain separately bounded, never silently zero.

@@ -1,5 +1,7 @@
 # Open-problem reading inventory
 
+Current destination audit: approved REVIEW_7 division, 2026-09-28. Unprefixed labels refer to the coefficient article; `companion:` labels refer to *Hidden States and Unassigned Work*. All question text and source-status scopes below are retained. The twelve principal targets and supporting questions are mapped in notes/review-7-resolution.md.
+
 
 This is a source-question reading and coverage record, not a dataset or a claim that the cited computations or hardware actions were performed here. Status words retain the source scope; mathematical corrections in the article do not modify the read-only register. Administrative and unrelated questions are explicitly distinguished below.
 ## OP-NUM-BACKEND-01: Establish whether the exact-rank condition number is a result or a conditioning artifact
@@ -840,7 +842,7 @@ Source: opb-lr-03.md
 
 Can a bounded test or proof resolve the mathematical release closes the declared storage boundary, but every force-zero row retains an unassigned fracture/acoustic/thermal/fixture destination?
 
-Coverage: sec:impact-release; sec:release-open; eq:release-residual; eq:release-sequence; eq:release-measurement. Negative deleted-store residual, exclusive acoustic/heat/fracture/fixture hypotheses and independently observed retained state/transfer; physical destination remains open.
+Coverage: sec:impact-release; companion:sec:release-open; eq:release-residual; companion:eq:release-sequence; companion:eq:release-measurement. Negative deleted-store residual, exclusive acoustic/heat/fracture/fixture hypotheses and independently observed retained state/transfer; physical destination remains open.
 
 ## OP-LR03-02: Criterion choice is constitutive and remains unresolved
 
@@ -850,7 +852,7 @@ Source: opb-lr-03.md
 
 Can a bounded test or proof resolve criterion choice is constitutive and remains unresolved?
 
-Coverage: sec:release-open, criterion paragraph after eq:release-sequence. Force-zero, deformation-zero and clipped-force state laws are distinct constitutive choices; work does not select the criterion.
+Coverage: companion:sec:release-open, criterion paragraph after companion:eq:release-sequence. Force-zero, deformation-zero and clipped-force state laws are distinct constitutive choices; work does not select the criterion.
 
 ## OP-LR04-01: Destination and constitutive restitution law remain unidentified
 
@@ -860,7 +862,7 @@ Source: opb-lr-04.md
 
 Can a bounded test or proof resolve destination and constitutive restitution law remain unidentified?
 
-Coverage: sec:release-open, eq:release-measurement and the retained deformation measurement. Destination and general restitution law remain unassigned; the easy deformation test is narrower than full release attribution.
+Coverage: companion:sec:release-open, companion:eq:release-measurement and the retained deformation measurement. Destination and general restitution law remain unassigned; the easy deformation test is narrower than full release attribution.
 
 ## OP-LR04-02: Friction, plasticity, adhesion, thermal/acoustic release, motor ripple, m...
 
@@ -870,7 +872,7 @@ Source: opb-lr-04.md
 
 Can a bounded test or proof resolve friction, plasticity, adhesion, thermal/acoustic release, motor ripple, more than two re-engagements, wider gaps/edges/damping and hardware are untested?
 
-Coverage: sec:release-open; sec:collision; sec:networks; sec:contact-extensions. Repeated gates retain negative residual sums and separate motor/fixture accounts; wider friction, adhesion, plasticity, acoustic/thermal, motor and hardware limits remain open.
+Coverage: companion:sec:release-open; sec:collision; sec:networks; sec:contact-extensions. Repeated gates retain negative residual sums and separate motor/fixture accounts; wider friction, adhesion, plasticity, acoustic/thermal, motor and hardware limits remain open.
 
 ## OP-LR05-01: The noncoincidence rejects a one-to-one internal-zero interpretation, but...
 
@@ -1290,7 +1292,7 @@ Source: opb-lr-23.md
 
 Can a bounded test or proof resolve bound hidden prepared energy from terminal uncertainty and test multiple nearly cancelled modes, nonideal transformers and noisy observations?
 
-Coverage: sec:hidden-measurement; eq:hidden-energy-bound. Exact finite-coupling bound, bounded-parameter extension, low-voltage internal-store audit and unknown-coupling limit. Marker developed locally; multimode, nonideal and preparation limits remain open.
+Coverage: sec:hidden-measurement; eq:hidden-energy-bound. Exact finite-coupling bound, bounded-parameter extension, low-voltage internal-store audit and unknown-coupling limit. Marker developed locally; multimode, nonideal and preparation limits remain open. Developed physical account: companion:sec:hidden-measurement.
 
 ## OP-LR23-02: Exact port cancellation does not establish absence of an internal prepare...
 
@@ -1300,7 +1302,7 @@ Source: opb-lr-23.md
 
 Can a bounded test or proof resolve exact port cancellation does not establish absence of an internal prepared mode?
 
-Coverage: eq:hidden-discharge and sec:hidden-measurement. The ideal discharge is accounted for by resistor work while terminal work is zero; this is a conditional construction, not a new unresolved energy deficit.
+Coverage: eq:hidden-discharge and sec:hidden-measurement. The ideal discharge is accounted for by resistor work while terminal work is zero; this is a conditional construction, not a new unresolved energy deficit. Developed physical account: companion:sec:hidden-measurement.
 
 ## OP-LR24-01: Prohibit unguarded transient use
 
@@ -2210,7 +2212,7 @@ Source: opb-lr-55.md
 
 Do driven-CRL physical settling and measurement work integration discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: sec:residual-outcomes and sec:driven. Physical settling/measurement port work and endpoint residuals require separate interval bounds; exact symbolic replacement does not resolve source integration failures.
+Coverage: sec:residual-outcomes and sec:driven. Physical settling/measurement port work and endpoint residuals require separate interval bounds; exact symbolic replacement does not resolve source integration failures. Developed physical account: companion:sec:residual-outcomes.
 
 ## OP-NUM-LR55-02: Converge the 791 driven-CRL surrogate-audit warnings
 
@@ -2220,7 +2222,7 @@ Source: opb-lr-55.md
 
 Do driven-CRL surrogate settling work integration discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: sec:residual-outcomes and sec:driven. Surrogate settling/measurement work requires its own declared realization, signed intervals and endpoint bounds; no source convergence is asserted.
+Coverage: sec:residual-outcomes and sec:driven. Surrogate settling/measurement work requires its own declared realization, signed intervals and endpoint bounds; no source convergence is asserted. Developed physical account: companion:sec:residual-outcomes.
 
 ## OP-LR56-01: The earlier non-sinusoidal/multitone/stochastic drive exclusion is narrow...
 
@@ -2480,7 +2482,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve the 66 unstable and 474 nonpassive controls are deliberately incomplete models, not passive transducers?
 
-Coverage: sec:coupling-open; eq:coupling-residual and eq:source-off-values through eq:source-off-works. Exact positive listed-port residual in a new illustrative finite-prefix model; stability, passivity and physical supply remain separate.
+Coverage: sec:coupling-open; eq:coupling-residual and companion:eq:source-off-values through companion:eq:source-off-works. Exact positive listed-port residual in a new illustrative finite-prefix model; stability, passivity and physical supply remain separate. Developed physical account: companion:sec:growing-plant.
 
 ## OP-LR59-02: The explicit controller closes the tested positive-store boundary but its...
 
@@ -2490,7 +2492,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve the explicit controller closes the tested positive-store boundary but its physical bias/supply realization is unidentified?
 
-Coverage: eq:bias-state, eq:bias-work and eq:bias-increase; sec:supply. Reaction-driven coil increase and finite supply state/port equations are conditional; hardware realization and DC-link/thermal/interval consistency remain open.
+Coverage: eq:bias-state, companion:eq:bias-dependent-work and companion:eq:bias-increase; companion:sec:supply. Reaction-driven coil increase and finite supply state/port equations are conditional; hardware realization and DC-link/thermal/interval consistency remain open.
 
 ## OP-LR59-03: Continue unstable-prefix precision with relative as well as absolute tole...
 
@@ -2500,7 +2502,7 @@ Source: opb-lr-59.md
 
 Can a bounded test or proof resolve continue unstable-prefix precision with relative as well as absolute tolerances, do not extrapolate it to steady state, and test effective coupling outside `0.1..0.9`, `Q` outside `2..10`, other loads and `m/L`, bias dynamics, nonlinear saturation/hysteresis, thermal ports, finite switching, feedback, multi-axis transducers, calibrated cross-domain sensors and hardware?
 
-Coverage: sec:supply final paragraph; sec:residual-outcomes. Absolute and relative uncertainty on unstable prefixes, nonlinear/material/sensor/multiaxis limits and finite-supply constraints remain independent questions.
+Coverage: companion:sec:supply final paragraph; sec:residual-outcomes. Absolute and relative uncertainty on unstable prefixes, nonlinear/material/sensor/multiaxis limits and finite-supply constraints remain independent questions. Developed physical account: companion:sec:residual-outcomes.
 
 ## OP-NUM-LR59-01: Converge the four unstable-transducer finite-prefix audit failures
 
@@ -2510,7 +2512,7 @@ Source: opb-lr-59.md
 
 Do unstable-transducer finite-prefix solver, quadrature, model, and energy audit discrepancies converge below the declared threshold on the exact affected rows?
 
-Coverage: sec:coupling-open finite-prefix discussion and sec:supply final paragraph. Separate source numerical failures remain unresolved; the exact exponential example neither reproduces nor resolves them.
+Coverage: sec:coupling-open finite-prefix discussion and companion:sec:supply final paragraph. Separate source numerical failures remain unresolved; the exact exponential example neither reproduces nor resolves them. Developed physical account: companion:sec:growing-plant.
 
 ## OP-NUM-LR59-02: Converge the Step 13 finite transducer supply ledgers
 
@@ -2520,7 +2522,7 @@ Source: opb-lr-59.md
 
 Do the Step 13 thermal endpoint solver, Simpson–GK quadrature, interval r_E, and integrated DC-link subledger discrepancies converge below their frozen gates?
 
-Coverage: eq:supply-local-residuals; eq:supply-combined; sec:supply final paragraph. DC-link integrated demand, interval residuals, thermal endpoints and transfer integration remain distinct checks; a proved conditional identity does not certify source convergence.
+Coverage: companion:eq:supply-local-residuals; companion:eq:supply-combined; companion:sec:supply final paragraph. DC-link integrated demand, interval residuals, thermal endpoints and transfer integration remain distinct checks; a proved conditional identity does not certify source convergence.
 
 ## OP-LR60-01: The principal finite-band approximation does not certify nonprincipal pat...
 
@@ -3392,7 +3394,7 @@ Within the ideal quasistatic scope of OP-EPI-08, do the corresponding electrical
 
 Updated source status (2026-09-27): bounded closure success, superseding the earlier snapshot's inconclusive ideal result. The current ideal counterpart is supported on its specified finite comparison population. It does not establish physical finite-state duality.
 
-Coverage: sec:compound-states; sec:physical-reference; eq:compound-mechanical; eq:compound-modal-limit; sec:compound-events. The finite ODE correspondence, compatible rigid reduction and distinction between mapped core diagnostics and a complete physical boundary are explicit. Pure quasistatic table enumeration is contextual rather than a new higher-order ODE result. Finite extensions belong to the separate issue below.
+Coverage: sec:compound-states; companion:sec:physical-reference; eq:compound-mechanical; eq:compound-modal-limit; companion:sec:compound-events. The finite ODE correspondence, compatible rigid reduction and distinction between mapped core diagnostics and a complete physical boundary are explicit. Pure quasistatic table enumeration is contextual rather than a new higher-order ODE result. Finite extensions belong to the separate issue below. Developed physical account: companion:sec:compound-states.
 
 ## OP-TRF-12: Finite compound duality: certified events, nonideal drivers and conditional rigid limits
 
@@ -3407,26 +3409,26 @@ Bounded source results retained in their actual scope: the finite compliant/elec
 Item-specific article coverage:
 
 - eq:compound-state and eq:compound-mechanical: independent finite constitutive laws, dimensional state map, seven/eight receiver states, physical ten-port account, five operating stages and continuous conductance events.
-- eq:reference-cell and eq:reference-ramp-work: real compensation and driver ports, independent stores, exact receiver/driver examples, finite-duration source and heat works. The practical question has a single inline marker beside its first developed statement in sec:physical-reference.
-- eq:compound-reference and eq:ideal-reference-rail: prescribed versus state-dependent references, compatible initialization, nine ideal converters, rail and controller accounts.
-- eq:compound-sensor through eq:compound-finite-rail: 28 finite states, nine sensors, eight current actuators, command/driver capacitors, eighteen converter losses, forty-one separate heat exports, local versus combined boundaries.
-- eq:rail-preparation and eq:rail-cutoff: independently integrated rail preparation and positive store at cutoff; active-cutoff receiver states remain present.
-- sec:compound-driver: fast same-sign work, opposite local residuals, rail endpoint sensitivity, retained constitutive assumptions and conditional simultaneous bandwidth/efficiency approach.
-- eq:perfect-coupling-state and eq:energized-clamp: compatible descriptor constraints, retained magnetizing dynamics, source/heat shares and independent event endpoints; fixed-resistance zero-time reference limit.
-- eq:compound-modal-limit through eq:drive-mismatch-limit and eq:compound-preparation: exact winding modes, prepared common/differential cases, separately integrated preparation, finite or divergent hidden stores and drive mismatch.
+- companion:eq:reference-cell-unit and companion:eq:reference-ramp-work: real compensation and driver ports, independent stores, exact receiver/driver examples, finite-duration source and heat works. The practical question has a single inline marker beside its first developed statement in companion:sec:physical-reference.
+- eq:compound-reference and companion:eq:ideal-reference-rail: prescribed versus state-dependent references, compatible initialization, nine ideal converters, rail and controller accounts.
+- companion:eq:compound-sensor through companion:eq:compound-finite-rail: 28 finite states, nine sensors, eight current actuators, command/driver capacitors, eighteen converter losses, forty-one separate heat exports, local versus combined boundaries.
+- companion:eq:rail-preparation and companion:eq:rail-cutoff: independently integrated rail preparation and positive store at cutoff; active-cutoff receiver states remain present.
+- companion:sec:compound-driver: fast same-sign work, opposite local residuals, rail endpoint sensitivity, retained constitutive assumptions and conditional simultaneous bandwidth/efficiency approach.
+- eq:perfect-coupling-state and companion:eq:energized-clamp: compatible descriptor constraints, retained magnetizing dynamics, source/heat shares and independent event endpoints; fixed-resistance zero-time reference limit.
+- eq:compound-modal-limit through eq:drive-mismatch-limit and companion:eq:compound-preparation: exact winding modes, prepared common/differential cases, separately integrated preparation, finite or divergent hidden stores and drive mismatch.
 - eq:compound-passive-limit and eq:compound-fast: unchanged passive source/receiver graph, conditional Hurwitz fast subsystem and initial layers; distinct state/current/work/store convergence.
-- eq:event-analytic-bounds and eq:compound-reversal: exact analytic event obligations, repeated/tangent zeros, persistent ties, factor coincidences, root-box works, undefined denominators and nontrivial zero full-interval works; no transfer of a linear certificate to nonlinear driver or hardware.
+- companion:eq:event-analytic-bounds and companion:eq:compound-reversal: exact analytic event obligations, repeated/tangent zeros, persistent ties, factor coincidences, root-box works, undefined denominators and nontrivial zero full-interval works; no transfer of a linear certificate to nonlinear driver or hardware.
 
 Source computations were not rerun. Their numerical tables are replaced by these exact constructions and conditional bounds; no old unresolved numerical classification is silently changed by an article identity.
 
 ## Review 3 supplemental destinations for existing energy questions
 
-- OP-LR03-01: the first local release question now bears its verified marker; finite two-sided release window, regular-work timing bounds and independent retained/contact store bounds follow eq:release-measurement.
+- OP-LR03-01: the first local release question now bears its verified marker; finite two-sided release window, regular-work timing bounds and independent retained/contact store bounds follow companion:eq:release-measurement.
 - OP-LR23-01 and OP-LR23-02: sec:hidden-loop adds an exact three-state ordinary-scale control, terminal-hidden relaxation, independent resistor works and assumed calibration-to-residual budget.
-- OP-LR59-02: sec:coupling-control provides a distinct independently instrumentable reciprocal-transducer control; eq:bias-work and sec:supply preserve the actual bias-coil, DC-link, thermal and interval questions. Its verified local marker is unique.
-- OP-TRF-01 and OP-TRF-07: the local loading/return measurement and independent calibrated-model comparison now have their verified unique markers; eq:channel-work-bound and eq:quadratic-store-error connect channels and coupled magnetic endpoints to residual resolution.
+- OP-LR59-02: sec:coupling-control provides a distinct independently instrumentable reciprocal-transducer control; companion:eq:bias-dependent-work and companion:sec:supply preserve the actual bias-coil, DC-link, thermal and interval questions. Its verified local marker is unique.
+- OP-TRF-01 and OP-TRF-07: the local loading/return measurement and independent calibrated-model comparison now have their verified unique markers; companion:eq:channel-work-bound and companion:eq:quadratic-store-error connect channels and coupled magnetic endpoints to residual resolution.
 
 
 ## Review 6 local placement
 
-OP-LR03-01 now first appears in sec:impact-release, beside eq:release and eq:release-residual. Their positive store, negative residual and deletion assumptions are unchanged. sec:release-open retains the exclusive destination hypotheses, repeated-event sum, criterion distinctions and finite-window uncertainty. OP-LR08-01 remains beside its two-body measurement proposal in sec:impact-measurement, with the anvil-channel null example and calibrated-band requirement. Neither question has been closed, and no hardware observation is claimed. All twelve developed markers still occur once.
+OP-LR03-01 now first appears in sec:impact-release, beside eq:release and eq:release-residual. Their positive store, negative residual and deletion assumptions are unchanged. companion:sec:release-open retains the exclusive destination hypotheses, repeated-event sum, criterion distinctions and finite-window uncertainty. OP-LR08-01 remains beside its two-body measurement proposal in sec:impact-measurement, with the anvil-channel null example and calibrated-band requirement. Neither question has been closed, and no hardware observation is claimed. All twelve developed markers still occur once.
