@@ -25,4 +25,4 @@ The physical realizations also lead to open energy questions that can be investi
 
 [Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md)
 
-Run `make pdf` with Pandoc, XeLaTeX and the TeX Gyre fonts installed. The build regenerates changed vector figures before the article. Coverage, conventions and revision verification are maintained in `notes/`.
+Run `make pdf` with Pandoc, XeLaTeX and the TeX Gyre fonts installed. The build regenerates changed vector figures before the article and stamps the first page with its UTC build time. An up-to-date PDF keeps its existing timestamp. Coverage, conventions and revision verification are maintained in `notes/`.

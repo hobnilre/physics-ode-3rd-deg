@@ -35,9 +35,7 @@ urlcolor: MidnightBlue
 citecolor: MidnightBlue
 ---
 
-Latest PDF on GitHub:
-
-<https://github.com/hobnilre/physics-ode-3rd-deg/blob/main/third-and-higher-order-odes.pdf>
+\begingroup\scriptsize\noindent PDF created: \pdfbuildtimestamp\par\noindent Latest on GitHub: \url{https://github.com/hobnilre/physics-ode-3rd-deg}\par\endgroup
 
 # Synthesizing coefficients for higher derivative orders
 \label{sec:scope}

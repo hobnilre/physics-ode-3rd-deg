@@ -9,7 +9,8 @@ pdf: $(PDF)
 figures: $(FIGURES)
 $(PDF): $(ARTICLE) $(PREAMBLE) $(FIGURES) Makefile
 	mkdir -p build
-	TMPDIR=$(CURDIR)/build pandoc $(ARTICLE) --from markdown+tex_math_dollars --pdf-engine=xelatex --include-in-header=$(PREAMBLE) -o $@
+	printf '\\newcommand{\\pdfbuildtimestamp}{%s}\n' "$$(date -u '+%Y-%m-%d %H:%M:%S UTC')" > build/pdf-build-time.tex
+	TMPDIR=$(CURDIR)/build pandoc $(ARTICLE) --from markdown+tex_math_dollars --pdf-engine=xelatex --include-in-header=$(PREAMBLE) --include-in-header=build/pdf-build-time.tex -o $@
 figures/%.pdf: figures/%.tex figures/figure-style.tex
 	mkdir -p build
 	cd figures && xelatex -interaction=nonstopmode -halt-on-error -output-directory=../build $*.tex > /dev/null

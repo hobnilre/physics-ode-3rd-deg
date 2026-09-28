@@ -140,3 +140,15 @@ The final make pdf check is up to date, git diff --check passes and the index is
 ## Repository disposition
 
 Only this project directory was written. The external source and named templates remained read-only. No staging or commit command was run. The Git index has no staged changes; the manuscript, root PDF, README, revised conceptual figure and working notes remain local changes. REVIEW_1.md through REVIEW_5.md remain outside Git tracking and are currently ignored by the repository's review-file rule. Repository remotes were not changed. Build intermediates and rendered inspection images remain ignored under build/. No scripts, notebooks, numerical datasets or scratch calculation programs are included in the deliverables.
+
+
+## First-page URL typography — 2026-09-28
+
+The GitHub PDF label and URL share one line and one local scriptsize group; surrounding text retains its existing size. make pdf succeeds and retains 87 pages. Extracted page text is unchanged after whitespace normalization, and only page 1 has a changed extracted layout. The rebuilt first page was rendered and inspected: the label and URL are legible on the same line at the same size, with no clipping or surrounding font change. git diff --check passes. No scientific content, coverage destination, figure or equation changes; no commit or push performed for this adjustment.
+
+
+## Automatic PDF timestamp — 2026-09-28
+
+The user's shortened “Latest on GitHub” label and repository URL are preserved. The first line displays “PDF created” with a UTC timestamp; the GitHub link follows on the second line, aligned and using the same scriptsize font. The PDF recipe captures the current UTC time once in an ignored build header and includes it during compilation, so all LaTeX passes share the same build timestamp. Rebuilding refreshed the displayed value; an up-to-date make pdf left it unchanged. README documents this behavior.
+
+The build succeeds and retains 87 pages. The generated timestamp appears correctly on page 1, which was rendered and inspected after aligning both lines and again after placing the timestamp first. Only page 1 changes relative to the previous PDF; remaining page text/layout and scientific content are unchanged, with no unresolved references. git diff --check passes. No staging, commit or push performed.
