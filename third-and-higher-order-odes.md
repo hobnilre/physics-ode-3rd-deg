@@ -4,7 +4,7 @@ subtitle: "Coefficient synthesis, identification, and physical realization"
 author: "Hob Nilre & Bo C. Herlin"
 date: "2026-09-28"
 abstract: |
-  We develop a framework for synthesizing coefficients of third- and higher-order ordinary differential equations from declared reference quantities. Two dimensional constraints give the complete monomial family in a positive reference triple; constitutive laws, interconnection structure or identifiable observations determine particular combinations. The rotary impact driver is the principal worked application: exact hammer–anvil elimination yields coefficient laws in four independent dimensionless coordinates, with seven- and nine-term constant-weight representations on specified restricted parameter domains. Changing the joint connects these laws to coefficient prediction and contact–joint discrimination; release exposes a remaining contact store accessible to torque and motion measurements on a slow torsional analogue. An exact branch-addition recurrence constructs successive higher-order operators and their forcing terms; a separate rational-series recurrence generates higher expansion coefficients without adding physical states. Reference transport, support independence and observation uncertainty distinguish representation, recovery and prediction. Stability, initial-data compatibility and passive realization delimit the equations' physical use. Four physical collision states can give a third-order initialized output and a second-order zero-state transfer. RF, battery, mechanical, finite-supply and distributed examples establish complementary conditions and limitations. Signed port works and independently evaluated stores delimit the realized equations; a companion develops the physical comparisons and extended energy accounts. Measurements remain conditional on calibration and preparation; no measured discrepancy is reported.
+  We develop a framework for synthesizing coefficients of third- and higher-order ordinary differential equations from declared reference quantities. Two dimensional constraints give the complete monomial family in a positive reference triple; constitutive laws, interconnection structure or identifiable observations determine particular combinations. The rotary impact driver is the principal worked application: exact hammer–anvil elimination yields coefficient laws in four independent dimensionless coordinates, with seven- and nine-term constant-weight representations on specified restricted parameter domains. Changing the joint connects these laws to coefficient prediction and contact–joint discrimination; release exposes a remaining contact store accessible to torque and motion measurements on a slow torsional analogue. Local series and parallel equations compose into complete coefficient and forcing operators at a chosen boundary; phasor impedance or admittance exposes the effect of where a component is connected. An exact branch-addition recurrence constructs successive higher-order operators and their forcing terms; a separate rational-series recurrence generates higher expansion coefficients without adding physical states. Reference transport, support independence and observation uncertainty distinguish representation, recovery and prediction. Stability, initial-data compatibility and passive realization delimit the equations' physical use. Four physical collision states can give a third-order initialized output and a second-order zero-state transfer. RF, battery, mechanical, finite-supply and distributed examples establish complementary conditions and limitations. Signed port works and independently evaluated stores delimit the realized equations; a companion develops the physical comparisons and extended energy accounts. Measurements remain conditional on calibration and preparation; no measured discrepancy is reported.
 keywords:
   - higher-order ordinary differential equations
   - coefficient synthesis
@@ -40,11 +40,11 @@ citecolor: MidnightBlue
 # Synthesizing coefficients for higher derivative orders
 \label{sec:scope}
 
-Given reference quantities and additional model information, how can coefficients of higher derivatives be generated, determined and justified? This question organizes the article. Dimensional constraints supply a family of admissible terms. A constitutive model and its connections can determine a coefficient law by exact elimination; sufficiently informative observations can instead identify a law within a declared candidate family. Each construction must state its parameter domain, normalization, forcing and remaining freedom.
+Given reference quantities and additional model information, how can coefficients of higher derivatives be generated, determined and justified? This question organizes the article. Dimensional constraints supply a family of admissible terms. A constitutive model and its connections can determine a coefficient law by exact elimination; sufficiently informative observations can instead identify a law within a declared candidate family. Each construction must state its parameter domain, normalization, forcing and remaining freedom. First choose what to synthesize: a component law, a contact or joint response, a subnetwork, or the equation of an observed motion. Its physical attachment, input and observation determine which coefficients are being constructed. Local equations can then be interconnected without repeatedly rebuilding a global mesh description.
 
 An impact driver gives the coefficient problem a concrete setting. During one blow, the rotating hammer loads the anvil through a deforming contact, while the output attachment and tightened joint supply a second dynamic response. Starting from those component laws, we construct the coefficients of the observed hammer motion. Changing the joint or contact then gives a direct question for the theory: which coefficients change, and can the same law predict another blow?
 
-The construction begins with the second-order reference triple and its complete monomial family in Section \ref{sec:family}. Section \ref{sec:collision} carries the impact driver from its component equations to a fourth-order observation law, with exact coefficient support on several parameter domains in Section \ref{sec:collision-support}. Section \ref{sec:construction} constructs arbitrary successive orders by adding physical relaxation states and distinguishes this operation from extending a transfer series. Section \ref{sec:identification} returns to the impact measurements to establish what independent parameter changes and observations can recover. Initial data, physical realizations and finite-domain limits then determine what the synthesized equations describe.
+The construction begins with the second-order reference triple and its complete monomial family in Section \ref{sec:family}. Section \ref{sec:collision} carries the impact driver from its component equations to a fourth-order observation law, with exact coefficient support on several parameter domains in Section \ref{sec:collision-support}. Section \ref{sec:construction} derives series and parallel coefficient composition, works a mixed third-order circuit, and constructs arbitrary successive orders by adding physical relaxation states. It distinguishes these operations from extending a transfer series. Section \ref{sec:identification} returns to the impact measurements to establish what independent parameter changes and observations can recover. Initial data, physical realizations and finite-domain limits then determine what the synthesized equations describe.
 
 The contribution is the connected treatment of these constructions: dimensional freedom, exact parameter-dependent coefficient laws, constructive extension in order, and conditions for recovery and physical interpretation. Dimensional analysis, realization theory, passive synthesis and crossing theory supply established foundations; their derivations are retained where needed. No claim of historical priority is made for those foundations. The examples make the determined quantities and the remaining freedom explicit.
 
@@ -105,6 +105,15 @@ The coefficient transformation
 interchanges the two connection templates. It is an algebraic correspondence until topology and the effort--flow map are supplied. Does a damped mechanical/electrical correspondence also transport preparation and reset [OP-LR50-01]? Matched normalized displacement and current, together with separately measured force--velocity and voltage--current products, distinguish a complete port correspondence from a homogeneous-equation match. [*Hidden States and Unassigned Work*][companion] develops the finite comparison with an encoder and shunt. Lossless comparisons alone do not settle it: the coordinates below are singular at $b=0$.
 
 Specifically, with $\tau=a/b$, $\rho=b^2/(ac)$, $y=Yz$ and $\xi=t/\tau$, both driven templates reduce exactly to $z''+z'+\rho^{-1}z=\varphi$, where $\varphi=f/(b^2Y/a)$ and primes denote $\xi$ derivatives. Matching $\rho$, the normalized input, and the initial pair $(z,z')$ predicts identical normalized responses by uniqueness. For mechanics observe velocity as $\dot y\,\tau/Y$; for the electrical charge coordinate observe current as $i\tau/Y$, and obtain charge from its known initial value and integrated current. A normalized trajectory difference exceeding the combined calibration and parameter-error enclosure rejects the proposed complete mapping. Agreement within it remains a bounded correspondence result. Preparation, sensor loading and each conjugate power product must still be audited independently.
+
+## Choosing the local equation and its connections
+\label{sec:local-interconnection}
+
+A second-order template can describe one block inside a larger system. A series electrical block uses common current and adds voltage drops; a parallel block uses common voltage and adds currents. Thus an LRC charge equation and a CRL linkage equation can be retained at different places in the same assembly. Under the full port correspondence, MCK uses common velocity and summed forces, while KCM uses common force and summed velocities. Mechanical connection geometry must implement those constraints; the electrical names alone do not specify it.
+
+Specify the boundary, its physical input and observation, the integrated or differentiated variable, the local constitutive laws, and which internal variables remain explicit. Then choose independent component coordinates, quantities held fixed, preparation and a time or frequency domain. A design target or observed response supplies additional determining information only for that declared family and boundary. Changing a contact law, moving a shunt, and observing another terminal are different choices with different coefficient consequences.
+
+Kirchhoff's voltage and current laws remain the connection constraints. For series--parallel blocks they allow coefficient construction from already derived local equations, as Section \ref{sec:operator-composition} shows. Arbitrary graphs, shared internal nodes and multiport components require coupled or matrix equations; Sections \ref{sec:network-elimination} and \ref{sec:passive} retain those extensions. Rewriting one block's impedance as its reciprocal admittance changes its representation, not its physical connections. Neither that operation nor \eqref{eq:duality} relocates a component.
 
 ## Source placement and the forcing operator
 \label{sec:source-placement}
@@ -542,6 +551,26 @@ $\mathcal K_c(s)=K_c+H_c(sI-F_c)^{-1}G_c=P_c(s)/Q_c(s)$. For initialized elimina
 \end{equation}
 with initial derivatives restricted by the respective state-to-jet maps. The joint uses the analogous unreduced construction. A reduced pair is sufficient only when every removed natural contribution is invisible at this output or excluded by the preparation. Zero-state reduction alone cannot remove a separately prepared natural response. A Kelvin--Voigt direct term or an explicit inertial term can be retained alongside the internal-state model when its port realization is declared.
 
+The location of either rational law enters the observed coefficients explicitly. With fixed support, fixed active contact, and the same two body inertias, the zero-state equations are
+\begin{equation}
+ \begin{pmatrix}
+ J_hs^2+\mathcal K_c&-\mathcal K_c\\
+ -\mathcal K_c&J_as^2+\mathcal K_c+\mathcal K_j
+ \end{pmatrix}
+ \begin{pmatrix}\Theta_h\\\Theta_a\end{pmatrix}
+ =\begin{pmatrix}U\\0\end{pmatrix}.
+ \label{eq:impact-block-matrix}
+\end{equation}
+Expanding the determinant cancels the two $\mathcal K_c^2$ terms. Multiplying by $Q_cQ_j$ gives the complete hammer law
+\begin{align}
+ \mathcal P={}&J_hJ_as^4Q_cQ_j+(J_h+J_a)s^2P_cQ_j
+                   +J_hs^2P_jQ_c+P_cP_j,\nonumber\\
+ \mathcal N={}&J_as^2Q_cQ_j+P_cQ_j+P_jQ_c,\qquad
+ \mathcal P(D)\theta_h=\mathcal N(D)u.
+ \label{eq:impact-block-synthesis}
+\end{align}
+The numerator is the first diagonal cofactor multiplied by $Q_cQ_j$. Choosing $Q_c=Q_j=1$, $P_c=k_c+d_cs$ and $P_j=k_j+d_js$ recovers every coefficient and the forcing in \eqref{eq:collision-poly}. For internal-state laws use their unreduced pairs and compatible initial jets; retain additional states before deciding which factors can be removed. Contact coefficients and joint coefficients enter different terms of both operators, so specifying where a new law acts is part of synthesis. The resolved inertias $J_h,J_a$ remain outside those local laws. This construction predicts the hammer equation from independently supplied local information; it does not uniquely recover that information from hammer motion alone. The anvil counterexample and preparation conditions above still apply.
+
 If $\mathcal K_c$ is analytic at the expansion point, its infinite Taylor series is an exact analytic identity only inside the disk to the nearest uncancelled pole. Identifying that series with a time-domain derivative operator further requires convergence on the chosen signals and transport of the initial state or history. For a finite polynomial $T_N$, the exact transfer discrepancy is $(P_c-Q_cT_N)/Q_c$. Thus a finite derivative family is a conditional candidate on a declared response domain, not an exact replacement of arbitrary rational memory. Negative derivative indices additionally require the initialized histories of Section \ref{sec:histories}. A repeatable slow tail may motivate their investigation, but cannot determine their integration constants.
 
 The physical contact power remains $\tau_c\dot\delta$. Its formal decomposition into $B_k^c\delta^{(k)}\dot\delta$ does not make each summand a separately accessible port or a physical store. An instantaneous contribution fraction can be defined as the absolute value of one summand divided by the sum of absolute values, only when that denominator is nonzero; it is a diagnostic of the chosen representation and normalization. Model comparison can use independently measured torque, motion, phase and instantaneous physical power, with coefficient estimation and final conditions kept separate. It cannot use the integrated formal term works to choose weights or derivative order.
@@ -576,6 +605,73 @@ This comparison connects the synthesized active-contact law to the event at whic
 \label{sec:construction}
 
 There are three different continuations of a coefficient construction: extend its dimensional basis, add an independently specified physical state, or retain more coefficients of one rational transfer series. Only the second necessarily adds a physical coordinate, and even then the order visible at a selected output can decrease through cancellation. The following construction determines complete coefficient laws at successive orders before their physical work is audited. It gives an explicit answer beyond the impact driver's fourth-order example: each added relaxation branch supplies the extra physical information that its next coefficients require. The rational contact and joint models of Section \ref{sec:impact-constitutive} pose the analogous state-addition question. Applying the electrical construction mechanically requires the actual connection topology and effort–flow map; renaming an electrical parameter does not derive a contact law.
+
+## Composing local operators and their coefficients
+\label{sec:operator-composition}
+
+Consider two linear two-terminal blocks on a smooth interval, with real constant polynomial laws
+\begin{equation}
+ P_j(D)i_j=Q_j(D)v_j,\qquad
+ P_j(s)=\sum_kp_{jk}s^k,\quad Q_j(s)=\sum_kq_{jk}s^k.
+ \label{eq:local-port-pair}
+\end{equation}
+Current enters the positive-voltage terminal of each block. Its zero-state impedance is $Z_j=P_j/Q_j$ wherever defined. The unreduced pair, its parameter domain and the physical state's compatible initial derivatives are part of the specification. Assume the interconnection is well posed under the declared drive. Independently prescribed sources and operating offsets are included separately below.
+
+For series connection, $i_1=i_2=i$ and $v=v_1+v_2$. Apply $Q_2(D)$ to the first equation and $Q_1(D)$ to the second and add. For parallel connection, $v_1=v_2=v$ and $i=i_1+i_2$; apply $P_2(D)$ and $P_1(D)$ instead. Constant-coefficient operators commute, giving
+\begin{align}
+ P_{\rm series}&=P_1Q_2+P_2Q_1,& Q_{\rm series}&=Q_1Q_2,\nonumber\\
+ P_{\rm parallel}&=P_1P_2,& Q_{\rm parallel}&=P_1Q_2+P_2Q_1.
+ \label{eq:port-composition}
+\end{align}
+In either case the complete equation is $P(D)i=Q(D)v$. Polynomial multiplication gives explicit coefficient constructions:
+\begin{equation}
+ \begin{aligned}
+ p_k^{\rm series}&=\sum_r(p_{1r}q_{2,k-r}+p_{2r}q_{1,k-r}),&
+ q_k^{\rm series}&=\sum_rq_{1r}q_{2,k-r},\\
+ p_k^{\rm parallel}&=\sum_rp_{1r}p_{2,k-r},&
+ q_k^{\rm parallel}&=\sum_r(p_{1r}q_{2,k-r}+p_{2r}q_{1,k-r}).
+ \end{aligned}
+ \label{eq:port-coefficients}
+\end{equation}
+Coefficients outside each finite range are zero. These are exact laws on any parameter domain where the local pairs and connection constraints hold. With shared independent coordinates, products of finite monomial supports add their exponents; sums collect equal exponents and can cancel. Dimensional admissibility follows from the full port equation, while independence and minimality still require the specified dictionary, domain and normalization. In particular, coefficients of a current equation with a differentiated voltage input need not have the normalization of an equation driven directly by voltage.
+
+If the local equations contain known source terms $g_j$, written $P_j(D)i_j=Q_j(D)v_j+g_j$, the series right-hand side additionally contains $Q_2(D)g_1+Q_1(D)g_2$; the parallel one contains $P_2(D)g_1+P_1(D)g_2$. Eliminated preparations instead restrict the output jets through the component states. The scalar equation alone can admit extra solutions unless those restrictions are imposed. A common polynomial factor is therefore inspected before cancellation. Multiplying an equation by a nonzero constant rescales both operators and every source term; $Q(0)=1$ is available only if $Q(0)\ne0$. The following example has $Q(0)=0$.
+
+## A mixed series--parallel third-order construction
+\label{sec:mixed-circuit}
+
+Take a series LRC block $A$ and a parallel RC block $B$, joined in series. The input is their total voltage $u$ and the observation their common current $i$. Let $L,R,C,R_b,C_b>0$ be independent component parameters and $\tau_b=R_bC_b$. With charge $q$ in $A$ and voltage $v_B$ across $B$,
+\begin{equation}
+ L\ddot q+R\dot q+q/C=v_A,\qquad
+ C_b\dot v_B+v_B/R_b=i,\qquad i=\dot q,\quad u=v_A+v_B.
+ \label{eq:mixed-components}
+\end{equation}
+Differentiating the first law and retaining its charge preparation gives $P_A=L s^2+Rs+1/C$, $Q_A=s$. The second gives $P_B=R_b$, $Q_B=1+\tau_bs$. Series composition yields
+\begin{align}
+ P(s)={}&L\tau_bs^3+(L+R\tau_b)s^2
+                  +(R+\tau_b/C+R_b)s+1/C,\nonumber\\
+ Q(s)={}&s(1+\tau_bs),\qquad P(D)i=(D+\tau_bD^2)u.
+ \label{eq:mixed-cubic}
+\end{align}
+The extra capacitor changes lower-order coefficients as well as the cubic coefficient; keeping only the latter would not describe this connection. This current equation has a differentiated input. Its third order does not contradict the polynomial driving-point obstruction in Section \ref{sec:rf}: the impedance is the rational function $P/Q$.
+
+The independent states are $q,i,v_B$. Differentiate $L\dot i=u-Ri-q/C-v_B$ once and substitute $\dot v_B=i/C_b-v_B/\tau_b$. This gives the inverse state-to-jet map
+\begin{equation}
+ v_B=\tau_b\big[L\ddot i-\dot u+R\dot i+(1/C+1/C_b)i\big],
+ \qquad q=C(u-L\dot i-Ri-v_B).
+ \label{eq:mixed-initialization}
+\end{equation}
+Together with the initial $i$, these expressions transport any compatible preparation. The map from $(q,i,v_B)$ to $(i,\dot i,\ddot i)$ at fixed $u,\dot u$ has determinant $1/(CL^2\tau_b)>0$; it loses no state for positive finite parameters. Differentiating the first expression and imposing the branch law reproduces \eqref{eq:mixed-cubic}. Moreover $P(0)=1/C$ and $P(-1/\tau_b)=-R_b/\tau_b$, so $P,Q$ share no factor on this domain. A zero-component boundary is a separate limiting realization, not an admissible initialization of this three-state formula.
+
+Connect this construction to the reference family using $(a,b,c)=(L,R,1/C)$, $\tau_0=L/R$, $S=R^2/L$ and independent dimensionless coordinates
+$\rho=R^2C/L$, $\mu=R_b/R$, $\chi=C_b/C$. Then $\alpha=\tau_b/\tau_0=\mu\chi\rho$. For $p_k=[s^k]P$, the exact full-domain representation is
+\begin{equation}
+ \left(\frac{p_0}{S},\frac{p_1}{S\tau_0},
+       \frac{p_2}{S\tau_0^2},\frac{p_3}{S\tau_0^3}\right)
+ =\left(\rho^{-1},\ 1+\mu+\mu\chi,\ 1+\mu\chi\rho,\ \mu\chi\rho\right).
+ \label{eq:mixed-support}
+\end{equation}
+Here $[p_k]=\Omega\,\mathrm{s}^{k-1}$ because $Q$ has inverse-time units: the derivative convention and input normalization, not merely the word current, determine the reference index. The powers $\rho^{-1},1,\rho$ correspond to $r=1,0,-1$ in $A_{r,k}$, with additional monomials in $\mu,\chi$ and constant weights on their positive domain. There is no remaining coefficient freedom once the five components and this normalization are fixed. For a transfer comparison, changing $R_b$ at fixed $C_b$ changes $\tau_b$; holding $\tau_b$ fixed instead requires a compensating change in $C_b$. Those experiments test different parameter paths.
 
 ## Adding physical relaxation states
 
@@ -613,7 +709,7 @@ Hold $L,R_\Sigma$ and the existing branches fixed, and add a branch with indepen
  Q_0(s)&=1,\qquad \mathcal P_0(s)=Ls+R_\Sigma.
  \label{eq:branch-synthesis}
 \end{align}
-Every old summand acquires the factor $1+\tau_{N+1}s$; the new summand is $R_{N+1}Q_N$. This proves the construction for any finite $N$. Define $Q_N=\sum_k q_k^{(N)}s^k$ and $\mathcal P_N=\sum_k p_k^{(N)}s^k$, with zero coefficients outside their polynomial ranges. Coefficient comparison yields
+This is the series rule \eqref{eq:port-composition} with the new local pair $P_{N+1}^{\rm branch}=R_{N+1}$, $Q_{N+1}^{\rm branch}=1+\tau_{N+1}s$. Every old summand acquires the factor $1+\tau_{N+1}s$; the new summand is $R_{N+1}Q_N$. This proves the construction for any finite $N$. Define $Q_N=\sum_k q_k^{(N)}s^k$ and $\mathcal P_N=\sum_k p_k^{(N)}s^k$, with zero coefficients outside their polynomial ranges. Coefficient comparison yields
 \begin{align}
  q_k^{(N+1)}&=q_k^{(N)}+\tau_{N+1}q_{k-1}^{(N)},\nonumber\\
  p_k^{(N+1)}&=p_k^{(N)}+\tau_{N+1}p_{k-1}^{(N)}
@@ -920,6 +1016,22 @@ Finite integral states still leave arbitrary delay histories undetermined. Appen
 
 Frequency-domain observations connect synthesized derivative coefficients to measurable impedance. The charge/current convention, forcing operator and rational realization determine that connection; the same formal polynomial can have a different physical meaning under a different port assignment.
 
+## Choosing what to synthesize in phasor analysis
+\label{sec:phasor-choice}
+
+Use peak phasors with time dependence $e^{\ii\omega t}$. For \eqref{eq:local-port-pair},
+\begin{equation}
+ P(\ii\omega)\widehat i=Q(\ii\omega)\widehat v,\qquad
+ Z=\frac{P(\ii\omega)}{Q(\ii\omega)},\quad
+ Y=\frac{Q(\ii\omega)}{P(\ii\omega)}.
+ \label{eq:phasor-port-pair}
+\end{equation}
+Choose the local component, subnetwork or complete driving point first, and place its observation at the declared terminals. Impedance adds for series connections; admittance adds for parallel connections. Either may make the intended coefficient contribution easier to isolate. At a zero or pole retain the undivided pair instead of forming an undefined ratio. A voltage gain between different nodes is a transfer function, not a driving-point impedance, and needs its own input and output specification.
+
+Mechanical dynamic stiffness maps angle to torque. Thus the contact and joint laws in \eqref{eq:impact-block-matrix} have torque/angle units; their torque/angular-velocity impedances are $\mathcal K_c/s$ and $\mathcal K_j/s$ where defined. The hammer mobility is $s\mathcal N/\mathcal P$. A held-engaged, preloaded linear comparison can identify these frequency responses over a declared amplitude and frequency domain. Actual blows also require their transient preparations, contact gates and event laws; a phasor fit does not replace them.
+
+One complex observation at one frequency generally does not determine an arbitrary higher-order law. Known finite constitutive families and additional channels can give stronger results: [*Hidden States and Unassigned Work*][companion] derives contact and joint recovery from hammer and anvil phasors at one informative frequency for known inertias and spring--damper laws. Further frequencies test that family. The same local law must predict independent configurations; independently refitting every frequency or every surrounding block supplies no transferable coefficient construction. Rational laws, finite polynomial candidates and convergent derivative expansions retain their different domains and remainders.
+
 ## Harmonic substitution and a precise onset criterion
 
 For an equation driven by terminal voltage with $y=q$ and $i=\dot q$, its zero-state impedance is $Z(s)=P(s)/s$. With $(a,b,c)=(L,R,1/C)$ and $x=\omega\tau$,
@@ -958,7 +1070,7 @@ This avoids replacing the denominator by a high-frequency estimate. For the illu
 
 One device at fixed $\rho$ identifies only the combined coefficient at each $k$. Do calibrated multi-device impedance measurements support a transferable coefficient law [OP-LR12-01]? Independent resonators or controlled shunts supply the missing coordinates. A common rational law must predict their complex responses with the same parameters across its declared domain; fixture or amplitude dependence is a competing explanation. Fixture calibration and compensation are essential [Keysight (n.d.)][keysight]. [*Hidden States and Unassigned Work*][companion] develops calibrated VNA comparisons. Nonlinear, temperature and aging behavior remain separate acquisition questions.
 
-For the quartz model derived below, changing only the known shunt capacitance by $\Delta C_0$ adds $s\Delta C_0$ to admittance. If $Z_a,Z_b$ are the two impedances, this gives the exact finite-change identity
+Choosing admittance isolates a parallel contribution directly. For the quartz model derived below, changing only the known shunt capacitance by $\Delta C_0$ adds $s\Delta C_0$ to admittance. If $Z_a,Z_b$ are the two impedances, this gives the exact finite-change identity
 \begin{equation}
  Z_b-Z_a=-s\Delta C_0 Z_aZ_b,\qquad
  |Z_b-Z_a|=\omega|\Delta C_0|\,|Z_aZ_b|\quad(s=\ii\omega).
@@ -992,6 +1104,14 @@ For $T_{N}(s)=\sum_{n=0}^Nd_{n}s^n$, the exact remainder is
 No truncation is assumed exact. The Taylor disk ends at the nearest uncancelled denominator pole; improving a polynomial locally cannot remove that boundary.
 
 An illustrative inductor has $L=100\ \mathrm{nH}$, $R=3/5\ \Omega$, $C_{p}=1/4\ \mathrm{pF}$. The lossless frequency $1/(2\pi\sqrt{LC_{p}})$ is a reference, not automatically the lossy impedance maximum. Winding capacitance and the fixture both affect measured self resonance; [Coilcraft (n.d.)][coilcraft] specifically explains the fixture dependence. A real-valued empirical loss law such as $R(\omega)=R_{\mathrm{dc}}[1+\alpha\sqrt{\omega/\omega_{0}}]$ specifies neither the associated reactive dispersion nor a causal transient model. A causal complex material response and its state or memory realization remain necessary.
+
+The attachment location can be tested separately from the capacitor value. Let $Z_w=R+sL$ denote the bare coil, $Z_e$ another series block, and $C_p>0$ the same capacitor. Placing $C_p$ across only the coil, or across the entire assembly, gives
+\begin{equation}
+ Z_{\rm local}=Z_e+\frac{Z_w}{1+sC_pZ_w},\qquad
+ Z_{\rm whole}=\frac{Z_e+Z_w}{1+sC_p(Z_e+Z_w)}.
+ \label{eq:shunt-placement}
+\end{equation}
+Both follow by adding the shunt admittance at its actual terminals and then composing the remaining series connection. They predict different coefficient and forcing pairs in general, despite using the same components. Compare them at defined finite responses in a calibrated band; special frequencies or component choices can leave indistinguishable predictions. The companion develops the voltage/current comparison and its uncertainty condition. In contrast, exchanging $Z_{\rm local}$ for $1/Z_{\rm local}$ leaves the physical attachment unchanged.
 
 ## Quartz, branch cancellation and observation geometry
 
@@ -1292,7 +1412,7 @@ Indeed the associated quadratic form is twice $u^Ty-\dot E$. The relation betwee
 
 ## A finite network grammar and exact cancellation
 
-Take one-store atoms $Z_{C}=R/(1+sRC)$ and $Z_{L}=sLR/(R+sL)$, and compose them recursively in series and parallel. Quotient associative and commutative composition, keeping the two atom types distinct. If $U(z)$ counts series-rooted expressions, symmetry gives the same count for parallel roots. With $B(z)=2z+U(z)=\sum b_{n}z^n$,
+The composition rules in Section \ref{sec:operator-composition} also generate a finite family of exact terminal laws. Take one-store atoms $Z_{C}=R/(1+sRC)$ and $Z_{L}=sLR/(R+sL)$, and compose them recursively in series and parallel. Quotient associative and commutative composition, keeping the two atom types distinct. If $U(z)$ counts series-rooted expressions, symmetry gives the same count for parallel roots. With $B(z)=2z+U(z)=\sum b_{n}z^n$,
 \begin{equation}
  U(z)=\prod_{n\geq1}(1-z^n)^{-b_{n}}-1-B(z),\qquad
  T(z)=2z+2U(z).
@@ -1316,7 +1436,7 @@ The initialized terminal law needs a separate derivation. An RC atom driven by c
 \end{equation}
 Consequently $(D+1)(3v-2i)=0$ describes the initialized terminal behavior, whereas $3v=2i$ holds precisely when $a_0+2b_0=0$. Zero initial state is sufficient but not necessary. The illustrative preparation $a_0=1,b_0=0$ produces $v=e^{-t}/3$ at zero terminal current. This observable natural decay is uncontrollable from the terminal current, while further internal directions can be hidden. A purely resistive zero-state fit therefore establishes neither zero free-response order nor absent physical stores.
 
-For arbitrary parameters, a modified nodal model is
+For arbitrary parameters and connections that cannot be separated into scalar two-terminal blocks, retain coupled equations. A modified nodal model is
 \begin{equation}
  C_{n}\dot e+Ge+B_{L}i_{L}=bu,\qquad
  L_{L}\dot i_{L}=B_{L}^Te.
@@ -1968,11 +2088,11 @@ For actual validation, ordinary synchronized effort and flow channels should be 
 # Conclusions
 \label{sec:conclusion}
 
-Higher-order coefficient synthesis begins with a declared observation, forcing and reference chart. The two dimensional constraints give every monomial in the positive triple $(a,b,c)$ as $A_{r,k}=S\tau^k\rho^{-r}$. They leave the dimensionless coefficient functions undetermined. A finite support, exponent class and constant weights are additional claims whose domain, normalization and source of information must be stated. Reference and duality transformations transport those coordinates; they do not select a physical operator.
+Higher-order coefficient synthesis begins with a declared observation, forcing and reference chart. The two dimensional constraints give every monomial in the positive triple $(a,b,c)$ as $A_{r,k}=S\tau^k\rho^{-r}$. They leave the dimensionless coefficient functions undetermined. Choosing the local boundary, physical placement and observation fixes the coefficient question before any law is selected. A finite support, exponent class and constant weights are additional claims whose domain, normalization and source of information must be stated. Reference and duality transformations transport those coordinates; they do not select a physical operator.
 
 The rotary impact driver makes the construction concrete. Eliminating the anvil from the two-body component laws gives coefficients depending on four independent dimensionless component ratios. Restricting the parameter domain gives the nine-atom two-coordinate and seven-atom one-coordinate identities, with their forcing operators transported under the same normalization. The distinct powers prove support requirements on an open stiffness interval. These results establish representation and coefficient prediction across their specified domains without refitting. Recovery from noisy motion measurements remains a separate identifiability question. Changing the joint supplies a prediction to check with the same law; synchronized hammer, anvil and torque observations distinguish contact from joint dynamics. Additional internal contact or joint states require their own construction and preparation.
 
-Adding a declared polarization branch constructs the next complete operator through $Q_{N+1}=(1+\tau_{N+1}s)Q_N$ and $\mathcal P_{N+1}=(1+\tau_{N+1}s)\mathcal P_N+R_{N+1}Q_N$. The resulting coefficient recurrence changes lower orders as well as the leading term and has an explicit finite representation in the dimensional family with additional independent component ratios. By contrast, the rational-series recurrence generates higher expansion coefficients of a fixed state model. Neither it nor a dimensional lattice shift establishes a new physical state merely by increasing an index.
+Series and parallel composition construct both operators directly from local equations; the mixed LRC--RC example supplies an exact third-order law with its full-domain coefficient representation and compatible preparation. Choosing impedance or admittance in phasor analysis exposes which contribution is additive at the actual connection. Adding a declared polarization branch constructs the next complete operator through $Q_{N+1}=(1+\tau_{N+1}s)Q_N$ and $\mathcal P_{N+1}=(1+\tau_{N+1}s)\mathcal P_N+R_{N+1}Q_N$. The resulting coefficient recurrence changes lower orders as well as the leading term and has an explicit finite representation in the dimensional family with additional independent component ratios. By contrast, the rational-series recurrence generates higher expansion coefficients of a fixed state model. Neither it nor a dimensional lattice shift establishes a new physical state merely by increasing an index.
 
 Independent coordinates and an observation model determine what a measurement can recover. Distinct finite Laurent monomials are independent on an open domain of independent coordinates, but restricted parameter paths can make them coincide. Exact rank, practical sensitivity and prediction on independent conditions have separate requirements. The impact example shows why an internal anvil observation can distinguish preparations invisible in hammer angle and contact torque. The complementary circuit and RF proposals retain deliberate null controls and uncertainty-based separation of competing fixed laws. A good terminal waveform fit alone does not establish a weak coefficient, an exponent or a particular internal realization.
 

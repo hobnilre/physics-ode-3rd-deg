@@ -9,6 +9,7 @@ Higher-order equations become useful when their coefficients can be constructed,
 The rotary impact driver is the main worked example. Follow one hammer–anvil blow from component laws to a fourth-order equation, then change the joint and ask what the same construction predicts. Motion and torque observations distinguish contact from joint dynamics; release exposes the energy still stored in the contact.
 
 - **A systematic coefficient family.** The dimensional construction `A_(r,k) = S τ^k ρ^(-r)` organizes admissible monomials at every derivative order and shows what further model information determines their combination.
+- **Choose what to synthesize and where.** Interconnect local series and parallel equations to construct a component, contact, joint or observed-motion law. Impedance and admittance show how the actual connection carries its coefficients into a measurable phasor response.
 - **A construction that continues to higher orders.** Adding physical relaxation states gives an exact recurrence for the coefficients and forcing operator.
 - **Laws that predict across configurations.** The impact construction gives exact seven- and nine-term representations on specified parameter domains. Support and identification results show how independent component changes distinguish competing coefficient laws.
 - **A defined physical scope.** Preparation, cancellation, passivity and finite-representation limits establish what each synthesized equation describes, including the field or history data required by distributed, fractional and delayed systems.
