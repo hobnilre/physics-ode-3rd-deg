@@ -23,6 +23,15 @@ The [companion article on open questions and signed work](https://github.com/hob
 
 ## Article and build
 
-[Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md) · [Companion article](https://github.com/hobnilre/physics-ode-3rd-deg-op)
+[Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md)
 
-Run `make pdf` with Pandoc, XeLaTeX and the TeX Gyre fonts installed. The build regenerates changed vector figures before the article and stamps the first page with its UTC build time. An up-to-date PDF keeps its existing timestamp. Coverage, conventions and revision verification are maintained in `notes/`.
+Install GNU Make, Pandoc, XeLaTeX and the TeX Gyre fonts, including the LaTeX
+packages used by `preamble.tex` and the standalone TikZ/PGFPlots figures. Run `make pdf`
+from this repository. The build uses only files in this checkout; no sibling
+repository or private working files are needed.
+
+The first page gives the PDF creation time in UTC, followed by this repository's
+GitHub link. An up-to-date PDF keeps its timestamp; `make -B pdf` forces a rebuild.
+Intermediates go to ignored `build/` by default; `BUILD_DIR=/absolute/path`
+selects another location. `make clean` removes that build directory and keeps
+the published PDF and figure assets.
