@@ -2,9 +2,9 @@
 title: "Third- and Higher-Order ODEs"
 subtitle: "Coefficient synthesis, identification, and physical realization"
 author: "Hob Nilre & Bo C. Herlin"
-date: "2026-09-28"
+date: "2026-09-30"
 abstract: |
-  We develop a framework for synthesizing coefficients of third- and higher-order ordinary differential equations from declared reference quantities. Two dimensional constraints give the complete monomial family in a positive reference triple; constitutive laws, interconnection structure or identifiable observations determine particular combinations. The rotary impact driver is the principal worked application: exact hammer–anvil elimination yields coefficient laws in four independent dimensionless coordinates, with seven- and nine-term constant-weight representations on specified restricted parameter domains. Changing the joint connects these laws to coefficient prediction and contact–joint discrimination; release exposes a remaining contact store accessible to torque and motion measurements on a slow torsional analogue. Local series and parallel equations compose into complete coefficient and forcing operators at a chosen boundary; phasor impedance or admittance exposes the effect of where a component is connected. An exact branch-addition recurrence constructs successive higher-order operators and their forcing terms; a separate rational-series recurrence generates higher expansion coefficients without adding physical states. Reference transport, support independence and observation uncertainty distinguish representation, recovery and prediction. Stability, initial-data compatibility and passive realization delimit the equations' physical use. Four physical collision states can give a third-order initialized output and a second-order zero-state transfer. RF, battery, mechanical, finite-supply and distributed examples establish complementary conditions and limitations. Signed port works and independently evaluated stores delimit the realized equations; a companion develops the physical comparisons and extended energy accounts. Measurements remain conditional on calibration and preparation; no measured discrepancy is reported.
+  We develop a framework for synthesizing coefficients of third- and higher-order ordinary differential equations from declared reference quantities. Two dimensional constraints give the complete monomial family in a positive reference triple; constitutive laws, interconnection structure or identifiable observations determine particular combinations. The rotary impact driver is the principal worked application: exact hammer–anvil elimination yields coefficient laws in four independent dimensionless coordinates, with seven- and nine-term constant-weight representations on specified restricted parameter domains. Changing the joint connects these laws to coefficient prediction and contact–joint discrimination; release exposes a remaining contact store accessible to torque and motion measurements on a slow torsional analogue. Local series and parallel equations compose into complete coefficient and forcing operators at a chosen boundary; phasor impedance or admittance exposes the effect of where a component is connected. An exact branch-addition recurrence constructs successive higher-order operators and their forcing terms; a separate rational-series recurrence generates higher expansion coefficients without adding physical states. Reference transport, support independence and observation uncertainty distinguish representation, recovery and prediction. Stability, initial-data compatibility and passive realization delimit the equations' physical use. Four physical collision states can give a third-order initialized output and a second-order zero-state transfer. RF, battery, mechanical, finite-supply and distributed examples establish complementary conditions and limitations. A switched cubic retains its forcing, resistance-rate term and event-side state reconstruction; material and field controls identify what reductions omit. Signed port works and independently evaluated stores delimit the realized equations; a companion develops the physical comparisons and extended energy accounts. Measurements remain conditional on calibration and preparation; no measured discrepancy is reported.
 keywords:
   - higher-order ordinary differential equations
   - coefficient synthesis
@@ -46,7 +46,24 @@ An impact driver gives the coefficient problem a concrete setting. During one bl
 
 The construction begins with the second-order reference triple and its complete monomial family in Section \ref{sec:family}. Section \ref{sec:collision} carries the impact driver from its component equations to a fourth-order observation law, with exact coefficient support on several parameter domains in Section \ref{sec:collision-support}. Section \ref{sec:construction} derives series and parallel coefficient composition, works a mixed third-order circuit, and constructs arbitrary successive orders by adding physical relaxation states. It distinguishes these operations from extending a transfer series. Section \ref{sec:identification} returns to the impact measurements to establish what independent parameter changes and observations can recover. Initial data, physical realizations and finite-domain limits then determine what the synthesized equations describe.
 
-The contribution is the connected treatment of these constructions: dimensional freedom, exact parameter-dependent coefficient laws, constructive extension in order, and conditions for recovery and physical interpretation. Dimensional analysis, realization theory, passive synthesis and crossing theory supply established foundations; their derivations are retained where needed. No claim of historical priority is made for those foundations. The examples make the determined quantities and the remaining freedom explicit.
+The contribution is the connected treatment of these constructions: dimensional freedom, exact parameter-dependent coefficient laws, constructive extension in order, and conditions for recovery and physical interpretation. The monomial classification applies dimensional covariance; the collision supports are derived coefficient laws on specified parameter domains; the state-addition recurrence is a constructive application of local operator composition. Realization and dissipativity supply established criteria for interpreting their outputs [Kalman (1963)][kalman] and [Willems (1972)][willems]. The support proofs and observation controls establish the scope of these constructions without asserting historical priority for their foundations.
+
+| Result and determining information | Output and remaining freedom | Derivation |
+|:----------------------------------|:-------------------------------------------|:--------------------|
+| Dimensions and a positive reference triple | $A_{r,k}=S\tau^k\rho^{-r}$; weights and general dimensionless functions remain free | Section \ref{sec:family} |
+| Impact component laws and independent parameter domain | Both operators $P,N$; full-domain, seven- and nine-atom laws under their stated normalizations | Section \ref{sec:collision-support} |
+| A new physical relaxation branch | Recurrences for every coefficient and the input operator; branch resistance and time constant are extra supplied information | Section \ref{sec:construction} |
+| Independently varied coordinates and a declared observation model | Recoverable coefficients or prediction sets; hidden directions and uncertainty remain explicit | Section \ref{sec:identification} |
+| Compatible states, ports and constitutive stores | Initialized observable order and physical scope; a terminal quotient need not reconstruct hidden storage | Sections \ref{sec:initial} and \ref{sec:passive} |
+
+: Principal outputs of the coefficient-synthesis argument. Representation, recovery, prediction and realization require different determining information.
+
+The arbitrary-order construction can be read at once. For a coil with $N$ series polarization branches, write the current equation as $\mathcal P_N(D)i=Q_N(D)(u-V_{\rm oc})$. Adding a parallel RC branch of resistance $R_{N+1}>0$ and time constant $\tau_{N+1}>0$ gives
+$$
+ Q_{N+1}=(1+\tau_{N+1}s)Q_N,\qquad
+ \mathcal P_{N+1}=(1+\tau_{N+1}s)\mathcal P_N+R_{N+1}Q_N,
+$$
+starting from $Q_0=1$ and $\mathcal P_0=Ls+R_\Sigma$. Section \ref{sec:construction} derives this recurrence from the component laws, connects its coefficients to the dimensional family and states its initialization and cancellation conditions. It constructs a new physical state; extending a dimensionless basis or expanding one fixed rational response is a different operation.
 
 An ordinary differential equation has effective order $n$ when its highest nonzero derivative coefficient multiplies $y^{(n)}$. Polynomial degree in $y$ is a different property: a cubic contact force can occur in a second-order system, while a linear scalar equation can have fourth order. Throughout, $D=\dd/\dd t$, coefficients are constant on each declared interval unless stated otherwise, and the scalar observation $y$ need not be a complete physical state.
 
@@ -64,7 +81,7 @@ This polynomial equation can contain common factors. For a proper scalar transfe
 
 \FloatBarrier
 
-The article derives results for declared models. Ideal switches, linear contacts, lumped components and prescribed material laws are assumptions, not measurements. Exact integrations have zero numerical integration residual; a nonzero balance residual can nevertheless remain when an event deletes a store or the declared ports leave a coupling transfer unassigned. Missing physical mechanisms are kept as named, unevaluated model residuals. Neither work nor energy is used to choose coefficients, derivative order, release criteria, preparation or control strategy.
+The article derives results for declared models. Ideal switches, linear contacts, lumped components and prescribed material laws are assumptions, not measurements. Closed-form integrations evaluated here are exact within their declared models. Unevaluated matrix-function or time-ordered work expressions are definitions, not zero-error numerical evaluations; a nonzero balance residual can nevertheless remain when an event deletes a store or the declared ports leave a coupling transfer unassigned. Missing physical mechanisms are kept as named, unevaluated model residuals. Neither work nor energy is used to choose coefficients, derivative order, release criteria, preparation or control strategy.
 
 The primary measurement questions ask whether independent component changes distinguish coefficient contributions and whether one fixed law predicts independently specified configurations. The impact example makes the first question physical: which motion and torque measurements separate hammer–anvil contact from the joint against which the tool strikes? Section \ref{sec:synthesis-evidence} gives a prediction-set separation criterion for these observations; the circuit and RF proposals supply complementary controls using calibrated voltage, current and phase. Parameter identification, candidate choice and final comparison remain separate. A small response discrepancy can coexist with an incorrectly recovered weak coefficient.
 
@@ -465,142 +482,6 @@ A fixed anvil gives $J_{h}\ddot\theta_{h}+d_{c}\dot\theta_{h}+k_{c}\theta_{h}=u$
 
 A compliant boundary with its own inertia adds another displacement and velocity, hence up to six states. A rational joint impedance likewise adds its internal states. Fixing the anvil suppresses the motion needed to identify those joint dynamics. The limiting model must be derived from the constrained equations, with preparation and observation specified; a small positive inertia does not justify a uniform lower-order law near resonance.
 
-## Competing contact descriptions
-
-An instantaneous rigid-impact map predicts a velocity jump and restitution but no resolved contact waveform. For a one-dimensional free pair with initial velocities $u_1,u_2$, restitution $e$ gives
-\begin{equation}
- v_1^+=\frac{(m_1-em_2)u_1+(1+e)m_2u_2}{m_1+m_2},
- \qquad
- v_2^+=\frac{(1+e)m_1u_1+(m_2-em_1)u_2}{m_1+m_2}.
- \label{eq:rigid-map}
-\end{equation}
-These follow from signed momentum and the specified relative-velocity law, not an energy premise. For $u_2=0$, $u_1>0$, the striker stops at $m_1=e m_2$ and retains forward motion above that ratio. A fixture or accumulating penetration boundary invalidates the free-pair assumption. An oblique frictionless contact applies the impulse along its declared normal and leaves the tangential relative component unchanged; offset rotation requires \eqref{eq:effective-mass}. For a finite compliant regularization of a constant-mass body, integrating $F\cdot v$ gives the impulse work $J\cdot(v^-+v^+)/2$. Multiplying a delta impulse by an unspecified discontinuous velocity is not an independent work definition. A linear compliant contact predicts a duration, a waveform and reversible spring storage with viscous dissipation. A nonlinear contact such as
-\begin{equation}
- \tau_{c}=k_{c}\delta+d_{c}\dot\delta+\beta k_{c}\frac{\delta^3}{\delta_*^2},\quad
- U_{c}=\frac{k_{c}\delta^2}{2}+\frac{\beta k_{c}\delta^4}{4\delta_*^2}
- \label{eq:cubic-contact}
-\end{equation}
-retains four first-order mechanical states but has no global constant-coefficient fourth-order scalar law. Its tangent stiffness is
-$k_{c}[1+3\beta\delta^2/\delta_*^2]$; illustrative values $\beta=1/5$, $\delta_*=1/25$ define one model only. A Hertz-type fractional power law has a local tangent only on its active deformation domain and needs a separate release rule.
-
-A candidate scalar extension may use $B_k(\delta,p)$ depending on deformation and preload $p$, or an explicit nonlinear remainder $g(\delta,\dot\delta,p)$. It must be derived or identified with its own regularity and initialization conditions. Eliminating a nonlinear internal coordinate can introduce products of derivatives, local inversion conditions and singularities; assigning variable weights to a linear polynomial does not prove equivalence to the four-state contact model.
-
-A higher-order linear scalar model can represent eliminated linear modes or a finite-band rational contact response. It cannot, merely by adding derivatives, replace engagement gates, backlash, partial-edge geometry, dry friction, adhesion, plastic deformation, evolving preload or an amplitude-dependent force law. Resolved inertias must not be counted again in a contact correction. If an exact contact transfer is expanded as a derivative series, convergence of that series and admissible initial history must be proved; retaining a finite internal-state realization is often the clearer construction.
-
-These distinctions determine the comparisons that are meaningful:
-
-| Description | What can be predicted within its assumptions | What remains unspecified |
-|:---------------------|:------------------------------------|:----------------------------------|
-| Rigid restitution | Outgoing velocities and impulse | Contact duration, peak torque, within-contact power |
-| Linear compliant two-body model | Motion, torque and signed power during active contact | Release physics and unmodeled boundary modes |
-| Nonlinear compliant model | Amplitude-dependent waveform under a declared force law | Constitutive transfer outside the declared law |
-| Higher-order scalar linear model | A chosen observation and compatible derivatives | Component interpretation, other ports and preparation unless realized |
-
-: Collision descriptions and their distinct scopes.
-
-For a linear system with proportionally scaled initial state and input, motions and torques scale by the amplitude factor, while physical powers scale by its square. Failure of this scaling can distinguish nonlinear contact, altered boundary conditions or instrumentation effects; it does not identify the cause uniquely. Compare contact duration, peak torque, outgoing speeds, compression and rebound phases, instantaneous signed power and its peak and root-mean-square values. A global work match can conceal a wrong waveform and is not an order-selection criterion.
-
-## Initial states, repeated engagement and measurement
-\label{sec:impact-measurement}
-
-The four jets of $q=\theta_{h}$ determine the hidden anvil coordinates only when the following matrix is nonsingular:
-\begin{equation}
- \begin{pmatrix}
- k_{c}&d_{c}\\-d_{c}k_{j}/J_{a}&k_{c}-d_{c}d_{j}/J_{a}
- \end{pmatrix}
- \binom{\theta_{a}}{\dot\theta_{a}}
- =\binom{J_{h}\ddot q+k_{c}q+d_{c}\dot q}
- {J_{h}q^{(3)}+k_{c}\dot q+d_{c}(1+J_{h}/J_{a})\ddot q}.
- \label{eq:collision-jet}
-\end{equation}
-Here $u=0$ and the angle origin is the active-contact origin. The determinant is \eqref{eq:collision-hidden}. Close to that surface a formally invertible reconstruction can be practically useless. Noisy jerk is especially dangerous: differentiating the angle three times amplifies high-frequency errors, and stable coefficients do not bound the response to an arbitrarily corrupted initial jet.
-
-During free flight set the contact torque to zero, evolve both bodies and the joint, and include the motor if present. Re-engagement occurs at a root of the gap condition with the appropriate approaching velocity. States remain continuous at an uncompressed engagement without an imposed impulse; higher jets generally jump because the vector field changes. A motor acting between contacts does not justify a motor-free model of an entire impact sequence. More than a small number of engagements, frictional changes and evolving joint properties require their own constitutive model.
-
-Which measurements separate contact dynamics from the frequency-dependent joint against which the impact driver strikes [OP-LR08-01]? A slow torsional rig with two encoders and a contact-torque sensor can compare independently changed contact compliance and support stiffness. Hammer agreement with anvil disagreement rejects a claimed internal reconstruction. The separation criterion below retains calibrated response and correlated uncertainty. [*Hidden States and Unassigned Work*][companion] develops the apparatus and support observations; correspondence to a commercial driver requires its own component allocation, preparation and bandwidth.
-
-The exact hidden-motion alternative on \eqref{eq:collision-hidden} makes the required internal sensor concrete. Two preparations differing by $\Delta\theta_a(t)=A e^{-k_c t/d_c}$, with $A\ne0$ and the corresponding anvil velocity, have identical hammer angle and contact torque: $k_c\Delta\theta_a+d_c\Delta\dot\theta_a=0$. An anvil encoder separates them at time $t$ if $|A|e^{-k_c t/d_c}$ exceeds the sum of their angle-error bounds. A contact-torque channel alone cannot detect this particular motion. Further derivatives of the identical hammer-angle trace cannot recover it either. Away from the cancellation surface, compare the complete predictions $Ce^{Ft}x_0$ and the driven convolution from each calibrated contact/boundary model using \eqref{eq:measurement-separation}; allowing fixture parameters to vary can cause those prediction sets to overlap even when a nominal observability matrix has full rank.
-
-## Separate contact and joint constitutive families
-\label{sec:impact-constitutive}
-
-The second synthesis task supplies dynamics within the contact or joint. Its coefficients require extra information: a declared internal-state model or observations that identify its parameters independently of the resolved body motion. A scalar equation for hammer angle obtained by eliminating the anvil differs from a higher-derivative constitutive proposal for the contact itself. To formulate the latter, introduce positive unresolved-contact reference scales $(J_*^c,d_*^c,k_*^c)$ and independent joint scales $(J_*^j,d_*^j,k_*^j)$. The superscripts identify different physical regions, not derivatives. For $\ell\in\{c,j\}$ define
-\begin{equation}
- A^\ell_{r,k}=(J_*^\ell)^{k-1+r}(d_*^\ell)^{2-k-2r}(k_*^\ell)^r,
- \qquad B_k^\ell=\sum_r w^\ell_{r,k}A^\ell_{r,k}.
- \label{eq:constitutive-family}
-\end{equation}
-Each coefficient has torque times time to power $k$ per angular deformation. The economical contact sequence has the six coefficients
-$k_*^c,d_*^c,J_*^c,J_*^cd_*^c/k_*^c,(J_*^c)^2/k_*^c,(J_*^c)^2d_*^c/(k_*^c)^2$
-at orders zero through five. It remains a convention, not six new components. In particular, $J_*^c$ must represent an unresolved local inertia or an explicitly modeled internal contact mode; assigning either resolved body inertia to it again counts that inertia twice.
-
-On each smooth active interval, the candidate laws are
-\begin{equation}
- \tau_c=\chi_c\sum_{k=0}^{N_c}B_k^c\delta^{(k)},\qquad
- \tau_j=\sum_{k=0}^{N_j}B_k^j\theta_a^{(k)},\qquad \chi_c\in\{0,1\}.
- \label{eq:constitutive-candidates}
-\end{equation}
-The contact gate $\chi_c$ is fixed within that interval and supplied by an engagement/release law at its boundaries. Derivatives of a switching gate are not silently included in the smooth constitutive equation. Orders zero and one recover separate spring--damper descriptions. Varying their two sets of coefficients together would conceal whether a missing mode belongs to contact or support. The two-body balances still have to be solved together with these constitutive laws; their combined scalar order is not simply either constitutive truncation index.
-
-A constructed linear internal contact model instead has, for example, $\dot z_c=F_cz_c+G_c\delta$ and $\tau_c=H_cz_c+K_c\delta$. Its zero-state dynamic stiffness is
-$\mathcal K_c(s)=K_c+H_c(sI-F_c)^{-1}G_c=P_c(s)/Q_c(s)$. For initialized elimination take $Q_c(s)=\det(sI-F_c)$ and $P_c(s)=K_cQ_c(s)+H_c\operatorname{adj}(sI-F_c)G_c$ before cancelling common factors. Eliminating the states on a smooth interval gives
-\begin{equation}
- Q_c(D)\tau_c=P_c(D)\delta,\qquad
- Q_j(D)\tau_j=P_j(D)\theta_a,
- \label{eq:constitutive-rational}
-\end{equation}
-with initial derivatives restricted by the respective state-to-jet maps. The joint uses the analogous unreduced construction. A reduced pair is sufficient only when every removed natural contribution is invisible at this output or excluded by the preparation. Zero-state reduction alone cannot remove a separately prepared natural response. A Kelvin--Voigt direct term or an explicit inertial term can be retained alongside the internal-state model when its port realization is declared.
-
-The location of either rational law enters the observed coefficients explicitly. With fixed support, fixed active contact, and the same two body inertias, the zero-state equations are
-\begin{equation}
- \begin{pmatrix}
- J_hs^2+\mathcal K_c&-\mathcal K_c\\
- -\mathcal K_c&J_as^2+\mathcal K_c+\mathcal K_j
- \end{pmatrix}
- \begin{pmatrix}\Theta_h\\\Theta_a\end{pmatrix}
- =\begin{pmatrix}U\\0\end{pmatrix}.
- \label{eq:impact-block-matrix}
-\end{equation}
-Expanding the determinant cancels the two $\mathcal K_c^2$ terms. Multiplying by $Q_cQ_j$ gives the complete hammer law
-\begin{align}
- \mathcal P={}&J_hJ_as^4Q_cQ_j+(J_h+J_a)s^2P_cQ_j
-                   +J_hs^2P_jQ_c+P_cP_j,\nonumber\\
- \mathcal N={}&J_as^2Q_cQ_j+P_cQ_j+P_jQ_c,\qquad
- \mathcal P(D)\theta_h=\mathcal N(D)u.
- \label{eq:impact-block-synthesis}
-\end{align}
-The numerator is the first diagonal cofactor multiplied by $Q_cQ_j$. Choosing $Q_c=Q_j=1$, $P_c=k_c+d_cs$ and $P_j=k_j+d_js$ recovers every coefficient and the forcing in \eqref{eq:collision-poly}. For internal-state laws use their unreduced pairs and compatible initial jets; retain additional states before deciding which factors can be removed. Contact coefficients and joint coefficients enter different terms of both operators, so specifying where a new law acts is part of synthesis. The resolved inertias $J_h,J_a$ remain outside those local laws. This construction predicts the hammer equation from independently supplied local information; it does not uniquely recover that information from hammer motion alone. The anvil counterexample and preparation conditions above still apply.
-
-If $\mathcal K_c$ is analytic at the expansion point, its infinite Taylor series is an exact analytic identity only inside the disk to the nearest uncancelled pole. Identifying that series with a time-domain derivative operator further requires convergence on the chosen signals and transport of the initial state or history. For a finite polynomial $T_N$, the exact transfer discrepancy is $(P_c-Q_cT_N)/Q_c$. Thus a finite derivative family is a conditional candidate on a declared response domain, not an exact replacement of arbitrary rational memory. Negative derivative indices additionally require the initialized histories of Section \ref{sec:histories}. A repeatable slow tail may motivate their investigation, but cannot determine their integration constants.
-
-The physical contact power remains $\tau_c\dot\delta$. Its formal decomposition into $B_k^c\delta^{(k)}\dot\delta$ does not make each summand a separately accessible port or a physical store. An instantaneous contribution fraction can be defined as the absolute value of one summand divided by the sum of absolute values, only when that denominator is nonzero; it is a diagnostic of the chosen representation and normalization. Model comparison can use independently measured torque, motion, phase and instantaneous physical power, with coefficient estimation and final conditions kept separate. It cannot use the integrated formal term works to choose weights or derivative order.
-
-The practical comparison asks which repeatable features of the impact response are explained by additional linear dynamics and which require a changing contact or joint law. Tuned linear pulse shape, phase and unresolved linear modes may then receive a rational constitutive explanation; resolved rebound may predict restitution rather than impose it. None of these constructions removes release logic, partial engagement, backlash, preload-dependent microslip or an amplitude-dependent deformation law. Stable response and port passivity require the whole declared interconnection. A direct physical contact law of polynomial degree above two faces the same global passivity obstruction as the electrical law proved in Section \ref{sec:rf}, with torque and angular rate replacing voltage and current.
-
-Additional contact information can take several distinct forms. A resolved bending mode supplies further displacement and velocity states; an offset rigid contact changes effective inertia; penetration memory and damage require their own internal coordinates or event laws. Appendix \ref{sec:contact-extensions} derives these distinctions for teeterboard, club--ball and hammer--nail systems, including \eqref{eq:effective-mass}. They identify what must be supplied before extending the impact-driver coefficients: a component law and its preparation, a geometric inertia map, or a switching rule with its state transport.
-
-## What remains when the blow releases?
-\label{sec:impact-release}
-
-The blow ends when contact releases. What remains stored, what returns to the mechanism, and what leaves through the support [OP-LR03-01]? At zero contact torque in the linear spring--damper model,
-\begin{equation}
- \delta=-\frac{d_{c}}{k_{c}}\dot\delta,\qquad
- U_{c}(t_{e}^-)=\frac{d_{c}^2\dot\delta(t_{e}^-)^2}{2k_{c}}.
- \label{eq:release}
-\end{equation}
-This store is positive unless relative speed vanishes. Consider the explicit deletion model: the two body states and joint store remain continuous at $t_e$, the contact store is removed, and no finite or impulsive release transfer is supplied. Bounded regular port powers have vanishing integrals on a shrinking event interval. Independent event-side store evaluation therefore gives
-\begin{equation}
- \Delta E_{e}=-U_c(t_e^-),\qquad
- \sum_\ell W_{\ell,e}^{\mathrm{declared}}=0,\qquad
- r_{E,e}=-\frac{d_c^2\dot\delta(t_e^-)^2}{2k_c}.
- \label{eq:release-residual}
-\end{equation}
-The removed store has positive magnitude; the residual is negative with power positive into the boundary. The calculation checks the torque-zero condition, event-side continuity, the spring store and the regular port integrals. Its numerical integration residual is zero. The physical destination and a constitutive law for the release remain unresolved.
-
-A slow torsional rig with encoders and a torque sensor can locate the release event and resolve the remaining deformation. Independently calibrated stiffness and pre-release angle determine the store; a positive lower bound must survive angle, stiffness and timing uncertainty. [*Hidden States and Unassigned Work*][companion] develops retained material states, destination alternatives, repeated-event accounts and the finite observation window. A fixed support can carry torque with zero work; support transfer needs both torque and motion.
-
-This comparison connects the synthesized active-contact law to the event at which its description changes. The separate port works follow in Section \ref{sec:work}. The energy outcome does not choose coefficient weights or derivative order.
-
 # Constructive synthesis at arbitrary order
 \label{sec:construction}
 
@@ -883,6 +764,147 @@ A continuous-frequency derivative and a discrete difference have different symbo
  \label{eq:derivative-symbols}
 \end{equation}
 These correspond to the continuous derivative, forward difference and bilinear transformation. Replacing one by another changes the design matrix; the bilinear symbol is singular at $z=-1$. An apparent change of exponents can be an observation-operator effect. First differences, local polynomial estimates and regularized polynomial derivative estimates impose different filters and initial biases. Sensor bandwidth, timing and colored noise must be propagated through the chosen estimator. Measuring hidden positions and velocities can be more informative than estimating a high derivative from one channel.
+
+# Contact laws, preparation and release
+\label{sec:contact-synthesis}
+
+The coefficient construction in Section \ref{sec:collision} and the recovery conditions in Section \ref{sec:identification} now delimit which additional contact laws, preparations and release events those coefficients can describe. The following developments retain their distinct constitutive information and event boundaries.
+
+## Competing contact descriptions
+
+An instantaneous rigid-impact map predicts a velocity jump and restitution but no resolved contact waveform. For a one-dimensional free pair with initial velocities $u_1,u_2$, restitution $e$ gives
+\begin{equation}
+ v_1^+=\frac{(m_1-em_2)u_1+(1+e)m_2u_2}{m_1+m_2},
+ \qquad
+ v_2^+=\frac{(1+e)m_1u_1+(m_2-em_1)u_2}{m_1+m_2}.
+ \label{eq:rigid-map}
+\end{equation}
+These follow from signed momentum and the specified relative-velocity law, not an energy premise. For $u_2=0$, $u_1>0$, the striker stops at $m_1=e m_2$ and retains forward motion above that ratio. A fixture or accumulating penetration boundary invalidates the free-pair assumption. An oblique frictionless contact applies the impulse along its declared normal and leaves the tangential relative component unchanged; offset rotation requires \eqref{eq:effective-mass}. For a finite compliant regularization of a constant-mass body, integrating $F\cdot v$ gives the impulse work $J\cdot(v^-+v^+)/2$. Multiplying a delta impulse by an unspecified discontinuous velocity is not an independent work definition. A linear compliant contact predicts a duration, a waveform and reversible spring storage with viscous dissipation. A nonlinear contact such as
+\begin{equation}
+ \tau_{c}=k_{c}\delta+d_{c}\dot\delta+\beta k_{c}\frac{\delta^3}{\delta_*^2},\quad
+ U_{c}=\frac{k_{c}\delta^2}{2}+\frac{\beta k_{c}\delta^4}{4\delta_*^2}
+ \label{eq:cubic-contact}
+\end{equation}
+retains four first-order mechanical states but has no global constant-coefficient fourth-order scalar law. Its tangent stiffness is
+$k_{c}[1+3\beta\delta^2/\delta_*^2]$; illustrative values $\beta=1/5$, $\delta_*=1/25$ define one model only. A Hertz-type fractional power law has a local tangent only on its active deformation domain and needs a separate release rule.
+
+A candidate scalar extension may use $B_k(\delta,p)$ depending on deformation and preload $p$, or an explicit nonlinear remainder $g(\delta,\dot\delta,p)$. It must be derived or identified with its own regularity and initialization conditions. Eliminating a nonlinear internal coordinate can introduce products of derivatives, local inversion conditions and singularities; assigning variable weights to a linear polynomial does not prove equivalence to the four-state contact model.
+
+A higher-order linear scalar model can represent eliminated linear modes or a finite-band rational contact response. It cannot, merely by adding derivatives, replace engagement gates, backlash, partial-edge geometry, dry friction, adhesion, plastic deformation, evolving preload or an amplitude-dependent force law. Resolved inertias must not be counted again in a contact correction. If an exact contact transfer is expanded as a derivative series, convergence of that series and admissible initial history must be proved; retaining a finite internal-state realization is often the clearer construction.
+
+These distinctions determine the comparisons that are meaningful:
+
+| Description | What can be predicted within its assumptions | What remains unspecified |
+|:---------------------|:------------------------------------|:----------------------------------|
+| Rigid restitution | Outgoing velocities and impulse | Contact duration, peak torque, within-contact power |
+| Linear compliant two-body model | Motion, torque and signed power during active contact | Release physics and unmodeled boundary modes |
+| Nonlinear compliant model | Amplitude-dependent waveform under a declared force law | Constitutive transfer outside the declared law |
+| Higher-order scalar linear model | A chosen observation and compatible derivatives | Component interpretation, other ports and preparation unless realized |
+
+: Collision descriptions and their distinct scopes.
+
+For a linear system with proportionally scaled initial state and input, motions and torques scale by the amplitude factor, while physical powers scale by its square. Failure of this scaling can distinguish nonlinear contact, altered boundary conditions or instrumentation effects; it does not identify the cause uniquely. Compare contact duration, peak torque, outgoing speeds, compression and rebound phases, instantaneous signed power and its peak and root-mean-square values. A global work match can conceal a wrong waveform and is not an order-selection criterion.
+
+## Initial states, repeated engagement and measurement
+\label{sec:impact-measurement}
+
+The four jets of $q=\theta_{h}$ determine the hidden anvil coordinates only when the following matrix is nonsingular:
+\begin{equation}
+ \begin{pmatrix}
+ k_{c}&d_{c}\\-d_{c}k_{j}/J_{a}&k_{c}-d_{c}d_{j}/J_{a}
+ \end{pmatrix}
+ \binom{\theta_{a}}{\dot\theta_{a}}
+ =\binom{J_{h}\ddot q+k_{c}q+d_{c}\dot q}
+ {J_{h}q^{(3)}+k_{c}\dot q+d_{c}(1+J_{h}/J_{a})\ddot q}.
+ \label{eq:collision-jet}
+\end{equation}
+Here $u=0$ and the angle origin is the active-contact origin. The determinant is \eqref{eq:collision-hidden}. Close to that surface a formally invertible reconstruction can be practically useless. Noisy jerk is especially dangerous: differentiating the angle three times amplifies high-frequency errors, and stable coefficients do not bound the response to an arbitrarily corrupted initial jet.
+
+During free flight set the contact torque to zero, evolve both bodies and the joint, and include the motor if present. Re-engagement occurs at a root of the gap condition with the appropriate approaching velocity. States remain continuous at an uncompressed engagement without an imposed impulse; higher jets generally jump because the vector field changes. A motor acting between contacts does not justify a motor-free model of an entire impact sequence. More than a small number of engagements, frictional changes and evolving joint properties require their own constitutive model.
+
+Which measurements separate contact dynamics from the frequency-dependent joint against which the impact driver strikes [OP-LR08-01]? A slow torsional rig with two encoders and a contact-torque sensor can compare independently changed contact compliance and support stiffness. Hammer agreement with anvil disagreement rejects a claimed internal reconstruction. The separation criterion below retains calibrated response and correlated uncertainty. [*Hidden States and Unassigned Work*][companion] develops the apparatus and support observations; correspondence to a commercial driver requires its own component allocation, preparation and bandwidth.
+
+The exact hidden-motion alternative on \eqref{eq:collision-hidden} makes the required internal sensor concrete. Two preparations differing by $\Delta\theta_a(t)=A e^{-k_c t/d_c}$, with $A\ne0$ and the corresponding anvil velocity, have identical hammer angle and contact torque: $k_c\Delta\theta_a+d_c\Delta\dot\theta_a=0$. An anvil encoder separates them at time $t$ if $|A|e^{-k_c t/d_c}$ exceeds the sum of their angle-error bounds. A contact-torque channel alone cannot detect this particular motion. Further derivatives of the identical hammer-angle trace cannot recover it either. Away from the cancellation surface, compare the complete predictions $Ce^{Ft}x_0$ and the driven convolution from each calibrated contact/boundary model using \eqref{eq:measurement-separation}; allowing fixture parameters to vary can cause those prediction sets to overlap even when a nominal observability matrix has full rank.
+
+## Separate contact and joint constitutive families
+\label{sec:impact-constitutive}
+
+The second synthesis task supplies dynamics within the contact or joint. Its coefficients require extra information: a declared internal-state model or observations that identify its parameters independently of the resolved body motion. A scalar equation for hammer angle obtained by eliminating the anvil differs from a higher-derivative constitutive proposal for the contact itself. To formulate the latter, introduce positive unresolved-contact reference scales $(J_*^c,d_*^c,k_*^c)$ and independent joint scales $(J_*^j,d_*^j,k_*^j)$. The superscripts identify different physical regions, not derivatives. For $\ell\in\{c,j\}$ define
+\begin{equation}
+ A^\ell_{r,k}=(J_*^\ell)^{k-1+r}(d_*^\ell)^{2-k-2r}(k_*^\ell)^r,
+ \qquad B_k^\ell=\sum_r w^\ell_{r,k}A^\ell_{r,k}.
+ \label{eq:constitutive-family}
+\end{equation}
+Each coefficient has torque times time to power $k$ per angular deformation. The economical contact sequence has the six coefficients
+$k_*^c,d_*^c,J_*^c,J_*^cd_*^c/k_*^c,(J_*^c)^2/k_*^c,(J_*^c)^2d_*^c/(k_*^c)^2$
+at orders zero through five. It remains a convention, not six new components. In particular, $J_*^c$ must represent an unresolved local inertia or an explicitly modeled internal contact mode; assigning either resolved body inertia to it again counts that inertia twice.
+
+On each smooth active interval, the candidate laws are
+\begin{equation}
+ \tau_c=\chi_c\sum_{k=0}^{N_c}B_k^c\delta^{(k)},\qquad
+ \tau_j=\sum_{k=0}^{N_j}B_k^j\theta_a^{(k)},\qquad \chi_c\in\{0,1\}.
+ \label{eq:constitutive-candidates}
+\end{equation}
+The contact gate $\chi_c$ is fixed within that interval and supplied by an engagement/release law at its boundaries. Derivatives of a switching gate are not silently included in the smooth constitutive equation. Orders zero and one recover separate spring--damper descriptions. Varying their two sets of coefficients together would conceal whether a missing mode belongs to contact or support. The two-body balances still have to be solved together with these constitutive laws; their combined scalar order is not simply either constitutive truncation index.
+
+A constructed linear internal contact model instead has, for example, $\dot z_c=F_cz_c+G_c\delta$ and $\tau_c=H_cz_c+K_c\delta$. Its zero-state dynamic stiffness is
+$\mathcal K_c(s)=K_c+H_c(sI-F_c)^{-1}G_c=P_c(s)/Q_c(s)$. For initialized elimination take $Q_c(s)=\det(sI-F_c)$ and $P_c(s)=K_cQ_c(s)+H_c\operatorname{adj}(sI-F_c)G_c$ before cancelling common factors. Eliminating the states on a smooth interval gives
+\begin{equation}
+ Q_c(D)\tau_c=P_c(D)\delta,\qquad
+ Q_j(D)\tau_j=P_j(D)\theta_a,
+ \label{eq:constitutive-rational}
+\end{equation}
+with initial derivatives restricted by the respective state-to-jet maps. The joint uses the analogous unreduced construction. A reduced pair is sufficient only when every removed natural contribution is invisible at this output or excluded by the preparation. Zero-state reduction alone cannot remove a separately prepared natural response. A Kelvin--Voigt direct term or an explicit inertial term can be retained alongside the internal-state model when its port realization is declared.
+
+The location of either rational law enters the observed coefficients explicitly. With fixed support, fixed active contact, and the same two body inertias, the zero-state equations are
+\begin{equation}
+ \begin{pmatrix}
+ J_hs^2+\mathcal K_c&-\mathcal K_c\\
+ -\mathcal K_c&J_as^2+\mathcal K_c+\mathcal K_j
+ \end{pmatrix}
+ \begin{pmatrix}\Theta_h\\\Theta_a\end{pmatrix}
+ =\begin{pmatrix}U\\0\end{pmatrix}.
+ \label{eq:impact-block-matrix}
+\end{equation}
+Expanding the determinant cancels the two $\mathcal K_c^2$ terms. Multiplying by $Q_cQ_j$ gives the complete hammer law
+\begin{align}
+ \mathcal P={}&J_hJ_as^4Q_cQ_j+(J_h+J_a)s^2P_cQ_j
+                   +J_hs^2P_jQ_c+P_cP_j,\nonumber\\
+ \mathcal N={}&J_as^2Q_cQ_j+P_cQ_j+P_jQ_c,\qquad
+ \mathcal P(D)\theta_h=\mathcal N(D)u.
+ \label{eq:impact-block-synthesis}
+\end{align}
+The numerator is the first diagonal cofactor multiplied by $Q_cQ_j$. Choosing $Q_c=Q_j=1$, $P_c=k_c+d_cs$ and $P_j=k_j+d_js$ recovers every coefficient and the forcing in \eqref{eq:collision-poly}. For internal-state laws use their unreduced pairs and compatible initial jets; retain additional states before deciding which factors can be removed. Contact coefficients and joint coefficients enter different terms of both operators, so specifying where a new law acts is part of synthesis. The resolved inertias $J_h,J_a$ remain outside those local laws. This construction predicts the hammer equation from independently supplied local information; it does not uniquely recover that information from hammer motion alone. The anvil counterexample and preparation conditions above still apply.
+
+If $\mathcal K_c$ is analytic at the expansion point, its infinite Taylor series is an exact analytic identity only inside the disk to the nearest uncancelled pole. Identifying that series with a time-domain derivative operator further requires convergence on the chosen signals and transport of the initial state or history. For a finite polynomial $T_N$, the exact transfer discrepancy is $(P_c-Q_cT_N)/Q_c$. Thus a finite derivative family is a conditional candidate on a declared response domain, not an exact replacement of arbitrary rational memory. Negative derivative indices additionally require the initialized histories of Section \ref{sec:histories}. A repeatable slow tail may motivate their investigation, but cannot determine their integration constants.
+
+The physical contact power remains $\tau_c\dot\delta$. Its formal decomposition into $B_k^c\delta^{(k)}\dot\delta$ does not make each summand a separately accessible port or a physical store. An instantaneous contribution fraction can be defined as the absolute value of one summand divided by the sum of absolute values, only when that denominator is nonzero; it is a diagnostic of the chosen representation and normalization. Model comparison can use independently measured torque, motion, phase and instantaneous physical power, with coefficient estimation and final conditions kept separate. It cannot use the integrated formal term works to choose weights or derivative order.
+
+The practical comparison asks which repeatable features of the impact response are explained by additional linear dynamics and which require a changing contact or joint law. Tuned linear pulse shape, phase and unresolved linear modes may then receive a rational constitutive explanation; resolved rebound may predict restitution rather than impose it. None of these constructions removes release logic, partial engagement, backlash, preload-dependent microslip or an amplitude-dependent deformation law. Stable response and port passivity require the whole declared interconnection. A direct physical contact law of polynomial degree above two faces the same global passivity obstruction as the electrical law proved in Section \ref{sec:rf}, with torque and angular rate replacing voltage and current.
+
+Additional contact information can take several distinct forms. A resolved bending mode supplies further displacement and velocity states; an offset rigid contact changes effective inertia; penetration memory and damage require their own internal coordinates or event laws. Appendix \ref{sec:contact-extensions} derives these distinctions for teeterboard, club--ball and hammer--nail systems, including \eqref{eq:effective-mass}. They identify what must be supplied before extending the impact-driver coefficients: a component law and its preparation, a geometric inertia map, or a switching rule with its state transport.
+
+## What remains when the blow releases?
+\label{sec:impact-release}
+
+The blow ends when contact releases. What remains stored, what returns to the mechanism, and what leaves through the support [OP-LR03-01]? At zero contact torque in the linear spring--damper model,
+\begin{equation}
+ \delta=-\frac{d_{c}}{k_{c}}\dot\delta,\qquad
+ U_{c}(t_{e}^-)=\frac{d_{c}^2\dot\delta(t_{e}^-)^2}{2k_{c}}.
+ \label{eq:release}
+\end{equation}
+This store is positive unless relative speed vanishes. Consider the explicit deletion model: the two body states and joint store remain continuous at $t_e$, the contact store is removed, and no finite or impulsive release transfer is supplied. Bounded regular port powers have vanishing integrals on a shrinking event interval. Independent event-side store evaluation therefore gives
+\begin{equation}
+ \Delta E_{e}=-U_c(t_e^-),\qquad
+ \sum_\ell W_{\ell,e}^{\mathrm{declared}}=0,\qquad
+ r_{E,e}=-\frac{d_c^2\dot\delta(t_e^-)^2}{2k_c}.
+ \label{eq:release-residual}
+\end{equation}
+The removed store has positive magnitude; the residual is negative with power positive into the boundary. The calculation checks the torque-zero condition, event-side continuity, the spring store and the regular port integrals. The physical destination and a constitutive law for the release remain unresolved.
+
+A slow torsional rig with encoders and a torque sensor can locate the release event and resolve the remaining deformation. Independently calibrated stiffness and pre-release angle determine the store; a positive lower bound must survive angle, stiffness and timing uncertainty. [*Hidden States and Unassigned Work*][companion] develops retained material states, destination alternatives, repeated-event accounts and the finite observation window. A fixed support can carry torque with zero work; support transfer needs both torque and motion.
+
+This comparison connects the synthesized active-contact law to the event at which its description changes. The separate port works follow in Section \ref{sec:work}. The energy outcome does not choose coefficient weights or derivative order.
 
 # Initial data, effective order and physical preparation
 \label{sec:initial}
@@ -1246,6 +1268,17 @@ On a truly periodic interval of length $T=2\pi/\omega$, a port with peak phasors
 \end{equation}
 Each source and resistor contribution is integrated separately. Component states independently return to their initial values; this follows from the periodic solution, not from assuming constant instantaneous store. A finite settling interval generally has nonzero endpoint change and must retain its homogeneous transient. No component energy is assigned to bare polynomial terms.
 
+For an arbitrary finite window, multiplication of the real peak-phasor signals gives $p(t)=\Rea(VI^*)/2+\Rea(VI e^{2\ii\omega t})/2$. Its exact integral is
+\begin{equation}
+ W(t_0,t_1)=\frac{t_1-t_0}{2}\Rea(VI^*)
+ +\Rea\!\left[
+ \frac{VI}{4\ii\omega}
+ \left(e^{2\ii\omega t_1}-e^{2\ii\omega t_0}\right)\right],
+ \qquad \omega\ne0.
+ \label{eq:finite-window-phasor}
+\end{equation}
+The endpoint primitive vanishes on a full period but generally survives on a partial period. For a capacitor with $v=V_p\cos\omega t$, $i=C\dot v$, direct integration gives $W=CV_p^2[\cos^2(\omega t_1)-\cos^2(\omega t_0)]/2$, matching the two independently evaluated capacitor stores. It equals $-CV_p^2/2$ from $0$ to $\pi/(2\omega)$ and zero over a full period. Zero period-average input therefore does not imply constant instantaneous storage. At DC use the actual constant effort--flow product. Startup adds the homogeneous state response and all its cross products; multiple frequencies add their beat terms. Neither a carrier-frequency fit nor cycle-average loss alone determines these finite-window transfers.
+
 ## A passive reference for finite representations
 
 A useful exact normalized reference is
@@ -1527,6 +1560,56 @@ Real coefficients make numerator and denominator conjugate at imaginary $s$, pro
 
 Driven and changing systems test which parts of a coefficient law remain fixed when excitation, material state or control is varied. The input operator, time dependence and additional physical states must be specified before a constant-coefficient construction is transferred.
 
+## A switched cubic with a reconstructible physical state
+\label{sec:switched-cubic}
+
+Consider a voltage-driven primary winding coupled to a secondary series winding, resistor and capacitor. The observation is the capacitor voltage $v$, the input is the primary voltage $u$, and the retained states are $(i_1,i_2,v)$. Fix $L_1,L_2,C,R_1>0$, real $M$, and $\Delta=L_1L_2-M^2>0$; prescribe a nonnegative resistance $R_2(t)$ independently of the observed response. On a smooth interval, Kirchhoff's laws are
+\begin{equation}
+ L_1\dot i_1+M\dot i_2=u-R_1i_1,\qquad
+ M\dot i_1+L_2\dot i_2=-R_2i_2-v,\qquad
+ C\dot v=i_2.
+ \label{eq:switched-components}
+\end{equation}
+Eliminate $i_2$, multiply the second winding equation by $L_1$, and subtract $M$ times the first. This gives
+$$
+ MR_1i_1=Mu+\Delta Cv''+L_1R_2Cv'+L_1v.
+$$
+Differentiation followed by the second winding law yields
+\begin{equation}
+ \Delta Cv'''+C(L_1R_2+R_1L_2)v''
+ +(L_1+R_1R_2C+L_1C\dot R_2)v'+R_1v=-M\dot u.
+ \label{eq:switched-cubic}
+\end{equation}
+Both $\dot R_2$ and $\dot u$ follow from the elimination. A resistance value substituted into the constant-interval cubic cannot represent a finite edge without its product-rule term. For $M\ne0$, the inverse map is
+\begin{equation}
+ i_2=Cv',\qquad
+ i_1=\frac{Mu+\Delta Cv''+L_1R_2Cv'+L_1v}{MR_1}.
+ \label{eq:switched-inverse}
+\end{equation}
+Substitution into the two winding laws gives respectively $L_1F/(MR_1)$ and $F/R_1$, where $F$ is the left-hand side of \eqref{eq:switched-cubic} plus $M\dot u$. Thus the initialized cubic and the component system are equivalent on this regular domain.
+
+For an ideal resistance jump with finite efforts, currents and capacitor voltage remain continuous. Write $[g]=g(t_e^+)-g(t_e^-)$. Transporting those physical states in \eqref{eq:switched-inverse} gives
+\begin{equation}
+ [v]=[v']=0,\qquad
+ \Delta C[v'']=-M[u]-L_1C[R_2]v'.
+ \label{eq:switched-jet-jump}
+\end{equation}
+The input may have a finite jump here. Copying $v''$ across the event generally violates the new component law; a distributional scalar formulation must retain the corresponding jumps. There is no ideal resistor-switch impulse in this model. Actual gate, arc or material dynamics require their own laws.
+
+The coefficient family needs a declared scale even in this example. On each smooth interval set $(a,b,c)=(L_1,R_1,1/C)$ and multiply the complete equation by $R_1/L_1$. If $b_k$ are the four unscaled coefficients in \eqref{eq:switched-cubic}, then
+\begin{equation}
+ B_k=(R_1/L_1)b_k=w_{0,k}A_{0,k},\qquad
+ A_{0,k}=L_1^{k-1}R_1^{2-k},\qquad
+ f=-(R_1M/L_1)\dot u.
+ \label{eq:switched-normalization}
+\end{equation}
+Here $w_{0,k}=B_k/A_{0,k}$ is dimensionless. The independent physical coordinates may be taken as $L_1,R_1,C,L_2,M,R_2$ on a constant interval; a finite edge additionally supplies the function $R_2(t)$. The observation is voltage, but the chosen equation scale gives $[B_k]=\Omega\,\mathrm{s}^{k-1}$. These parameter-dependent weights give an exact representation, not constant weights across an arbitrarily changing component domain. All coefficients and the input are fixed by the component laws; no energy account determines them.
+
+At $M=0$, the observable secondary obeys $L_2Cv''+R_2Cv'+v=0$ while the independent primary can still store energy. At $R_1=0$, which lies outside this reference chart, elimination before differentiation gives $\Delta Cv''+L_1R_2Cv'+L_1v=-Mu$; differentiating it admits an extra integration constant unless the original relation is retained. At $\Delta=0$, retain the descriptor equations and the constraint $MR_1i_1-Mu-L_1(R_2i_2+v)=0$ instead of dividing by $\Delta$. More generally, replacing $F=0$ by $(D+\lambda)F=0$ permits $F=ae^{-\lambda(t-t_0)}$; $F(t_0)=0$ is required to recover the original law. Higher formal order does not repair missing preparation.
+
+For the winding/capacitor boundary the constitutive store is
+$E=(L_1i_1^2+2Mi_1i_2+L_2i_2^2+Cv^2)/2$. Its distinct inward powers are $ui_1$, $-R_1i_1^2$ and $-R_2i_2^2$. Their separate finite-interval integrals and independently evaluated endpoint stores follow the state reconstructed above. An exact observation reduction at $M=0$ cannot reconstruct the hidden primary store from $v$. The prescribed resistor command excludes its physical controller; that implementation requires additional ports and states. The example therefore tests equation equivalence, event initialization and physical accounting as separate claims.
+
 ## Common and differential electrical modes
 
 Consider two reciprocal coupled windings with
@@ -1586,6 +1669,18 @@ A concrete nonlinear inductive model uses flux $\phi$, internal material coordin
 \end{equation}
 with $\alpha\geq0$, $h,\zeta,R>0$ in a declared normalized system. Direct differentiation yields
 $\dot U=vi-Ri^2-h^2(\phi-m)^2/\zeta$. The material loss is the product of generalized effort $h(\phi-m)$ and its conjugate flow $\dot m$. Integrate that loss and electrical powers separately. A loop integral $\oint i\,\dd\phi$ describes a closed physical cycle only when the internal coordinate also returns to its initial state. This rate-dependent lag law is not a universal hysteresis model. Thermodynamically admissible measured material laws, saturation, longer settling and wider excitation remain open.
+
+A second normalized material control isolates the failure of an average-loss replacement:
+\begin{equation}
+ \dot\phi=v,\quad i=\phi+\phi^3+z,\quad
+ \dot z=k_m v-z/\tau_m,\quad
+ E_m=\phi^2/2+\phi^4/4+z^2/(2k_m),\quad
+ \dot E_m=vi-z^2/(k_m\tau_m).
+ \label{eq:material-average-control}
+\end{equation}
+Here $k_m>0$ is fixed and $\tau_m>0$ may be a prescribed function of bias or temperature. Two preparations with the same $\phi,v$ and different $z$ have different current and remaining material store. Matching one sinusoidal cycle loss therefore does not identify instantaneous power, minor reversals, startup or reset. This synthetic law has no independently established material applicability; a fitted loss resistor needs its own waveform, bias, temperature and history domain. If $k_m$ varies, differentiation adds the parameter term $-z^2\dot k_m/(2k_m^2)$, which cannot be dropped.
+
+A mechanical/thermal boundary gives a related exact control: $m\dot v=F=-b(v-u)$ and $C_T\dot\vartheta=b(v-u)^2-h_T\vartheta$. The mass receives $Fv$, while the thermal subsystem receives viscous conversion and exports $h_T\vartheta$. The combined store $mv^2/2+C_T\vartheta$ receives $Fu-h_T\vartheta$, since $Fv+b(v-u)^2=Fu$. Counting viscous heat as both internal retained heat and exported work would change this boundary. These are declared viscous and caloric laws, not measured contact laws.
 
 For a mechanical oscillator with prescribed positive $m(t),k(t)$,
 $\dot q=p/m$ and $\dot p=F-cp/m-kq$, the actual store satisfies
@@ -1933,6 +2028,53 @@ A finite implementation has four receiver voltages, four winding currents, nine 
 
 Which independently measured supply transfers realize a moving reference in a finite electromechanical correspondence [OP-TRF-12]? A coordinate change supplies none. Separate compensation currents, receiver endpoints and driver voltage/current products make the question observable. [*Hidden States and Unassigned Work*][companion] develops the capacitor cell, equal-endpoint ramps, complete controller and rail accounts, preparation and event certificates. Appendix \ref{sec:compound-limits} retains the exact constraints and prepared limits needed for this article's order claims.
 
+## Loaded auxiliary ports and observable order
+\label{sec:loaded-auxiliary}
+
+An extra accessible port can alter the coefficient construction without adding an independent motion. For positive gear teeth $Z_r=Z_s+2Z_p$, the four shaft rates $(s,c,r,o)$ equal $\mathsf B(u,d)^T$, where
+$$
+ \mathsf B=\begin{pmatrix}1&1\\1&0\\1&-Z_s/Z_r\\1&-Z_s/Z_p\end{pmatrix},\qquad
+ u=\omega_c,\quad d=\omega_s-\omega_c.
+$$
+The rank is two. Its electrical ideal counterpart has $h_s=-Z_p/Z_s$, $h_r=Z_p/Z_r$ and
+$$
+ V_S-V_C=h_s(V_P-V_C),\quad V_R-V_C=h_r(V_P-V_C),\quad
+ I_P=-h_sI_S-h_rI_R,\quad I_C=-I_S-I_R-I_P.
+$$
+External voltages are measured to a physical return $O$. Loading $P$ invalidates the unloaded relation $I_P=0$. At teeth $(24,18,60)$, a common-flux winding with taps $(35,20,14,0)$ has section currents $I_S,I_S+I_C,-I_P$ and constraint $35I_S+20I_C+14I_R=0$. Together with KCL this gives the same ideal terminal domain; it does not identify finite magnetic states with rigid mechanical motion. Dynamically $\mathsf B^T\tau=\mathsf B^T\mathsf M\mathsf B(\dot u,\dot d)^T$, so zero summed torque alone does not imply no acceleration.
+
+A finite construction retains three node voltages and four winding currents. With $R$ clamped to $O$, use
+\begin{align}
+ B_f&=\begin{pmatrix}1&0&0&0\\-1&-1&-1&-1\\0&1&0&1\end{pmatrix},\quad C=I\ \mathrm F,\\
+ L&=\operatorname{diag}\left[
+ \begin{pmatrix}9/16&-3/8\\-3/8&1\end{pmatrix},
+ \begin{pmatrix}9/100&3/20\\3/20&1\end{pmatrix}\right]\mathrm H,\\
+ C\dot v&=b-Gv-B_fi,\qquad L\dot i=B_f^Tv-R_wi,
+ \label{eq:loaded-auxiliary-state}
+\end{align}
+where $R_w=\operatorname{diag}(9/160,1/10,9/1000,1/10)\ \Omega$, $G=\operatorname{diag}(1,1/2,G_P)$ in siemens and $b=(U/(1\ \Omega),0,0)^T$. On each fixed-parameter interval these laws determine
+$$
+ A=\begin{pmatrix}-C^{-1}G&-C^{-1}B_f\\L^{-1}B_f^T&-L^{-1}R_w\end{pmatrix},\quad
+ b_u=\binom{C^{-1}(1/(1\ \Omega),0,0)^T}{0}.
+$$
+For a declared observation $y=c_y^T(v,i)^T$, exact synthesis returns $P(s)=\det(sI-A)$ and $N(s)=c_y^T\operatorname{adj}(sI-A)b_u$, with $P(D)y=N(D)U$ and the physical state-to-jet preparation. Seven physical states give degree at most seven before common-factor and observability analysis; they do not prove a seventh-order scalar output. Fixed $L,C,R_w$ and independently varied positive $G_P$ define one coefficient family, not arbitrary per-setting fits. A changed $G_P$ preserves states and requires new jets.
+
+The exact compliant map $v=\alpha_v\omega$, $z=Li/\alpha_v$, $J=\alpha_v^2C$, $K=\alpha_v^2L^{-1}$ preserves kinetic/capacitive and elastic/magnetic stores and gives $\dot z=B_f^T\omega-R_wKz/\alpha_v^2$. It supplies a distinct compliant realization. The [companion][companion] develops the initialized four-port controls, full finite preparation/loading/relaxation sequence, individual works, actual nonzero endpoints and phasing qualifications. Those accounts do not certify a rigid spatial mechanism or finite-core DC operation.
+
+## Many branches, finite service and incomplete observation
+\label{sec:many-branch-limits}
+
+A larger constructive example uses six three-winding input cores and one shared thirteen-winding output core. Their inductances are $L_j=(1\ \mathrm H)(I+nn^T/4)$, $n=(1,1/2,1/2)^T$, and $L_o=(1\ \mathrm H)(I+\mathbf1_{13}\mathbf1_{13}^T/4)$. Individual leakage is positive. The connected laws have the form $L\dot i=B^Tv-R_wi$, $C\dot v=-Bi-G(z)v+d-K^Ti_c(Kv)$, with positive capacitance, physical incidence $B$, finite gate states $C_g\dot z=(c-z)/R_g$ and monotone clamps. Its 31 winding currents, 50 node/probe voltages, 24 gate states and heat are physical coordinates. Time-varying selectors and nonlinear clamps prevent inferring a constant scalar order of 106. A constant linearized plateau permits the determinant/adjugate construction only for that declared plateau and observation.
+
+The [companion][companion] specifies all incidences, components and initial states, and proves a loaded $1/200\ \mathrm s$ transition with receiver work at least $259081/141120000\ \mathrm J$. The result uses a prepared neighborhood, finite selector response and actual probes; it is a finite service certificate. Extending the fixture with generators, a shaft and an insulated timing drive changes the state equations. If the timing bearing has $b_t=1/10\ \mathrm{N\,m\,s}$, its independent heat law on a full timing revolution with $T\in[1/2,2]\ \mathrm s$ gives
+$$
+ \Delta H\geq b_t\int_0^T\Omega^2dt
+ \geq\frac{b_t}{T}(2\pi)^2\geq\frac{\pi^2}{5}\ \mathrm J.
+$$
+There is no full-state return in that insulated domain. Heat rejection or an electrical trace that repeats while heat drifts is a different problem. Neither the work result nor this obstruction selects coefficient weights.
+
+The same finite fixture supplies a precise observation limit. Two preparations differ only by opposite $1/10\ \mathrm V$ changes at two exchangeable positive-cell nodes. Their independently evaluated electrical energies are $392079/8000$ and $392239/8000\ \mathrm J$. With the same selector history their homogeneous difference has $D=\delta i^TL\delta i/2+\delta v^TC\delta v/2$, $\dot D\leq0$, $D(0)=1/50\ \mathrm J$. Each source-node voltage difference is at most $1/5\ \mathrm V$. A physical $10\ \Omega$, $1\ \mathrm F$ source probe with zero initial difference has unit-gain nonnegative response, so the reported source-current difference is at most $1/5\ \mathrm A$. Channel-exchange symmetry makes the complete receiver history identical, including its probe; gates also agree. Allowing $1/10\ \mathrm A$ pointwise error on each source-current record admits their common midpoint. All other electrical observations agree exactly. Thus a two-preparation energy estimator has worst-case error at least $1/100\ \mathrm J$, attained by the midpoint, exceeding a $1/250\ \mathrm J$ target. This is overlap of calibrated prediction sets; it is not a claim that all exact source traces coincide. The complete local graph, loading and proof are repeated in the [companion][companion] so its inference does not depend on this summary.
+
 # Signed physical work and equation-term identities
 \label{sec:work}
 
@@ -1948,7 +2090,7 @@ For a declared system boundary, positive power enters through a port. An electri
 \end{equation}
 Each signed port integral is evaluated before summation. End stores come independently from the component states. Switching work is evaluated on a finite regularization or as a separately justified impulse; one must distinguish $t_{e}^-$ and $t_{e}^+$. A fixed support can deliver impulse with zero work because its velocity is zero. Nonzero reaction force does not imply energy transfer.
 
-For the exact integrations below, the numerical integration residual is exactly zero. The endpoint balance residual $r_E$ is still evaluated for the ports actually declared: an unassigned event or coupling contribution may make it nonzero. The model discrepancy $r_{\mathrm{model}}$ names what a physical implementation adds or changes, including constitutive error and unresolved event destinations; its value is unknown unless a stated assumption determines it. A surviving discrepancy remains open with its sign, magnitude and conditions of occurrence. Reversing a sensor orientation requires reversing the associated incidence map. Voltages and currents from different connection graphs or different event sides cannot be paired without proving a common physical port.
+The endpoint balance residual $r_E$ is still evaluated for the ports actually declared: an unassigned event or coupling contribution may make it nonzero. The model discrepancy $r_{\mathrm{model}}$ names what a physical implementation adds or changes, including constitutive error and unresolved event destinations; its value is unknown unless a stated assumption determines it. A surviving discrepancy remains open with its sign, magnitude and conditions of occurrence. Reversing a sensor orientation requires reversing the associated incidence map. Voltages and currents from different connection graphs or different event sides cannot be paired without proving a common physical port.
 
 ## The collision ledger
 
@@ -2032,7 +2174,7 @@ The stores are evaluated from the states and the identified physical metric, not
 
 The unresolved operation question is whether a persistent positive or negative residual survives the joint uncertainty of source work, losses and endpoint states. A source-off relaxation interval is audited separately with its actual remaining ports; its initial state is the operation endpoint. Agreement of a relaxation identity or an operation endpoint check does not bound uncertainty in each operation port integral. Shared paths, finite-window leakage, unresolved high-frequency modes and correlated gain or timing errors require their own bounds. A constant bias in one power channel can accumulate with interval duration; extending the interval without resolving that bias does not establish a physical drift.
 
-For a finite damped realization and a specified forcing covariance, exact state and work integrals give conditional predictions. Their zero numerical integration residual does not resolve an independently unbounded finite-precision or physical observation. Section \ref{sec:residual-outcomes} gives the signed outcome criterion. Non-Gaussian drives, longer tails, nonlinear or time-varying plants and a physical implementation of the metric remain open beyond these conditions.
+For a finite damped realization and a specified forcing covariance, exact state and work integrals give conditional predictions. Their exact model identities do not bound finite-precision or physical observation errors. Section \ref{sec:residual-outcomes} gives the signed outcome criterion. Non-Gaussian drives, longer tails, nonlinear or time-varying plants and a physical implementation of the metric remain open beyond these conditions.
 
 # Signed residual outcomes and measurement uncertainty
 \label{sec:limits}
@@ -2067,7 +2209,7 @@ A dimensionless magnitude can use
 $\Phi_{T}=\int|r_{T}|\dd t/\int(|P_{\mathrm{exc}}|+|a\dot vv|+|bv^2|+|cyv|)\dd t$
 when its denominator is positive. State the normalization explicitly. Signed cancellation can make $W_{T}$ small while $\Phi_{T}$ remains large. Neither quantity replaces \eqref{eq:work}.
 
-A disciplined interpretation first establishes the observation and arithmetic uncertainty on the same interval and port, then considers omitted higher-order states, time-varying coefficients, declared event partitions and other actual ports. A higher-order equation that explains a residual still needs a realization. Local coefficient variation can absorb discrepancy without identifying physical parameter variation. A multi-port projection must show its dependence on the chosen port; selecting a port by integrated throughput would make work part of selection and is excluded here. A matched exact-model control has zero numerical floor. Actual instrumentation supplies its own nonzero uncertainty and cannot borrow a floor from another scale, interval or apparatus.
+A disciplined interpretation first establishes the observation and arithmetic uncertainty on the same interval and port, then considers omitted higher-order states, time-varying coefficients, declared event partitions and other actual ports. A higher-order equation that explains a residual still needs a realization. Local coefficient variation can absorb discrepancy without identifying physical parameter variation. A multi-port projection must show its dependence on the chosen port; selecting a port by integrated throughput would make work part of selection and is excluded here. An exact-model identity supplies no empirical uncertainty bound. Actual instrumentation supplies its own nonzero uncertainty and cannot borrow a floor from another scale, interval or apparatus.
 
 There are three possible failures of such a residual program: the residual may be indistinguishable from its measurement floor; every excess may already be explained by the declared finite model; or the conclusion may depend mainly on arbitrary port choice. In those cases the quantity has, respectively, no discriminating power, only a bounded audit role, or no robust cross-port interpretation. A small residual, a large residual and an unperformed comparison establish different facts. None establishes an unspecified energy destination.
 
@@ -2095,6 +2237,8 @@ The rotary impact driver makes the construction concrete. Eliminating the anvil 
 Series and parallel composition construct both operators directly from local equations; the mixed LRC--RC example supplies an exact third-order law with its full-domain coefficient representation and compatible preparation. Choosing impedance or admittance in phasor analysis exposes which contribution is additive at the actual connection. Adding a declared polarization branch constructs the next complete operator through $Q_{N+1}=(1+\tau_{N+1}s)Q_N$ and $\mathcal P_{N+1}=(1+\tau_{N+1}s)\mathcal P_N+R_{N+1}Q_N$. The resulting coefficient recurrence changes lower orders as well as the leading term and has an explicit finite representation in the dimensional family with additional independent component ratios. By contrast, the rational-series recurrence generates higher expansion coefficients of a fixed state model. Neither it nor a dimensional lattice shift establishes a new physical state merely by increasing an index.
 
 Independent coordinates and an observation model determine what a measurement can recover. Distinct finite Laurent monomials are independent on an open domain of independent coordinates, but restricted parameter paths can make them coincide. Exact rank, practical sensitivity and prediction on independent conditions have separate requirements. The impact example shows why an internal anvil observation can distinguish preparations invisible in hammer angle and contact torque. The complementary circuit and RF proposals retain deliberate null controls and uncertainty-based separation of competing fixed laws. A good terminal waveform fit alone does not establish a weak coefficient, an exponent or a particular internal realization.
+
+The switched cubic additionally makes smooth-interval elimination and event-side reconstruction explicit: its resistance-rate term, input derivative and derivative jumps follow from the retained physical states. Finite-window phasor work retains its endpoint term. Material memory and field boundaries require their own states and source laws; closing one whole-window account does not prove a path-preserving reduction.
 
 The synthesized equation's meaning also depends on its forcing and initialization. Four physical collision states can yield a third-order initialized output and a second-order zero-state transfer. A compound receiver has seven or eight independent states under its declared constraints, while a finite sensor--actuator--rail implementation has 28. A vanishing common current can retain a finite prepared store in the specified rigid family. Passive realizations can have identical terminal functions and different internal currents, stresses and preparations. Stability, port passivity and component realization are additional conditions; the direct polynomial driving-point obstruction does not exclude a passive rational higher-order realization. Distributed, fractional and delayed laws retain field or history information and require explicit domains for every finite representation.
 
@@ -2220,6 +2364,17 @@ For the illustrative $C_{1}=C_{2}=1\ \mathrm F$, $d^-=2\ \mathrm V$, the total l
 
 After the event, a fixed conductance $G_{0}=C_{e}/\tau$ leaves $d'=-d/\tau$ and constant $Q$. Each capacitor voltage therefore satisfies $v_{j}''+v_{j}'/\tau=0$. Before connection the isolated voltage satisfies $v_{j}'=0$. The derivative order changes because the accessible difference mode changes. Jets must be reconstructed from the post-event state, and a discarded difference store must not be concealed in an arbitrary derivative reset.
 
+## Noncommuting finite state maps
+
+The scalar reset above does not exhaust event transport. Three grounded unit capacitors, initially $q=(1,0,-1)^T\ \mathrm C$, can be connected by a unit resistor on edge A, $a_A=(1,-1,0)^T$, or edge B, $a_B=(0,1,-1)^T$. In the corresponding SI coordinates $\dot q=-a_ja_j^Tq$. An interval $\log2/2\ \mathrm s$ gives
+$$
+ M_A=\begin{pmatrix}3/4&1/4&0\\1/4&3/4&0\\0&0&1\end{pmatrix},\qquad
+ M_B=\begin{pmatrix}1&0&0\\0&3/4&1/4\\0&1/4&3/4\end{pmatrix}.
+$$
+These follow by exponentiating the rank-one generator, whose nonzero eigenvalue is $-2$. The two orders give $M_BM_Aq=(3/4,-1/16,-11/16)^T$ and $M_AM_Bq=(11/16,1/16,-3/4)^T\ \mathrm C$. Physical states are continuous at each connection, but their final maps do not commute. Each first-channel heat is $3/16\ \mathrm J$, each second-channel heat $75/256\ \mathrm J$, and independently evaluated final store $133/256\ \mathrm J$. This stronger state difference is separate from commuting scalar maps with unequal channel works. The [companion][companion] retains both complete signed accounts.
+
+A series two-cell observation supplies a different exact limit. For equal $C$ and a series receiver $R$, $s=v_1+v_2$ obeys $\dot s=-2s/(RC)$, while $\delta=v_1-v_2$ remains constant. At unit $R,C$, initial pairs $(1,1)$ and $(3,-1)\ \mathrm V$ produce identical terminal histories $s=2e^{-2t}\ \mathrm V$ but stores $1$ and $5\ \mathrm J$. Adding a finite cell probe changes the graph and its observation map. It can discriminate a specified binary preparation family only when its predicted filtered histories separate by more than the full error bounds; it does not identify arbitrary unknown cell states. The companion supplies a finite charged bank, its actual probe loading, time-ordered observation map and conditional discrimination criterion.
+
 # Field and history data for finite coefficient models
 \label{sec:field-history-details}
 
@@ -2259,6 +2414,26 @@ For a Thevenin source and resistive load these are the separately integrated pow
 
 A degree-six Taylor matrix or a $[3/3]$ Padé matrix is a finite candidate with its own exact residual against the matrix exponential. Neither the order nor a small low-frequency discrepancy certifies a near-open high-frequency corner. An alternating zero-weighted-mean capacitance change preserves total capacitance but alters the medium; it cannot be called mere refinement of a fixed uniform line. A continuum comparison needs either a fixed material profile with refinement or a proved homogenization limit. Ideal open and short terminations are separate boundary conditions. Long reflection tails, dispersive loss, discontinuous edges, exterior fields, radiation and measured terminations remain unresolved physical limits. A separately normalized line model does not automatically audit the field and termination realization of a dimensional RF device.
 
+## What a field reduction preserves
+\label{sec:field-reduction}
+
+A finite coefficient model needs a specified electromagnetic boundary before its work interpretation can be assessed. For a fixed vacuum volume, Maxwell's curl equations imply
+\begin{equation}
+ \frac{d}{dt}\int_V\left(\frac{\epsilon_0|E|^2}{2}+\frac{|B|^2}{2\mu_0}\right)dV
+ =-\int_VJ\cdot E\,dV-\int_{\partial V}(E\times H)\cdot n\,dS.
+ \label{eq:field-boundary}
+\end{equation}
+The volume and surface works are separately integrated. Material dispersion, hysteresis, heat and motion require their own constitutive states; a moving volume adds Reynolds transport and a declared frame. A finite surface cannot be replaced by infinity without a decay bound. Terminal $vi$ and the surface transfer across that same interface are not two independent inputs: integrating \eqref{eq:field-boundary} between reference planes also retains intervening storage and material conversion. The actual return conductor belongs to that comparison.
+
+An exact invalid-reduction control makes the issue explicit. Let $A_0$ be a smooth divergence-free vector potential, $B_0=\nabla\times A_0$, $H_0=B_0/\mu_0$, $J_0=\nabla\times H_0$. Put $A=g(t)A_0$, $E=-\dot gA_0$, $B=gB_0$, $J=gJ_0$. Faraday's law and both Gauss equations hold, but
+\begin{equation}
+ \nabla\times H-J-\epsilon_0\dot E=\epsilon_0\ddot gA_0.
+ \label{eq:field-omission}
+\end{equation}
+Thus this is a magnetoquasistatic construction, not a full-Maxwell solution for the same source whenever the right side is nonzero. Define independently $K_B=\int_V|B_0|^2/(2\mu_0)$, $K_A=\int_V|A_0|^2$, $K_J=\int_VJ_0\cdot A_0$ and $K_S=\int_{\partial V}(A_0\times H_0)\cdot n$. Integration by parts gives $2K_B=K_J+K_S$. Magnetic and electric stores are $K_Bg^2$ and $\epsilon_0K_A\dot g^2/2$; the original volume and surface powers are $K_Jg\dot g$ and $K_Sg\dot g$. Their separate primitives are $K_J\Delta(g^2)/2$ and $K_S\Delta(g^2)/2$.
+
+Including electric storage with those original ports leaves the exact residual $\epsilon_0K_A\Delta(\dot g^2)/2$. A complete ramp with zero endpoint slopes hides this mismatch, whereas its rising and falling subintervals retain opposite signs. A different source $J_{\rm full}=gJ_0+\epsilon_0\ddot gA_0$ restores Maxwell's equation and adds independently derived power $\epsilon_0K_A\dot g\ddot g$, whose integral supplies that electric-store change. It does not validate the original current. Continuous $g,\dot g$ with a jump in $\ddot g$ requires a finite current jump, not a delta impulse. Electric storage scales as the inverse square of ramp duration; a small retardation ratio alone bounds neither radiation nor material and return-path omissions. A physical source/field realization and its uncertainty remain unresolved.
+
 # Finite waveform and random-drive observations
 \label{sec:waveform-statistics}
 
@@ -2295,6 +2470,10 @@ For two masses $1$ and $19\ \mathrm{kg}$, initial velocities $10$ and $0\ \mathr
 The contact force is $(19/2)\sin t$ in newtons. The signed momentum stays $10$, while the endpoint magnitude sum is $28$, a ratio $14/5$. Its first sign crossing is $t=\arccos(-1/19)$. Direct integration of $-k\delta\dot x_{1}$ and $k\delta\dot x_{2}$ gives works $-19/2$ and $19/2\ \mathrm J$; the spring starts and ends unstrained, and both endpoint total stores are $50\ \mathrm J$. In the center-of-mass frame the magnitude sum is $19$ at both endpoints. The change of observer modifies kinetic stores and individual works, not the physical contact law.
 
 For an uncoupled inductive pair with ratio $r=L_{2}/L_{1}$, the corresponding zero-mediator endpoint ratio is $(3r-1)/(r+1)$ for $r>1$, and one for $r\leq1$. The ceiling three belongs to that particular pair and preparation. It is not a general multi-state limit. An exact three-body counterexample consists of two separated compliant elastic encounters: masses $1,19,361$, initially velocities $(10,0,0)$, first let masses $1,19$ exchange, then $19,361$. At the end the velocities are $(-9,-9/10,1/10)$, with momenta $(-9,-171/10,361/10)$. The magnitude ratio is $311/50>3$. Each encounter is realized by the sinusoidal relative solution with its own positive stiffness and reduced mass, and the gaps are chosen so they do not overlap. This establishes a wider counterexample, while maxima for a specified continuously connected chain still require its own exact trajectory and extremum analysis.
+
+A physical two-cell LC version also shows why charge magnitude is not an energy measure. With $C_1=1\ \mathrm F$, $C_2=19\ \mathrm F$, $L=20/19\ \mathrm H$, $\dot q_1=-i$, $\dot q_2=i$, $L\dot i=q_1-q_2/19$ in SI coordinates, initial $(10,0,0)$ evolves as $q_1=(1+19\cos t)/2$, $q_2=19(1-\cos t)/2$, $i=19\sin t/2$. At $t=\pi\ \mathrm s$ the absolute charge sum grows from $10$ to $28\ \mathrm C$ while both total reactive endpoint stores are $50\ \mathrm J$. Separate cell works are $-19/2,+19/2\ \mathrm J$ and inductor work zero. Isolated resistive parallel exchange instead conserves $q_1+q_2$ and has nonincreasing absolute charge, with rate $-2|v_1-v_2|/R$ for opposite signs.
+
+Adding a unit shunt across the first LC cell only on $[\pi/2,\pi/2+1/10]\ \mathrm s$ replaces its law by $\dot q_1=-i-q_1/(1\ \mathrm s)$. The former sum invariant fails on that interval. The component laws give $\dot E=-q_1^2/(1\ \mathrm{F}^2\,\Omega)$, so $A_q^2\leq2(C_1+C_2)E_C\leq2000\ \mathrm{C^2}$ for the energized preparation; the zero preparation stays zero. The companion proves the complete sign certificate: initial $q_2$ tangency, one cell-1 zero in $(\pi/2+1/21,\pi/2+1/16)\ \mathrm s$, a magnitude cusp minimum, continuous states and the two one-sided switch derivatives, followed by positive magnitude growth through $2\ \mathrm s$. These particular states and graph do not establish a universal magnitude factor. The shunt changes the coefficient matrix and invariant eligibility before its work is audited.
 
 ## Coupled pickups and hidden common preparation
 \label{sec:pickup-observation}
@@ -2543,7 +2722,7 @@ There is also an exact discrete algebraic control for a lossless linear state eq
 \end{equation}
 then $E(x_+)-E(x)=h[(x_++x)/2]^THF[(x_++x)/2]=0$ whenever the update exists. This identity is independent of arithmetic implementation. It does not supply a finite-precision drift bound, an event rule, or a physical model certificate; those remain separate uncertainty questions. Likewise, a null singular value and a divergent unstable continuation are exact features before any arithmetic error is assessed.
 
-The proved complete-model balances follow from separate port integrals and endpoint states. Exact integration has zero numerical residual; it does not make every declared-boundary balance zero. The contact deletion and listed-port coupling examples retain their signed nonzero residuals, while the expanded supply accounts remain conditional on their state and port laws. Unspecified material, sensor, switching, thermal, acoustic and exterior-field effects remain $r_{\mathrm{model}}$, whose sign and magnitude are not invented. Unresolved interval, DC-link, thermal-endpoint and stochastic-work checks retain their own scope. Every surviving discrepancy is reported with its interval, orientation, preparation, event sides and uncertainty rather than absorbed into a presumed destination.
+The proved complete-model balances follow from separate port integrals and endpoint states. An exact integral does not make every declared-boundary balance zero. The contact deletion and listed-port coupling examples retain their signed nonzero residuals, while the expanded supply accounts remain conditional on their state and port laws. Unspecified material, sensor, switching, thermal, acoustic and exterior-field effects remain $r_{\mathrm{model}}$, whose sign and magnitude are not invented. Unresolved interval, DC-link, thermal-endpoint and stochastic-work checks retain their own scope. Every surviving discrepancy is reported with its interval, orientation, preparation, event sides and uncertainty rather than absorbed into a presumed destination.
 
 # References {-}
 

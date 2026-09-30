@@ -22,6 +22,8 @@ The [companion article on open questions and signed work](https://github.com/hob
 - **The energy consequences of a return wire.** A transformer's return or probe connection changes its dynamics. Synchronized voltage and current channels follow source, winding and receiver work. Can one calibrated model predict both connections?
 - **The energy cost of a moving reference.** Two voltage ramps reach the same capacitor endpoint with different source works. A slow driver and shunt measurements reveal the difference. Which supply transfers produce the reference motion and compensation currents?
 
+A result map leads from the dimensional family and continuous impact construction to the branch-addition recurrence, identification and physical scope. Further exact controls derive a switched cubic with forcing and event-side initialization, finite-window phasor work, and the material/field information a reduction must retain. Loaded multiport constructions and finite-error observation limits show why physical state count and scalar derivative order remain separate.
+
 ## Article and build
 
 [Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md)
