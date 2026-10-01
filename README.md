@@ -8,6 +8,8 @@ Higher-order equations become useful when their coefficients can be constructed,
 
 The rotary impact driver is the main worked example. Follow one hammer–anvil blow from component laws to a fourth-order equation, then change the joint and ask what the same construction predicts. Motion and torque observations distinguish contact from joint dynamics; release exposes the energy still stored in the contact.
 
+The six main sections form a short, continuous argument: the synthesis problem, dimensional family, exact impact construction, recurrence to successive orders, identification and prediction, and physical scope. The same PDF contains the complete proofs, additional examples and physical accounts in nine organized appendices. A guide after the conclusion gives direct entry to each treatment.
+
 - **A systematic coefficient family.** The dimensional construction `A_(r,k) = S τ^k ρ^(-r)` organizes admissible monomials at every derivative order and shows what further model information determines their combination.
 - **Choose what to synthesize and where.** Interconnect local series and parallel equations to construct a component, contact, joint or observed-motion law. Impedance and admittance show how the actual connection carries its coefficients into a measurable phasor response.
 - **A construction that continues to higher orders.** Adding physical relaxation states gives an exact recurrence for the coefficients and forcing operator.
@@ -22,7 +24,7 @@ The [companion article on open questions and signed work](https://github.com/hob
 - **The energy consequences of a return wire.** A transformer's return or probe connection changes its dynamics. Synchronized voltage and current channels follow source, winding and receiver work. Can one calibrated model predict both connections?
 - **The energy cost of a moving reference.** Two voltage ramps reach the same capacitor endpoint with different source works. A slow driver and shunt measurements reveal the difference. Which supply transfers produce the reference motion and compensation currents?
 
-A result map leads from the dimensional family and continuous impact construction to the branch-addition recurrence, identification and physical scope. Further exact controls derive a switched cubic with forcing and event-side initialization, finite-window phasor work, and the material/field information a reduction must retain. Loaded multiport constructions and finite-error observation limits show why physical state count and scalar derivative order remain separate.
+Read the main text for the method and one complete construction. Use the appendices for the full support proofs and coefficient array, local interconnection laws, identification diagnostics, initialized and passive realizations, further applications, networks and finite supplies, distributed histories, and signed work and verification. The switched cubic retains its forcing and event-side initialization; material and field controls state what a reduction must preserve. Loaded multiport constructions and finite-error observation limits keep physical state count distinct from scalar derivative order.
 
 ## Article and build
 
