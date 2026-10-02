@@ -26,6 +26,12 @@ The [companion article on open questions and signed work](https://github.com/hob
 
 Read the main text for the method and one complete construction. Use the appendices for the full support proofs and coefficient array, local interconnection laws, identification diagnostics, initialized and passive realizations, further applications, networks and finite supplies, distributed histories, and signed work and verification. The switched cubic retains its forcing and event-side initialization; material and field controls state what a reduction must preserve. Loaded multiport constructions and finite-error observation limits keep physical state count distinct from scalar derivative order.
 
+## Artikeln på svenska
+
+[Läs artikeln på svenska](https://github.com/hobnilre/physics-ode-3rd-deg-sv).
+Den svenska artikeln återger huvudtexten, med en inledande sammanfattning
+utan matematik. Bilagorna och den kompletterande artikeln finns på engelska.
+
 ## Article and build
 
 [Read the article (PDF)](third-and-higher-order-odes.pdf) · [Manuscript source](third-and-higher-order-odes.md)
