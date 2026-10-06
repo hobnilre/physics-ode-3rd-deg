@@ -91,6 +91,8 @@ Write the complete law as $P(D)y=N(D)u$, where $P(s)=\sum_k B_ks^k$ and $s$ is a
 
 These declarations separate five claims: dimensional admissibility; exact representation on $\mathcal U$; recovery from observations; prediction under independent conditions; and realization by specified components and preparations. Reference transport changes the coordinates describing a law. Changing the attachment or adding a physical state changes the law itself. Appendix \ref{sec:family} supplies the complete transformation, support and convergence treatment; Appendix \ref{sec:array} gives the full coefficient array.
 
+The dimensions tell us which coefficient forms are possible, while the component laws tell us which ones describe the chosen system. A fit becomes a prediction test only when the same law is carried to independently changed conditions.
+
 # An exact construction from an impact driver
 \label{sec:core-impact}
 
@@ -131,6 +133,8 @@ Apply the lower diagonal operator to the first equation and use the second to el
 \end{align}
 \endgroup
 The $d_cd_j$ contribution is an interaction of the two damping regions. The physical hammer mobility, angular velocity per applied torque with zero initial physical states, is $sN/P$. This is the zero-state transfer; dropping $N$ changes the driven system. The initial jet is the list of angle derivatives at the starting time. Obtain these derivatives from the body equations, physical initial states and prescribed input. A scalar solution represents that preparation only when its initial jet agrees with those values. The full reconstruction and exceptional cases are in Appendix \ref{sec:collision}.
+
+Combining the body equations into one equation changes how the motion is described. The applied drive and the starting state still belong to the same physical system and must travel with that description.
 
 ## Normalization, support and independent changes
 
@@ -176,6 +180,8 @@ The same law gives a direct prediction. Increase joint stiffness by an independe
  \label{eq:core-joint-prediction}
 \end{equation}
 No weight is re-estimated. Use the new forcing operator and incoming physical state to predict motion and torque. A preload change counts as this experiment only after its changes in effective stiffness, damping and slip have been established. Independently varying damping requires the nine-atom law; independently changing contact requires the full chart or a newly declared constitutive model.
+
+The number of terms needed depends on which parts are allowed to change independently. A compact coefficient list that works for one restricted family need not describe a wider set of joints or contacts.
 
 # Constructing successive higher orders
 \label{sec:core-recurrence}
@@ -233,6 +239,8 @@ Starting from $\widehat q_0^{(0)}=\widehat p_0^{(0)}=\widehat p_1^{(0)}=1$, it p
 
 Two other extensions must be distinguished. Multiplying an atom by $\tau$ extends a dimensional basis. Expanding one fixed rational response $U/V$ generates higher Taylor coefficients from the denominator without adding physical states. That expansion is limited by the nearest uncancelled pole and has an exact finite remainder; both are retained in Appendices \ref{sec:construction} and \ref{sec:rf}. Neither operation supplies the new resistance, capacitance or preparation required by the physical recurrence.
 
+Adding a physical branch supplies both another state and the properties that determine its response. Merely writing a higher derivative supplies neither that component information nor its preparation.
+
 # Identification and independent prediction
 \label{sec:core-identification}
 
@@ -264,6 +272,8 @@ The triangle inequality makes the error neighborhoods disjoint. An observation r
 
 The impact example thus connects three different results. Component laws prove the coefficient identity. Independent coordinate variation can make its contributions distinguishable. A fixed law with an uncertainty model predicts an independently specified setting. The companion develops the contact/joint inverse and calibrated physical comparison; Appendix \ref{sec:identification} retains the full rank, sensitivity, exponent and derivative-measurement analysis. No work or energy outcome selects the coefficients.
 
+A measured trace can leave several internal explanations possible. Independent changes and additional observations are what make those explanations testable; more terms in a fitted equation cannot supply a missing measurement.
+
 # Physical scope and conclusions
 \label{sec:conclusion}
 
@@ -278,6 +288,8 @@ Finite-dimensional equations have further domain limits. Distributed, fractional
 
 Coefficient synthesis therefore returns a law together with its determining information and domain. Dimensions give the complete monomial family but leave dimensionless functions free. The impact component laws determine full-domain coefficients, restricted seven- and nine-atom representations, and independent-configuration predictions. Adding specified physical branches constructs successive orders and their forcing; observations determine which coefficients and states can be recovered. Compatible preparation and declared ports establish what the resulting equation describes. These conclusions require no selection of coefficients or derivative order by an energy outcome.
 
+
+The order of an observed equation is not a direct count of the parts or energy stores inside the system. Its physical meaning also depends on what is observed, how the system started, and when its component laws stop applying.
 
 # Guide to the appendices {-}
 
@@ -551,6 +563,8 @@ The economical coefficients also have a closed finite structure. Put $u=(a/c)s^2
  \label{eq:staircase-polynomial}
 \end{align}
 The finite sums, rather than a quotient with a removable singularity, define the expression at $u=1$. For odd order, every nontrivial root of $1+u+\cdots+u^m$ supplies additional roots in $s$. This makes explicit why the coefficient convention is no universal stability construction.
+
+The coefficient tables catalogue admissible expressions rather than ready-made physical systems. Selecting entries still requires a declared law and checks of how its connected states behave.
 
 # Impact construction, contact laws and release
 \label{app:impact}
@@ -890,6 +904,8 @@ Reversible, accumulating and terminal internal states are likewise distinct. A f
 
 Across these applications, simultaneous contacts, initially touching edges, chatter, support-port disappearance and terminal thresholds can make event ordering consequential. Four distinct discrepancies should be kept: the equation residual, the port-integration residual, the constitutive/model residual and the independently evaluated endpoint balance residual; impulse and partition identities add their own checks. Exact smooth-interval formulas do not settle convergence or physical meaning at an unresolved event. Accessible measurements differ by apparatus, and no hardware evidence is inferred from a proposed model.
 
+A contact model needs more than the motion observed during engagement. Its preparation, separating event and any retained deformation determine what can be carried into the next part of the motion.
+
 # Local composition and higher-order constructions
 \label{app:construction}
 
@@ -1061,6 +1077,8 @@ Now let $H(s)=U(s)/V(s)$ with real polynomials $U=\sum_n u_ns^n$, $V=\sum_{j=0}^
 This determines successively higher expansion coefficients from one fixed rational model. For the two-state inductor of Appendix \ref{sec:rf}, $U=R+sL$ and $V=1+RC_ps+LC_ps^2$ give $d_0=R$, $d_1=L-R^2C_p$ and $d_n=-RC_pd_{n-1}-LC_pd_{n-2}$ for $n\geq2$. The full coefficients and exact finite remainder are retained in \eqref{eq:inductor-coefficients} and \eqref{eq:rational-remainder}. No additional state is inferred from the expansion index. The nearest uncancelled pole bounds the Taylor disk; applying an infinite derivative series to a signal also requires convergence and its initialized interpretation.
 
 Finally, $A_{r,k+1}=\tau A_{r,k}$ extends a dimensional basis element. It supplies neither the new branch data in \eqref{eq:branch-synthesis} nor the rational denominator in \eqref{eq:series-synthesis}. These three recurrences answer different synthesis questions. Their exact domains and state interpretations must accompany any proposed higher-order continuation. Appendix \ref{sec:distributed} extends the comparison to finite ladders and rational candidates for infinite-dimensional laws, retaining the discrepancy and field or history data that increasing coefficient order alone does not determine.
+
+The constructive step is to add specified component information and derive both the response and its drive. Extending a mathematical basis or retaining more expansion terms is a different operation, with its own limits.
 
 # Identification, observation and uncertainty
 \label{app:identification}
